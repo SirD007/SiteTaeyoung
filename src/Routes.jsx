@@ -1,16 +1,24 @@
 import React from "react";
-import { Route, BrowserRouter } from "react-router-dom";
+import { Route, BrowserRouter, Routes } from "react-router-dom";
 
 import Home from "./pages/Home";
-import Maint from "./pages/Maint"
+import Maint from "./pages/Maint";
+import Empresa from "./pages/Empresa";
+import Solucoes from "./pages/Soluções";
+import Contato from "./pages/Soluções";
 
-const Routes = () => {
+const Rotas = () => {
    return(
        <BrowserRouter>
-           <Route component = { Maint }  path="/" exact />
-           <Route component = { Home }  path="/home" />
+            <Routes>
+                <Route element = { <Maint/> }  path="/" exact />
+                <Route element = { <Home/> }  path="/home" />
+                <Route element = { <Empresa/> }  path="/empresa" />
+                <Route element = { <Solucoes/> }  path="/solucoes" />
+                <Route element = { <Contato/> }  path="/contato" />
+           </Routes>
        </BrowserRouter>
    )
 }
 
-export default Routes;
+export default Rotas;
