@@ -199,12 +199,86 @@ const Home = () =>{
           </div>
         </section>
 
-        <section>
+        <section className='px-[20%] flex flex-col'>
 
-          <div>
-
+        <div class="bg-white">
+          <div class="mx-auto max-w-7xl py-24">
+            <div class="relative isolate overflow-hidden bg-gray-900 px-6 pt-16 shadow-2xl sm:rounded-3xl sm:px-16 md:pt-24 lg:flex lg:gap-x-20 lg:px-24 lg:pt-0">
+              <svg viewBox="0 0 1024 1024" class="absolute top-1/2 left-1/2 -z-10 h-[64rem] w-[64rem] -translate-y-1/2 [mask-image:radial-gradient(closest-side,white,transparent)] sm:left-full sm:-ml-80 lg:left-1/2 lg:ml-0 lg:translate-y-0 lg:-translate-x-1/2" aria-hidden="true">
+                <circle cx="512" cy="512" r="512" fill="url(#759c1415-0410-454c-8f7c-9a820de03641)" fill-opacity="0.7" />
+                <defs>
+                  <radialGradient id="759c1415-0410-454c-8f7c-9a820de03641">
+                    <stop stop-color="#f43f5e" />
+                    <stop offset="1" stop-color="#f43f5e" />
+                  </radialGradient>
+                </defs>
+              </svg>
+              <div className="mx-auto max-w-md text-center lg:mx-0 lg:flex-auto lg:py-32 lg:text-left">
+                <h2 className="font-heading text-3xl font-bold tracking-tight text-white sm:text-4xl">Tenha acesso as fichas tecnicas em suas mãos.</h2>
+                <p className="mt-6 text-gray-300">Em apenas um clique tenha todas as especificações de nossos produtos para consulta.</p>
+                <div className="mt-10 flex items-center justify-center gap-x-6 lg:justify-start">
+                  <a href="#" className="rounded-md bg-white px-3.5 py-1.5 text-base font-semibold leading-7 text-gray-900 shadow-sm hover:bg-gray-100 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white">Baixe Agora</a>
+                  <a href="#" className="text-base font-semibold leading-7 text-white">Ver Produtos<span aria-hidden="true">→</span></a>
+                </div>
+              </div>
+              <div className="relative mt-16 h-80 lg:mt-8">
+                <img className="absolute top-0 left-0 w-[28rem] max-w-none rounded-md bg-white/5 ring-1 ring-white/10" src="src/assets/datasheet.png" alt="App screenshot" width="1824" height="1080"></img>
+              </div>
+            </div>
           </div>
+        </div>
 
+        </section>
+
+        <section className='px-[20%] mb-[150px] flex flex-col'>
+
+          <div className='flex flex-col'>
+            <div className='flex flex-col'>
+              <span className='text-4xl font-heading text-center font-bold'>Contato</span>
+              <span className='text-zinc-500 text-center'>Nossa equipe está de prontidão para melhor te atender! Entre em contato, te retornaremos em breve</span>
+            </div>
+            <form class="w-full mt-10">
+            <div class="flex flex-wrap -mx-3 mb-6">
+              <div class="w-full md:w-1/2 px-3 mb-6 md:mb-0">
+                <label class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" for="grid-first-name">
+                  Primeiro Nome
+                </label>
+                <input class="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:border-gray-500 focus:bg-white" id="grid-first-name" type="text" placeholder="James"></input>
+              </div>
+              <div class="w-full md:w-1/2 px-3">
+                <label class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" for="grid-last-name">
+                  Último Nome
+                </label>
+                <input class="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500" id="grid-last-name" type="text" placeholder="Doe"></input>
+              </div>
+            </div>
+            <div class="flex flex-wrap -mx-3 mb-6">
+              <div class="w-full px-3">
+                <label class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" for="grid-password">
+                  E-mail
+                </label>
+                <input class="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white focus:border-gray-500" id="email" type="email"></input>
+              </div>
+            </div>
+            <div class="flex flex-wrap -mx-3 mb-6">
+              <div class="w-full px-3">
+                <label class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" for="grid-password">
+                  Mensagem
+                </label>
+                <textarea class=" no-resize appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white focus:border-gray-500 h-48 resize-none" id="message"></textarea>
+              </div>
+            </div>
+            <div class="md:flex md:items-center">
+              <div class="md:w-1/3">
+                <button class="shadow bg-primaryBlue hover:opacity-90 focus:shadow-outline focus:outline-none text-white font-bold py-2 px-4 rounded" type="button">
+                  Send
+                </button>
+              </div>
+              <div class="md:w-2/3"></div>
+            </div>
+            </form>
+          </div>
+        
         </section>
 
       </main>
