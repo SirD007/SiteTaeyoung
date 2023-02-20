@@ -2,7 +2,7 @@ import { Link } from "react-router-dom"
 
 export default function HeaderMenu() {
     return (
-        <div className="absolute">
+        <div className="fixed">
             <nav>
                 <div className="bg-white shadow-md h-26 w-screen flex px-[10%] justify-between items-center">
                     <div>

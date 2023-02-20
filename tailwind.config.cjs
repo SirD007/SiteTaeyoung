@@ -9,8 +9,15 @@ module.exports = {
       'heading': ['Lato', 'sans-serif']
     },
     extend: {
+      colors:{
+        'primaryBlue': "#3b82f6",
+        'primaryRose': "#f43f5e"
+      },
       backgroundImage:{
         'headerImg': "url('src/assets/headerBgImg.jpg')",
+        'secImg1': "url('src/assets/tapes.jpg')",
+        'secImg2': "url('src/assets/maskpro.jpg')",
+        'secImg3': "url('src/assets/doowon.png')",
       }
     },
   },
