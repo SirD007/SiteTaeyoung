@@ -7,7 +7,7 @@ import Empresa from "./pages/Empresa";
 import Solucoes from "./pages/Soluções";
 import Contato from "./pages/Soluções";
 
-const Rotas = () => {
+export default function Rotas() {
    return(
        <BrowserRouter>
             <Routes>
@@ -20,5 +20,3 @@ const Rotas = () => {
        </BrowserRouter>
    )
 }
-
-export default Rotas;
