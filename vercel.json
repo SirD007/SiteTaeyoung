@@ -1,3 +1,15 @@
 {
-  "routes": [{ "src": "/[^.]+", "dest": "/", "status": 200 }]
+  "redirects": [
+    {
+      "source": "/projects/<SideProjectName>/assets/:filePath",
+      "destination": "<SideProjectProdUrl>/assets/:filePath",
+      "permanent": true
+    }
+  ],
+  "rewrites": [
+    {
+      "source": "/projects/<SideProjectName>",
+      "destination": "<SideProjectProdUrl>"
+    }
+  ]
 }
