@@ -1,5 +1,6 @@
 import React from 'react';
 import HeaderMenu from '../components/HeaderMenu'
+import SiteFooter from '../components/SiteFooter'
 import { Link } from 'react-router-dom';
 import CustomBtn from '../components/CustomBtn';
 
@@ -280,8 +281,11 @@ const Home = () =>{
           </div>
         
         </section>
-
+        
       </main>
+      <footer>
+        <SiteFooter/>
+      </footer>
     </div> 
 
   );
