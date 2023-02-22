@@ -1,5 +1,11 @@
 {
-  "rewrites": [
-    { "source": "/((?!).*)", "destination": "/home" }
-  ]
+  "version": 1,
+  "builds": [
+    {
+      "src": "./src/main.jsx",
+      "use": "vercel/node"
+    }
+  ],
+  "routes": "/(.*)",
+  "dest": "/"
 }
