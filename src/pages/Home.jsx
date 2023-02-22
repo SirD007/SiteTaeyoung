@@ -1,6 +1,6 @@
 import React from 'react';
 import HeaderMenu from '../components/HeaderMenu'
-import SiteFooter from '../components/footer'
+import SiteFooter from '../components/Footer'
 import { Link } from 'react-router-dom';
 import CustomBtn from '../components/CustomBtn';
 
@@ -223,7 +223,7 @@ const Home = () =>{
                 </div>
               </div>
               <div className="relative mt-16 h-80 lg:mt-8">
-                <img className="absolute top-0 left-0 w-[28rem] max-w-none rounded-md bg-white/5 ring-1 ring-white/10" src="src/assets/datasheet.png" alt="App screenshot" width="1824" height="1080"></img>
+                <img className="absolute top-0 left-0 w-[28rem] max-w-none rounded-md" src="src/assets/datasheet.png" alt="App screenshot" width="1824" height="1080"></img>
               </div>
             </div>
           </div>
