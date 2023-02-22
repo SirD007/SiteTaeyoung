@@ -1,6 +1,5 @@
 import React from 'react';
 import HeaderMenu from '../components/HeaderMenu'
-import SiteFooter from '../components/Footer'
 import { Link } from 'react-router-dom';
 import CustomBtn from '../components/CustomBtn';
 
@@ -283,7 +282,6 @@ const Home = () =>{
         </section>
 
       </main>
-      <SiteFooter/>
     </div> 
 
   );
