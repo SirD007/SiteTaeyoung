@@ -1,15 +1,9 @@
 {
-  "version": 2,
-  "builds": [
-    {
-      "src": "./src/main.jsx",
-      "use": "vercel/node"
-    }
-  ],
-      "routes": [
-      {
-        "src": "/(.*)",
-        "dest": "/"
-      }    
-    ]
-  }
+  "routes": [
+    { "src": "/", "dest": "src/pages/Maint.jsx" },
+    { "src": "/home", "dest": "src/pages/Home.jsx" },
+    { "src": "/empresa", "dest": "src/pages/Empresa.jsx" },
+    { "src": "/solucoes", "dest": "src/pages/Soluções.jsx" },
+    { "src": "/contato", "dest": "src/pages/Contato.jsx" }
+  ]
+}
