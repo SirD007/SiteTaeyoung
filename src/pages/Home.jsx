@@ -5,6 +5,18 @@ import { Link } from 'react-router-dom';
 import CustomBtn from '../components/CustomBtn';
 
 import { FaBinoculars, FaPeopleArrows, FaAward, FaBullseye, FaPlayCircle } from "react-icons/fa";
+import costumerLogo1 from '../assets/costumerLogo1.png'
+import costumerLogo2 from '../assets/costumerLogo2.png'
+import costumerLogo3 from '../assets/costumerLogo3.png'
+import costumerLogo4 from '../assets/costumerLogo4.png'
+import costumerLogo5 from '../assets/costumerLogo5.png'
+import costumerLogo6 from '../assets/costumerLogo6.png'
+import datasheet from '../assets/datasheet.png'
+import doowon from '../assets/doowon.png'
+import headerBgImg from '../assets/headerBgImg.jpg'
+import HomeHeaderImg from '../assets/HomeHeaderImg.png'
+import maskpro from '../assets/maskpro.jpg'
+import tapes from '../assets/tapes.jpg'
 
 const Setores = [
   {imageSrc: 'bg-secImg1', pillText: 'TaeyoungTape', contentText: 'As fitas Taeyoung possuem uma melhor qualidade e acabamento perfeito'},
@@ -18,8 +30,11 @@ const Home = () =>{
     <HeaderMenu/>
       <main className='flex flex-col'>
         <section className='px-[20%] flex h-screen justify-between items-center bg-headerImg bg-cover bg-no-repeat'>
+          <img
+          className='absolute z-0 top-0 left-0'
+          src={headerBgImg} alt="" />
 
-          <div className='w-1/3 flex flex-col'>
+          <div className='w-1/3 flex flex-col z-10'>
             <div className="my-20 flex flex-col  gap-2">
               <h3 className="text-zinc-700 text-4xl font-heading font-black">Soluções Efetivas Lorem Ipsum Lorem</h3>
               <span className="text-zinc-700">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque enim ad odio saepe voluptatem eum rerum excepturi obcaecati animi voluptatibus consequuntur nostrum, assumenda quaerat hic id eos fugit nobis aliquid.</span>
@@ -30,7 +45,7 @@ const Home = () =>{
           </div>
 
           <FaPlayCircle
-          className='cursor-pointer mr-32'
+          className='cursor-pointer mr-32 z-10'
           size='150px'
           color='#f43f5e'
           />
@@ -39,7 +54,7 @@ const Home = () =>{
     
         <section className='px-[20%] flex justify-between items-center'>
 
-            <div className='shadow-lg rounded-lg bg-white mt-[-150px] grid-cols-3 grid'>
+            <div className='shadow-lg rounded-lg bg-white mt-[-150px] grid-cols-3 grid z-10'>
 
               <div className='grid-cols-2 grid gap-4 p-10 col-span-2 items-center'>
 
@@ -117,7 +132,7 @@ const Home = () =>{
             <div className='w-1/2'>
               <img 
               className='max-w-[500px]'
-              src="src/assets/HomeHeaderImg.png" alt="manwoman_business" />
+              src={HomeHeaderImg} alt="manwoman_business" />
             </div>
             <div className='w-1/2 flex flex-col'>
 
@@ -153,22 +168,22 @@ const Home = () =>{
             <div className='flex justify-between mt-10'>
               <img
               className='max-w-[100px]'
-              src="./src/assets/costumerLogo1.png" alt="costumerLogo1" />
+              src={costumerLogo1} alt="costumerLogo1" />
               <img
               className='max-w-[100px]'
-              src="./src/assets/costumerLogo2.png" alt="costumerLogo2" />
+              src={costumerLogo2} alt="costumerLogo2" />
               <img
               className='max-w-[100px]'
-              src="./src/assets/costumerLogo3.png" alt="costumerLogo3" />
+              src={costumerLogo3} alt="costumerLogo3" />
               <img
               className='max-w-[100px]'
-              src="./src/assets/costumerLogo4.png" alt="costumerLogo4" />
+              src={costumerLogo4} alt="costumerLogo4" />
               <img
               className='max-w-[100px]'
-              src="./src/assets/costumerLogo5.png" alt="costumerLogo5" />
+              src={costumerLogo5} alt="costumerLogo5" />
               <img
               className='max-w-[100px]'
-              src="./src/assets/costumerLogo6.png" alt="costumerLogo6" />
+              src={costumerLogo6} alt="costumerLogo6" />
             </div>
         </section>
 
@@ -223,7 +238,7 @@ const Home = () =>{
                 </div>
               </div>
               <div className="relative mt-16 h-80 lg:mt-8">
-                <img className="absolute top-0 left-0 w-[28rem] max-w-none rounded-md" src="src/assets/datasheet.png" alt="App screenshot" width="1824" height="1080"></img>
+                <img className="absolute top-0 left-0 w-[28rem] max-w-none rounded-md" src={datasheet} alt="App screenshot" width="1824" height="1080"></img>
               </div>
             </div>
           </div>
@@ -272,7 +287,7 @@ const Home = () =>{
             <div class="md:flex md:items-center">
               <div class="md:w-1/3">
                 <button class="shadow bg-primaryBlue hover:opacity-90 focus:shadow-outline focus:outline-none text-white font-bold py-2 px-4 rounded" type="button">
-                  Send
+                  Enviar
                 </button>
               </div>
               <div class="md:w-2/3"></div>

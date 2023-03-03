@@ -9,8 +9,8 @@ export default function SiteFooter() {
                 <div className="px-[20%] flex justify-between">
 
                     <div>
-                        <span className="font-bold text-white">Institucional</span>
-                        <div className="flex flex-col">
+                        <span className="font-bold text-white text-lg">Institucional</span>
+                        <div className="flex flex-col mt-6">
                             <Link
                             className="text-white hover:text-primaryBlue transition-all"
                             to="/empresa">Empresa</Link>
@@ -21,8 +21,8 @@ export default function SiteFooter() {
                     </div>
 
                     <div>
-                        <span className="font-bold text-white">Soluções</span>
-                        <div className="flex flex-col">
+                        <span className="font-bold text-white text-lg">Soluções</span>
+                        <div className="flex flex-col mt-6">
                             <Link
                             className="text-white hover:text-primaryBlue transition-all"
                             to="/empresa">Taeyoung Tape</Link>
@@ -39,8 +39,8 @@ export default function SiteFooter() {
                     </div>
 
                     <div>
-                        <span className="font-bold text-white">Fale Conosco</span>
-                        <div className="flex flex-col">
+                        <span className="font-bold text-white text-lg">Fale Conosco</span>
+                        <div className="flex flex-col mt-6">
                             <Link
                             className="text-white hover:text-primaryBlue transition-all"
                             to="/empresa">Formulário de Contato</Link>
