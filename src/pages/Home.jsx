@@ -12,16 +12,22 @@ import costumerLogo4 from '../assets/costumerLogo4.png'
 import costumerLogo5 from '../assets/costumerLogo5.png'
 import costumerLogo6 from '../assets/costumerLogo6.png'
 import datasheet from '../assets/datasheet.png'
-import doowon from '../assets/doowon.png'
 import headerBgImg from '../assets/headerBgImg.jpg'
 import HomeHeaderImg from '../assets/HomeHeaderImg.png'
 import maskpro from '../assets/maskpro.jpg'
 import tapes from '../assets/tapes.jpg'
+import doowon from '../assets/doowon.png'
+
+const setoresImg = [
+  maskpro,
+  tapes,
+  doowon
+]
 
 const Setores = [
-  {imageSrc: 'bg-secImg1', pillText: 'TaeyoungTape', contentText: 'As fitas Taeyoung possuem uma melhor qualidade e acabamento perfeito'},
-  {imageSrc: 'bg-secImg2', pillText: 'Maskpro', contentText: 'Soluções Inteligentes de Mascaramento e Proteção de Superfícies'},
-  {imageSrc: 'bg-secImg3', pillText: 'Doowon', contentText: 'Peças originais diretamente da fábrica, peças para arrefecimento automotivo'}
+  {imageSrc: {tapes}, pillText: 'TaeyoungTape', contentText: 'As fitas Taeyoung possuem uma melhor qualidade e acabamento perfeito'},
+  {imageSrc: {maskpro}, pillText: 'Maskpro', contentText: 'Soluções Inteligentes de Mascaramento e Proteção de Superfícies'},
+  {imageSrc: {doowon}, pillText: 'Doowon', contentText: 'Peças originais diretamente da fábrica, peças para arrefecimento automotivo'}
 ]
 
 const Home = () =>{
@@ -198,7 +204,11 @@ const Home = () =>{
             return(
               <div>
               <div className='flex flex-col w-[350px]'>
-                <div className={`w-[350px] h-[200px] rounded-lg mb-5 hover:scale-95 transition-all ${value.imageSrc} bg-no-repeat bg-cover bg-center shadow-md`}></div>
+                <div className={`w-[350px] h-[200px] rounded-lg mb-5 hover:scale-95 transition-all bg-no-repeat bg-cover bg-center shadow-md`}>
+                  <img
+                  className='object-cover w-full h-full'
+                  src={value.imageSrc} alt="" />
+                </div>
                 <div className='flex flex-col gap-4'>
                 <span className='px-2 py-1 bg-primaryBlue w-max rounded-full text-xs text-white'>{value.pillText}</span>
                 <span className='text-zinc-500'>{value.contentText}</span>
