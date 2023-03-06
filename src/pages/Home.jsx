@@ -18,16 +18,10 @@ import maskpro from '../assets/maskpro.jpg'
 import tapes from '../assets/tapes.jpg'
 import doowon from '../assets/doowon.png'
 
-const setoresImg = [
-  maskpro,
-  tapes,
-  doowon
-]
-
 const Setores = [
-  {imageSrc: {tapes}, pillText: 'TaeyoungTape', contentText: 'As fitas Taeyoung possuem uma melhor qualidade e acabamento perfeito'},
-  {imageSrc: {maskpro}, pillText: 'Maskpro', contentText: 'Soluções Inteligentes de Mascaramento e Proteção de Superfícies'},
-  {imageSrc: {doowon}, pillText: 'Doowon', contentText: 'Peças originais diretamente da fábrica, peças para arrefecimento automotivo'}
+  {imageSrc: `${maskpro}`, pillText: 'TaeyoungTape', contentText: 'As fitas Taeyoung possuem uma melhor qualidade e acabamento perfeito'},
+  {imageSrc: `${tapes}`, pillText: 'Maskpro', contentText: 'Soluções Inteligentes de Mascaramento e Proteção de Superfícies'},
+  {imageSrc: `${doowon}`, pillText: 'Doowon', contentText: 'Peças originais diretamente da fábrica, peças para arrefecimento automotivo'}
 ]
 
 const Home = () =>{
@@ -37,7 +31,7 @@ const Home = () =>{
       <main className='flex flex-col'>
         <section className='px-[20%] flex h-screen justify-between items-center bg-headerImg bg-cover bg-no-repeat'>
           <img
-          className='absolute z-0 top-0 left-0'
+          className='absolute z-0 top-0 left-0 opacity-50'
           src={headerBgImg} alt="" />
 
           <div className='w-1/3 flex flex-col z-10'>
@@ -206,7 +200,7 @@ const Home = () =>{
               <div className='flex flex-col w-[350px]'>
                 <div className={`w-[350px] h-[200px] rounded-lg mb-5 hover:scale-95 transition-all bg-no-repeat bg-cover bg-center shadow-md`}>
                   <img
-                  className='object-cover w-full h-full'
+                  className='object-cover w-full h-full inset-0'
                   src={value.imageSrc} alt="" />
                 </div>
                 <div className='flex flex-col gap-4'>
