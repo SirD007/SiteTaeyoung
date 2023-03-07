@@ -1,5 +1,6 @@
 import React from 'react';
 import HeaderMenu from '../components/HeaderMenu';
+import SiteFooter from '../components/SiteFooter';
 
 import { BsChatRightText  } from "react-icons/bs";
 import { BiLinkExternal, BiBookOpen } from "react-icons/bi";
@@ -20,7 +21,7 @@ const Solucoes = () => {
             </div>
 
             <div className='bg-sky-50 py-16'>
-                <div className='flex justify-between px-[20%]'>
+                <div className='flex justify-between px-[20%] items-center'>
                     <div>
                         <img
                         className='w-[400px]'
@@ -76,7 +77,7 @@ const Solucoes = () => {
             </div>
 
             <div className='py-16'>
-                <div className='flex justify-between px-[20%]'>
+                <div className='flex justify-between px-[20%] items-center'>
                     <div className='flex flex-col gap-4 w-1/2'>
                         <span className='text-2xl font-heading text-zinc-600 font-bold'>Maskpro</span>
                         <span className='text-zinc-600 font-light'>Cada fita para cada aplicação! A linha PVC é feita visando a melhor flexibilidade de uso, com uma aderência perfeitamente desenvolvida e resistência a alterações metereológicas.</span>
@@ -132,10 +133,10 @@ const Solucoes = () => {
             </div>
 
             <div className='bg-sky-50 py-16'>
-                <div className='flex justify-between px-[20%]'>
+                <div className='flex justify-between px-[20%] items-center'>
                     <div>
                         <img
-                        className='w-[600px]'
+                        className='w-[400px]'
                         src={doowon} alt="" />
                     </div>
                     <div className='flex flex-col gap-4 w-1/2'>
@@ -186,6 +187,7 @@ const Solucoes = () => {
                     </div>
                 </div>
             </div>
+            <SiteFooter />
         </div>
     );
 }
