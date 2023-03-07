@@ -23,7 +23,7 @@ const Solucoes = () => {
                 <div className='flex justify-between px-[20%]'>
                     <div>
                         <img
-                        className='w-[600px]'
+                        className='w-[400px]'
                         src={taeyoungTape} alt="" />
                     </div>
                     <div className='flex flex-col gap-4 w-1/2'>
@@ -125,7 +125,7 @@ const Solucoes = () => {
                     </div>
                     <div>
                         <img
-                        className='w-[600px]'
+                        className='w-[400px]'
                         src={maskpro} alt="" />
                     </div>
                 </div>
