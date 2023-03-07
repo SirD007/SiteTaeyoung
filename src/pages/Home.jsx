@@ -5,6 +5,7 @@ import { Link } from 'react-router-dom';
 import CustomBtn from '../components/CustomBtn';
 
 import { FaBinoculars, FaPeopleArrows, FaAward, FaBullseye, FaPlayCircle } from "react-icons/fa";
+
 import costumerLogo1 from '../assets/costumerLogo1.png'
 import costumerLogo2 from '../assets/costumerLogo2.png'
 import costumerLogo3 from '../assets/costumerLogo3.png'
