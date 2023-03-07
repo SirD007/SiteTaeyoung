@@ -12,3 +12,7 @@
     font-family: Lato, system-ui, sans-serif;
   }
 }
+
+.carousel-status {
+  display: none;
+}

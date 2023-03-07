@@ -4,9 +4,9 @@ import TaeyoungLogo from '../../public/favicon.png'
 
 export default function HeaderMenu() {
     return (
-        <div className="fixed z-10">
+        <div className="fixed z-20">
             <nav>
-                <div className="bg-white shadow-md h-26 w-screen flex px-[10%] justify-between items-center">
+                <div className="bg-white bg-opacity-90 shadow-md h-26 w-screen flex px-[20%] justify-between items-center">
                     <div>
                         <a href="/home"><img className="max-w-[80px]" src={TaeyoungLogo} alt="Taeyoung Logo" /></a>
                     </div>

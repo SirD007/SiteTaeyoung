@@ -71,7 +71,7 @@ const Empresa = () => {
                         </div>
 
                         <div className='py-10'>
-                            <div className='p-10 shadow-lg rounded-lg flex flex-col gap-3 bg-gray-900 text-white'>
+                            <div className='p-10 shadow-lg rounded-lg flex flex-col gap-3 bg-gray-900 text-white relative isolate overflow-hidden z-0'>
                                 <span className='text-3xl'>Conheça nossos Produtos</span>
                                 <span>A Taeyoung é pioneira em negócios em diferentes mercados. Clique e conheça nossos produtos</span>
                                 <CustomBtn
@@ -79,6 +79,15 @@ const Empresa = () => {
                                 bgColor="bg-primaryBlue"
                                 text="Clique Aqui"
                                 />
+                                <svg viewBox="0 0 1024 1024" class="absolute z-10 h-[64rem] w-[64rem] -translate-y-1/3 [mask-image:radial-gradient(closest-side,white,transparent)] sm:left-full sm:-ml-80 lg:left-1/2 lg:ml-0 lg:translate-y-0 lg:-translate-x-1/2" aria-hidden="true">
+                                <circle cx="512" cy="512" r="512" fill="url(#759c1415-0410-454c-8f7c-9a820de03641)" fill-opacity="0.7" />
+                                <defs>
+                                <radialGradient id="759c1415-0410-454c-8f7c-9a820de03641">
+                                    <stop stop-color="#f43f5e" />
+                                    <stop offset="1" stop-color="#f43f5e" />
+                                </radialGradient>
+                                </defs>
+                                </svg>
                             </div>
                         </div>
                     </div>                
