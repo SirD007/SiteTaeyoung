@@ -9,6 +9,7 @@ import taeyoungTape from '../assets/taeyoungTape.png'
 import doowon from '../assets/compressor.png'
 import maskpro from '../assets/maskpro.png'
 
+
 const Solucoes = () => {
     return (
         <div className='flex flex-col'>
@@ -20,7 +21,7 @@ const Solucoes = () => {
                 </div>
             </div>
 
-            <div className='bg-sky-50 py-16'>
+            <div id='tapes' className='bg-sky-50 py-16'>
                 <div className='flex justify-between px-[20%] items-center'>
                     <div>
                         <img
@@ -76,7 +77,7 @@ const Solucoes = () => {
                 </div>
             </div>
 
-            <div className='py-16'>
+            <div id='maskpro' className='py-16'>
                 <div className='flex justify-between px-[20%] items-center'>
                     <div className='flex flex-col gap-4 w-1/2'>
                         <span className='text-2xl font-heading text-zinc-600 font-bold'>Maskpro</span>
@@ -132,7 +133,7 @@ const Solucoes = () => {
                 </div>
             </div>
 
-            <div className='bg-sky-50 py-16'>
+            <div id='doowon' className='bg-sky-50 py-16'>
                 <div className='flex justify-between px-[20%] items-center'>
                     <div>
                         <img

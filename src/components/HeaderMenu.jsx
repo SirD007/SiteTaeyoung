@@ -13,6 +13,9 @@ export default function HeaderMenu() {
                     <div className="flex gap-10">
                         <Link
                         className="text-gray-700 hover:text-pink-600 transition-all uppercase"
+                        to="/home">Home</Link>
+                        <Link
+                        className="text-gray-700 hover:text-pink-600 transition-all uppercase"
                         to="/empresa">Empresa</Link>
                         <Link
                         className="text-gray-700 hover:text-pink-600 transition-all uppercase"
