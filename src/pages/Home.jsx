@@ -1,11 +1,15 @@
-import React from 'react';
+import {React, useState} from 'react';
+
 import HeaderMenu from '../components/HeaderMenu'
 import SiteFooter from '../components/SiteFooter'
 import CustomBtn from '../components/CustomBtn';
 
 import { Link } from 'react-router-dom';
 
-import { FaBinoculars, FaPeopleArrows, FaAward, FaBullseye, FaPlayCircle } from "react-icons/fa";
+import { Carousel } from 'react-responsive-carousel';
+import "react-responsive-carousel/lib/styles/carousel.min.css";
+
+import { FaBinoculars, FaPeopleArrows, FaAward, FaBullseye, FaPlayCircle, FaSlack, FaReply } from "react-icons/fa";
 
 import costumerLogo1 from '../assets/costumerLogo1.png'
 import costumerLogo2 from '../assets/costumerLogo2.png'
@@ -27,38 +31,89 @@ const Setores = [
 ]
 
 const Home = () =>{
+
+  const [modal, setModal] = useState(false);
+  const [videoLoading, setVideoLoading] = useState(true);
+
+  const openModal = () => {
+    setModal(!modal);
+  };
+
+  const spinner = () => {
+    setVideoLoading(!videoLoading);
+  };
+
   return (
     <div>
     <HeaderMenu/>
       <main className='flex flex-col'>
-        <section className='px-[20%] flex h-screen justify-between items-center bg-cover bg-no-repeat'>
+        <section className='max-lg:justify-end max-lg:flex-col-reverse max-lg:px-[10%] px-[20%] flex h-screen justify-between items-center'>
           <img
           className='absolute z-0 top-0 left-0 opacity-50'
           src={headerBgImg} alt="" />
 
-          <div className='w-1/3 flex flex-col z-10'>
-            <div className="mt-20 mb-10 flex flex-col  gap-2">
+          <div className='max-lg:text-center w-1/2 flex flex-col z-10'>
+            <div className="mb-10 flex flex-col gap-2">
               <h3 className="text-zinc-700 text-4xl font-heading font-black">Soluções efetivas para o seu negócio</h3>
               <span className="text-zinc-700">A Taeyoung ouve seus sonhos o os trás à vida através de pensamento criativo e tecnologia inovadora. Juntos, nos esforçamos para alcançar a harmonia social e o respeito pelo seu bem-estar futuro.</span>
             </div>
               <Link to="/contato"><CustomBtn text="Entre em Contato" bgColor="bg-primaryBlue" textColor="text-white"/></Link>
           </div>
 
-          <FaPlayCircle
-          className='cursor-pointer mr-32 z-10'
-          size='150px'
+    <div className='z-20 max-lg:mt-[150px]'>
+      <button onClick={openModal}>
+      <FaPlayCircle
+          className='cursor-pointer mr-32 max-lg:mr-0'
+          size='10vw'
           color='#f43f5e'
           />
+        {modal ? (
+          <section className="modal__bg fixed top-0 left-0 w-full h-full bg-[28,28,28,0.19] ease-out transition-[0.3s]">
+            <div className="modal__align flex justify-center items-center h-[100vh]">
+              <div className="modal__content w-[800px] h-[500px] shadow-xl rounded-xl bg-transparent text-white mx-[4rem]" modal={modal}>
+                <FaReply
+                  className="modal__close bg-white rounded-[50%] cursor-pointer relative bottom-12 w-8 h-8 p-0"
+                  arial-label="Close modal"
+                  onClick={setModal}
+                />
+                <div className="modal__video-align flex relative bottom-9">
+                  {videoLoading ? (
+                    <div className="modal__spinner fixed top-1/2 left-1/2 translate-x-[-50%,-50%] animate-spin text-[40px] text-primaryBlue">
+                      <FaSlack
+                        className="modal__spinner-style"
+                        fadeIn="none"
+                      />
+                    </div>
+                  ) : null}
+                  <iframe
+                    className="modal__video-style z-50"
+                    onLoad={spinner}
+                    loading="lazy"
+                    width="800"
+                    height="500"
+                    src="https://www.youtube.com/embed/4UZrsTqkcW4"
+                    title="YouTube video player"
+                    frameBorder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen
+                  ></iframe>
+                </div>
+              </div>
+            </div>
+          </section>
+        ) : null}
+      </button>
+    </div>
 
         </section>
     
-        <section className='px-[20%] flex justify-between items-center'>
+        <section className='max-lg:px-[10%] px-[20%] flex justify-between items-center'>
 
-            <div className='shadow-lg rounded-lg bg-white mt-[-150px] grid-cols-3 grid z-10'>
+            <div className='shadow-lg rounded-lg bg-white mt-[-150px] grid-cols-3 grid z-10 max-lg:flex flex-col-reverse'>
 
-              <div className='grid-cols-2 grid gap-4 p-10 col-span-2 items-center'>
+              <div className='max-sm:flex max-sm:flex-col grid-cols-2 grid gap-4 p-10 col-span-2 items-center'>
 
-                <div className='flex gap-4 group'>
+                <div className='flex gap-4 group items-start'>
                   <div className='group-hover:bg-primaryBlue rounded-[50%] min-h-[50px] min-w-[50px] max-h-[50px] max-w-[50px] bg-slate-100 flex items-center justify-center shadow-md'>
                     <FaBinoculars
                     size='20px'
@@ -71,7 +126,7 @@ const Home = () =>{
                   </div>
                 </div>
 
-                <div className='flex gap-4 group'>
+                <div className='flex gap-4 group items-start'>
                   <div className='group-hover:bg-primaryBlue rounded-[50%] min-h-[50px] min-w-[50px] max-h-[50px] max-w-[50px] bg-slate-100 flex items-center justify-center shadow-md'>
                     <FaPeopleArrows
                     size='20px'
@@ -84,7 +139,7 @@ const Home = () =>{
                   </div>
                 </div>
 
-                <div className='flex gap-4 group'>
+                <div className='flex gap-4 group items-start'>
                   <div className='group-hover:bg-primaryBlue rounded-[50%] min-h-[50px] min-w-[50px] max-h-[50px] max-w-[50px] bg-slate-100 flex items-center justify-center shadow-md'>
                     <FaAward
                     size='20px'
@@ -97,7 +152,7 @@ const Home = () =>{
                   </div>
                 </div>
 
-                <div className='flex gap-4 group'>
+                <div className='flex gap-4 group items-start'>
                   <div className='group-hover:bg-primaryBlue rounded-[50%] min-h-[50px] min-w-[50px] max-h-[50px] max-w-[50px] bg-slate-100 flex items-center justify-center shadow-md'>
                     <FaBullseye
                     size='20px'
@@ -112,7 +167,7 @@ const Home = () =>{
 
               </div>
 
-              <div className='bg-primaryBlue p-10 flex flex-col gap-6'>
+              <div className='bg-primaryBlue p-[2rem] flex flex-col gap-6'>
                   <span className='text-white font-bold'>Nosso orgulho</span>
                   <span className='text-white text-2xl'>9 anos de sucesso imbativel</span>
                   <span className='text-zinc-200'>A Taeyoung vem durante anos desempenhando o papel de agregar valor aos mercado que atua, com transparência nas negociações e serenidade no processo.</span>
@@ -128,11 +183,11 @@ const Home = () =>{
 
         </section>
 
-        <section className='px-[20%] my-[150px] flex flex-col'>
-          <div className='flex justify-between items-center'>
+        <section className='max-lg:px-[10%] px-[20%] my-[150px] flex flex-col'>
+          <div className='max-lg:flex-col flex justify-between items-center'>
             <div className='w-1/2'>
               <img 
-              className='max-w-[500px]'
+              className='max-w-[500px] w-[40vw]'
               src={HomeHeaderImg} alt="manwoman_business" />
             </div>
             <div className='w-1/2 flex flex-col'>
@@ -167,7 +222,7 @@ const Home = () =>{
             </div>
           </div>
 
-            <div className='flex justify-between mt-10'>
+            <div className='flex justify-between mt-10 flex-wrap'>
               <img
               className='max-w-[100px]'
               src={costumerLogo1} alt="costumerLogo1" />
@@ -189,36 +244,36 @@ const Home = () =>{
             </div>
         </section>
 
-        <section className='px-[20%] flex flex-col'>
+        <section className='max-lg:px-[10%] px-[20%] flex flex-col'>
           <div className='flex flex-col mb-14'>
             <h2 className='font-heading font-bold text-3xl text-center'>Nossos principais segmentos</h2>
           </div>
           
-          <div className='flex justify-between'>
-          {typeof Setores !== "undefined" && Setores.map((value) => {
+          <div className='flex gap-4 max-md:flex-col'>
+          {Setores.map((value) => {
             return(
-              <div>
-              <div className='flex flex-col w-[350px]'>
-                <div className={`w-[350px] h-[200px] rounded-lg mb-5 hover:scale-95 transition-all bg-no-repeat bg-cover bg-center shadow-md`}>
-                  <img
-                  className='object-cover w-full h-full inset-0'
-                  src={value.imageSrc} alt="" />
-                </div>
-                <div className='flex flex-col gap-4'>
-                <span className='px-2 py-1 bg-primaryBlue w-max rounded-full text-xs text-white'>{value.pillText}</span>
-                <span className='text-zinc-500'>{value.contentText}</span>
-                <a href={value.href}><button className='px-6 py-2 rounded hover:opacity-90 transition-all w-max text-white bg-primaryRose'>Saiba Mais</button></a>               
+              <div className='mx-auto max-w-full rounded-lg shadow-lg overflow-hidden md:max-w-2xl'>
+                <div className='h-full w-full md:flex md:flex-col'>
+                  <div className='overflow-hidden mx-auto max-w-full md:max-w-2xl'>
+                    <img
+                    className='object-cover'
+                    src={value.imageSrc} alt="" />
+                  </div>
+                  <div className='p-8 flex flex-col gap-2'>
+                    <span className='uppercase text-xs text-white font-semibold bg-primaryBlue rounded-full py-1 px-2 max-w-fit'>{value.pillText}</span>
+                    <span className='text-zinc-500'>{value.contentText}</span>
+                    <a href={value.href}><button className='px-6 py-2 rounded hover:opacity-90 transition-all w-max text-white bg-primaryRose'>Saiba Mais</button></a>               
+                  </div>
                 </div>
               </div>
-          </div>
             )
           })}
           </div>
         </section>
 
-        <section className='px-[20%] flex flex-col'>
+        <section className='max-lg:px-[10%] px-[20%] flex flex-col'>
 
-        <div class="bg-white">
+        <div>
           <div class="mx-auto max-w-7xl py-24">
             <div class="relative isolate overflow-hidden bg-gray-900 px-6 pt-16 shadow-2xl sm:rounded-3xl sm:px-16 md:pt-24 lg:flex lg:gap-x-20 lg:px-24 lg:pt-0">
               <svg viewBox="0 0 1024 1024" class="absolute top-1/2 left-1/2 -z-10 h-[64rem] w-[64rem] -translate-y-1/2 [mask-image:radial-gradient(closest-side,white,transparent)] sm:left-full sm:-ml-80 lg:left-1/2 lg:ml-0 lg:translate-y-0 lg:-translate-x-1/2" aria-hidden="true">
@@ -247,7 +302,7 @@ const Home = () =>{
 
         </section>
 
-        <section className='px-[20%] mb-[150px] flex flex-col'>
+        <section className='max-lg:px-[10%] px-[20%] mb-[150px] flex flex-col'>
 
           <div className='flex flex-col'>
             <div className='flex flex-col'>

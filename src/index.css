@@ -15,6 +15,33 @@
   
 }
 
+* {
+  font-size: 1rem;
+}
+
 .carousel-status {
   display: none;
+}
+
+@media screen and (max-width: 800px) {
+  .modal__content {
+    margin: 0rem 1rem;
+    width: 100%;
+  }
+  .modal__video-style {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 499px) {
+  .modal__content {
+    background: transparent;
+    height: auto;
+  }
+  .modal__video-align {
+    bottom: 0px;
+  }
+  .modal__video-style {
+    height: auto;
+  }
 }
