@@ -11,7 +11,7 @@ module.exports = {
     extend: {
       colors:{
         'primaryBlue': "#3b82f6",
-        'primaryRose': "#f43f5e"
+        'primaryRose': "#7f292d"
       },
       backgroundImage:{
         'headerImg': "url('src/assets/headerBgImg.jpg')",

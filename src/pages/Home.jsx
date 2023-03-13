@@ -6,7 +6,6 @@ import CustomBtn from '../components/CustomBtn';
 
 import { Link } from 'react-router-dom';
 
-import { Carousel } from 'react-responsive-carousel';
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 
 import { FaBinoculars, FaPeopleArrows, FaAward, FaBullseye, FaPlayCircle, FaSlack, FaReply } from "react-icons/fa";
@@ -17,17 +16,19 @@ import costumerLogo3 from '../assets/costumerLogo3.png'
 import costumerLogo4 from '../assets/costumerLogo4.png'
 import costumerLogo5 from '../assets/costumerLogo5.png'
 import costumerLogo6 from '../assets/costumerLogo6.png'
+import costumerLogo7 from '../assets/costumerLogo7.png'
+import costumerLogo8 from '../assets/costumerLogo8.png'
 import datasheet from '../assets/datasheet.png'
 import headerBgImg from '../assets/headerBgImg.jpg'
 import HomeHeaderImg from '../assets/HomeHeaderImg.png'
-import maskpro from '../assets/maskpro.jpg'
-import tapes from '../assets/tapes.jpg'
-import doowon from '../assets/doowon.png'
+import linhapvc from '../assets/linhapvc.png'
+import linhatextil from '../assets/linhatextil.png'
+import linhaaltatensao from '../assets/linhaaltatensao.png'
 
-const Setores = [
-  {imageSrc: `${maskpro}`, pillText: 'TaeyoungTape', contentText: 'As fitas Taeyoung possuem uma melhor qualidade e acabamento perfeito', href: '/solucoes#maskpro'},
-  {imageSrc: `${tapes}`, pillText: 'Maskpro', contentText: 'Soluções Inteligentes de Mascaramento e Proteção de Superfícies', href: '/solucoes#tapes'},
-  {imageSrc: `${doowon}`, pillText: 'Doowon', contentText: 'Peças originais diretamente da fábrica, peças para arrefecimento automotivo', href: '/solucoes#doowon'}
+const Fitas = [
+  {imageSrc: `${linhapvc}`, pillText: 'Linha PVC', contentText: 'Fita isolante de PVC elaborada para uso automotivo em ultra aderência', href: '/solucoes#maskpro'},
+  {imageSrc: `${linhaaltatensao}`, pillText: 'Linha Alta Tensão', contentText: 'Fita à base de borracha de etileno-propileno com alta conformidade', href: '/solucoes#doowon'},
+  {imageSrc: `${linhatextil}`, pillText: 'Linha Têxtil', contentText: 'Fita isolante para proteger os cabos e chicotes elétricos de alta temperatura', href: '/solucoes#tapes'}
 ]
 
 const Home = () =>{
@@ -54,7 +55,7 @@ const Home = () =>{
 
           <div className='max-lg:text-center w-1/2 flex flex-col z-10'>
             <div className="mb-10 flex flex-col gap-2">
-              <h3 className="text-zinc-700 text-4xl font-heading font-black">Soluções efetivas para o seu negócio</h3>
+              <h3 className="text-zinc-700 text-3xl font-heading">Reconhecida como <span className='text-zinc-700 text-3xl font-heading font-black'>líder mundial</span> em fita de isolamento elétrico de PVC</h3>
               <span className="text-zinc-700">A Taeyoung ouve seus sonhos o os trás à vida através de pensamento criativo e tecnologia inovadora. Juntos, nos esforçamos para alcançar a harmonia social e o respeito pelo seu bem-estar futuro.</span>
             </div>
               <Link to="/contato"><CustomBtn text="Entre em Contato" bgColor="bg-primaryBlue" textColor="text-white"/></Link>
@@ -65,7 +66,7 @@ const Home = () =>{
       <FaPlayCircle
           className='cursor-pointer mr-32 max-lg:mr-0'
           size='10vw'
-          color='#f43f5e'
+          color='#7f292d'
           />
         {modal ? (
           <section className="modal__bg fixed top-0 left-0 w-full h-full bg-[28,28,28,0.19] ease-out transition-[0.3s]">
@@ -184,21 +185,22 @@ const Home = () =>{
         </section>
 
         <section className='max-lg:px-[10%] px-[20%] my-[150px] flex flex-col'>
-          <div className='max-lg:flex-col flex justify-between items-center'>
+          <div className='max-lg:flex-col flex justify-between items-center w-full'>
             <div className='w-1/2'>
               <img 
-              className='max-w-[500px] w-[40vw]'
+              className='max-w-[400px] w-[40vw]'
               src={HomeHeaderImg} alt="manwoman_business" />
             </div>
-            <div className='w-1/2 flex flex-col'>
+            <div className='w-1/2 flex flex-col max-lg:w-full'>
 
-              <div className='flex-col flex gap-6'>
+              <div className='flex-col flex gap-6 w-full max-lg:col-auto'>
                 <span className='bg-primaryBlue w-max py-1 px-2 rounded-full text-white font-bold text-xs'>Sobre a Empresa</span>
-                <span className='font-heading font-bold text-3xl'>Negócios entre Brasil e Coréia do Sul</span>
-                <span className='text-zinc-500'>Em 1978, a Taeyoung foi fundada na Coréia do Sul pelo engenheiro Seung-Jin Baek, buscando soluções efetivas para proteção de fiação e fitas de isolamento elétrico. Hoje, somos uma potência em soluções efetivas no setores em que atuamos.</span>
+                <span className='font-heading font-bold text-3xl max-lg:text-center'>Negócios entre Brasil e Coréia do Sul</span>
+                <span className='text-zinc-500 max-lg:text-center'>Em 1978, a Taeyoung foi fundada na Coréia do Sul pelo engenheiro Seung-Jin Baek, buscando soluções efetivas para proteção de fiação e fitas de isolamento elétrico. Hoje, somos uma potência em soluções efetivas no setores em que atuamos.</span>
 
                 <Link to='/solucoes'>
-                <CustomBtn 
+                <CustomBtn
+                  className='justify-center'
                   bgColor="bg-primaryRose"
                   text="Nossos produtos"
                   textColor="text-white"
@@ -221,37 +223,55 @@ const Home = () =>{
 
             </div>
           </div>
-
-            <div className='flex justify-between mt-10 flex-wrap'>
-              <img
-              className='max-w-[100px]'
+        </section>
+        
+        <section className='max-lg:px-[10%] px-[20%] flex flex-col justify-center pb-20'>
+          <div className='flex flex-col mb-14'>
+            <h2 className='font-heading font-bold text-3xl text-center'>Principais Clientes</h2>
+          </div>
+          <div className='grid grid-flow-row sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-3'>
+          <img
+              className='min-w-[200px] border-[1px] rounded'
               src={costumerLogo1} alt="costumerLogo1" />
               <img
-              className='max-w-[100px]'
+              className='min-w-[200px] border-[1px] rounded'
               src={costumerLogo2} alt="costumerLogo2" />
               <img
-              className='max-w-[100px]'
+              className='min-w-[200px] border-[1px] rounded'
               src={costumerLogo3} alt="costumerLogo3" />
               <img
-              className='max-w-[100px]'
+              className='min-w-[200px] border-[1px] rounded'
               src={costumerLogo4} alt="costumerLogo4" />
               <img
-              className='max-w-[100px]'
+              className='min-w-[200px] border-[1px] rounded'
               src={costumerLogo5} alt="costumerLogo5" />
               <img
-              className='max-w-[100px]'
+              className='min-w-[200px] border-[1px] rounded'
               src={costumerLogo6} alt="costumerLogo6" />
-            </div>
+              <img
+              className='min-w-[200px] border-[1px] rounded'
+              src={costumerLogo7} alt="costumerLogo7" />
+              <img
+              className='min-w-[200px] border-[1px] rounded'
+              src={costumerLogo8} alt="costumerLogo8" />
+          </div>
+          <div>
+            <a
+            className='float-right transition-all hover:bg-blue-600 bg-primaryBlue py-1 px-2 rounded text-white text-sm font-bold mt-5'
+            href="#">Ver todos →</a>
+          </div>
+
         </section>
 
         <section className='max-lg:px-[10%] px-[20%] flex flex-col'>
           <div className='flex flex-col mb-14'>
-            <h2 className='font-heading font-bold text-3xl text-center'>Nossos principais segmentos</h2>
+            <h2 className='font-heading font-bold text-3xl text-center'>Conheça nossas linhas</h2>
           </div>
           
           <div className='flex gap-4 max-md:flex-col'>
-          {Setores.map((value) => {
+          {Fitas.map((value) => {
             return(
+              <a href={value.href}>
               <div className='mx-auto max-w-full rounded-lg shadow-lg overflow-hidden md:max-w-2xl'>
                 <div className='h-full w-full md:flex md:flex-col'>
                   <div className='overflow-hidden mx-auto max-w-full md:max-w-2xl'>
@@ -261,11 +281,11 @@ const Home = () =>{
                   </div>
                   <div className='p-8 flex flex-col gap-2'>
                     <span className='uppercase text-xs text-white font-semibold bg-primaryBlue rounded-full py-1 px-2 max-w-fit'>{value.pillText}</span>
-                    <span className='text-zinc-500'>{value.contentText}</span>
-                    <a href={value.href}><button className='px-6 py-2 rounded hover:opacity-90 transition-all w-max text-white bg-primaryRose'>Saiba Mais</button></a>               
+                    <span className='text-zinc-500'>{value.contentText}</span>            
                   </div>
                 </div>
               </div>
+              </a>
             )
           })}
           </div>

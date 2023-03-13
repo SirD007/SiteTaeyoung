@@ -6,6 +6,7 @@ import Maint from "./pages/Maint";
 import Empresa from "./pages/Empresa";
 import Solucoes from "./pages/Solucoes";
 import Contato from "./pages/Contato";
+import Costumers from "./pages/Costumers";
 
 export default function Rotas() {
    return(
@@ -16,6 +17,7 @@ export default function Rotas() {
                 <Route element = { <Empresa/> }  path="/empresa" />
                 <Route element = { <Solucoes/> }  path="/solucoes" />
                 <Route element = { <Contato/> }  path="/contato" />
+                <Route element = { <Costumers/> }  path="/clientes" />
            </Routes>
        </BrowserRouter>
    )
