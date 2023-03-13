@@ -230,7 +230,7 @@ const Home = () =>{
             <h2 className='font-heading font-bold text-3xl text-center'>Principais Clientes</h2>
           </div>
           <div className='grid grid-flow-row sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-3'>
-          <img
+              <img
               className='min-w-[200px] border-[1px] rounded'
               src={costumerLogo1} alt="costumerLogo1" />
               <img
