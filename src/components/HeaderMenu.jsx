@@ -16,7 +16,7 @@ export default function HeaderMenu() {
         <div>
             <div className="fixed z-50">
                 <nav>
-                    <div className="bg-white shadow-md h-26 w-screen flex 2xl:px-[20%] xl:px-[20%] lg:px-[10%] md:px-[10%] sm:px-[10%]  justify-between items-center">
+                    <div className="bg-white shadow-md h-26 w-screen flex px-[10%] justify-between items-center">
                         <div>
                             <a href="/home"><img className="max-w-[80px]" src={TaeyoungLogo} alt="Taeyoung Logo" /></a>
                         </div>

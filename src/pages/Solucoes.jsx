@@ -2,7 +2,7 @@ import React from 'react';
 import HeaderMenu from '../components/HeaderMenu';
 import SiteFooter from '../components/SiteFooter';
 
-import { BiLinkExternal, BiBookOpen } from "react-icons/bi";
+import { BiShow, BiBookOpen } from "react-icons/bi";
 import { FaFire, FaCheckDouble, FaLevelUpAlt, FaVolumeMute, FaTape, FaExpandAlt, FaRegThumbsUp } from 'react-icons/fa'
 
 import linhapvc from '../assets/h131.png'
@@ -14,20 +14,20 @@ const Solucoes = () => {
         <div className='flex flex-col'>
             <HeaderMenu/>
             <div className='mt-24'>
-                <div className='flex flex-col mb-14 py-24'>
+                <div className='flex flex-col mb-14 py-24 max-lg:py-12'>
                     <h2 className='font-heading font-bold text-3xl text-center'>Conheça nossos produtos em toda sua essência</h2>
                     <span className='text-center text-zinc-500'>Para cada ocasião temos o produto ideal</span>
                 </div>
             </div>
 
             <div id='linhapvc' className='bg-white py-16'>
-                <div className='flex justify-between px-[20%] items-center'>
+                <div className='flex justify-between px-[20%] max-lg:px-[10%] items-center max-lg:flex-col'>
                     <div>
                         <img
                         className='w-[400px]'
                         src={linhapvc} alt="" />
                     </div>
-                    <div className='flex flex-col gap-4 w-1/2'>
+                    <div className='flex flex-col gap-4 w-1/2 max-lg:w-full'>
                         <span className='text-2xl font-heading text-zinc-600 font-bold'>Linha PVC</span>
                         <span className='text-zinc-600 font-light'>Cada fita para cada aplicação! A linha PVC é feita visando a melhor flexibilidade de uso, com uma aderência perfeitamente desenvolvida e resistência a alterações metereológicas.</span>
                         <span className='text-zinc-600 font-light'><strong>Mais usado em</strong><br></br><span className='text-zinc-600'>Chicotes Automotivos, uso domésticos, concessionárias automotivas, loja de som e uso geral.</span></span>
@@ -66,10 +66,10 @@ const Solucoes = () => {
                         <div className='flex gap-4'>
                             <a 
                             className='py-2 px-4 bg-primaryRose text-white rounded flex items-center gap-2'
-                            href="https://taeyoungtape.com.br"><BiLinkExternal/> Acessar Site</a>
+                            href="https://taeyoungtape.com.br"><BiShow/> Detalhes</a>
                             <a 
                             className='py-2 px-4 bg-primaryRose text-white rounded flex items-center gap-2'
-                            href="#"><BiBookOpen/> Baixar datasheet</a>
+                            href="#"><BiBookOpen/> Datasheet</a>
                         </div>
 
                     </div>
@@ -77,8 +77,8 @@ const Solucoes = () => {
             </div>
 
             <div id='linhatextil' className='py-16'>
-                <div className='flex justify-between px-[20%] items-center'>
-                    <div className='flex flex-col gap-4 w-1/2'>
+                <div className='flex justify-between px-[20%] max-lg:px-[10%] items-center max-lg:flex-col-reverse'>
+                    <div className='flex flex-col gap-4 w-1/2 max-lg:w-full'>
                         <span className='text-2xl font-heading text-zinc-600 font-bold'>Linha Têxtil</span>
                         <span className='text-zinc-600 font-light'>Para aplicações que necessitam de atenção e uma resistência maior, a Linha Têxtil está pronta para encarar qualquer desafio de isolamento, contando com redução de ruído e extrema resistência.</span>
                         <span className='text-zinc-600 font-light'><strong>Mais usado em</strong><br></br><span className='text-zinc-600'>Chicotes Automotivos, Isolamento de Fios, enrolamento de cablagem automática e utilização em áreas de altas temperaturas.</span></span>
@@ -117,10 +117,10 @@ const Solucoes = () => {
                         <div className='flex gap-4'>
                             <a 
                             className='py-2 px-4 bg-primaryRose text-white rounded flex items-center gap-2'
-                            href="https://taeyoungtape.com.br"><BiLinkExternal/> Acessar Site</a>
+                            href="https://taeyoungtape.com.br"><BiShow/> Detalhes</a>
                             <a 
                             className='py-2 px-4 bg-primaryRose text-white rounded flex items-center gap-2'
-                            href="#"><BiBookOpen/> Baixar datasheet</a>
+                            href="#"><BiBookOpen/> Datasheet</a>
                         </div>
 
                     </div>
@@ -133,13 +133,13 @@ const Solucoes = () => {
             </div>
 
             <div id='linhaaltatensao' className='bg-white py-16'>
-                <div className='flex justify-between px-[20%] items-center'>
+                <div className='flex justify-between px-[20%] max-lg:px-[10%] items-center max-lg:flex-col'>
                     <div>
                         <img
                         className='w-[400px]'
                         src={linhaaltatensao} alt="" />
                     </div>
-                    <div className='flex flex-col gap-4 w-1/2'>
+                    <div className='flex flex-col gap-4 w-1/2 max-lg:w-full'>
                         <span className='text-2xl font-heading text-zinc-600 font-bold'>Linha Alta Tensão</span>
                         <span className='text-zinc-600 font-light'>Fita à base de borracha de etileno-propileno com alta conformidade em qualquer tipo de superfície e formulada para fusão instantânea sem a necessidade de aquecimento.</span>
                         <span className='text-zinc-600 font-light'><strong>Mais usado em</strong><br></br><span className='text-zinc-600'>Fita de alta isolação para emendas e terminações de cabos de média voltagem.</span></span>
@@ -178,10 +178,10 @@ const Solucoes = () => {
                         <div className='flex gap-4'>
                             <a 
                             className='py-2 px-4 bg-primaryRose text-white rounded flex items-center gap-2'
-                            href="https://taeyoungtape.com.br"><BiLinkExternal/> Acessar Site</a>
+                            href="https://taeyoungtape.com.br"><BiShow/> Detalhes</a>
                             <a 
                             className='py-2 px-4 bg-primaryRose text-white rounded flex items-center gap-2'
-                            href="#"><BiBookOpen/> Baixar datasheet</a>
+                            href="#"><BiBookOpen/> Datasheet</a>
                         </div>
 
                     </div>
