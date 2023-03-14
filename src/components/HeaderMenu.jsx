@@ -18,7 +18,7 @@ export default function HeaderMenu() {
                 <nav>
                     <div className="bg-white shadow-md h-26 w-screen flex px-[10%] justify-between items-center">
                         <div>
-                            <a href="/home"><img className="max-w-[80px]" src={TaeyoungLogo} alt="Taeyoung Logo" /></a>
+                            <a href="/"><img className="max-w-[80px]" src={TaeyoungLogo} alt="Taeyoung Logo" /></a>
                         </div>
                         <div className="flex gap-10 max-md:hidden">
                             <Link
