@@ -56,22 +56,22 @@ const testimonials = [
 
 const Contato = () => {
     return (
-        <div className='flex flex-col'>
+        <div className='flex flex-col w-screen'>
             <HeaderMenu/>
             <div className='mt-24'>
-            <div className='flex flex-col mb-14 py-24'>
+            <div className='flex flex-col mb-14 py-24 max-md:py-10'>
                 <h2 className='font-heading font-bold text-3xl text-center'>Vamos conversar</h2>
                 <span className='text-center text-zinc-500'>Gostariamos muito de te ouvir, veja como nos contactar</span>
             </div>
             </div>
 
-            <div className='flex items-center bg-slate-50'>
+            <div className='flex items-center bg-slate-50 max-md:justify-center'>
 
-                <div className='w-1/2'>
+                <div className='w-1/2 max-md:hidden'>
                     <img className='w-full' src={chicoteautomotivo} alt="chicoteautomotivo" />
                 </div>
 
-                <div className='bg-white p-10 shadow-xl rounded relative left-[-10%] w-1/2'>
+                <div className='bg-white p-10 shadow-xl rounded relative max-md:left-0 max-md:w-3/4 left-[-10%] w-1/2 max-md:items-center'>
                     <form class="mt-10">
                         <div class="flex flex-wrap -mx-3 mb-6">
                         <div class="w-full px-3">
@@ -190,7 +190,7 @@ const Contato = () => {
                     </div>
                 </div>
 
-            <div className='px-[20%] my-20 flex items-center justify-between max-lg:flex-col max-lg:gap-8'>
+            <div className='px-[20%] py-20 flex items-center justify-between max-lg:flex-col max-lg:gap-8'>
                 <div>
                     <span className='text-zinc-800 uppercase text-sm font-bold'>Contato</span>
                     <div className='flex items-center gap-2 text-zinc-500'>
@@ -217,7 +217,7 @@ const Contato = () => {
                 </div>
                 <div class="mapouter">
                     <div class="gmap_canvas">
-                        <iframe className='w-[600px]' height="350" id="gmap_canvas" src="https://maps.google.com/maps?q=Rua%20Visconde%20de%20Taunay%2080&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
+                        <iframe className='w-[600px] max-lg:w-auto' height="350" id="gmap_canvas" src="https://maps.google.com/maps?q=Rua%20Visconde%20de%20Taunay%2080&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
                     </div>
                 </div>
             </div>
