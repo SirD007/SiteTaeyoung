@@ -146,7 +146,6 @@ const Contato = () => {
                     emulateTouch="true"
                     showArrows="false"
                     showIndicators="false"
-                    showThumbs="false"
                     renderIndicator= {() => {
                         return (
                             <div></div>
@@ -190,7 +189,7 @@ const Contato = () => {
                     </div>
                 </div>
 
-            <div className='px-[20%] py-20 flex items-center justify-between max-lg:flex-col max-lg:gap-8'>
+            <div className='px-[20%] py-10 flex items-center justify-between max-lg:flex-col max-lg:gap-8'>
                 <div>
                     <span className='text-zinc-800 uppercase text-sm font-bold'>Contato</span>
                     <div className='flex items-center gap-2 text-zinc-500'>
