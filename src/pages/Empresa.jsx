@@ -26,14 +26,14 @@ const Empresa = () => {
     return (
         <div className='flex flex-col'>
             <HeaderMenu/>
-            <section className='px-[20%] flex justify-between items-center mt-16'>                
+            <section className='max-lg:px-[10%] px-[20%] flex items-center mt-16'>                
                     <div className='py-24'>
                         <div className='flex flex-col mb-14 py-16'>
                             <h2 className='font-heading font-bold text-3xl text-center'>Conheça a Taeyoung</h2>
                             <span className='text-center text-zinc-500'>Para cada ocasião temos o produto ideal</span>
                          </div>
-                        <div className='flex justify-between items-center'>
-                            <div className='text-zinc-500 flex flex-col gap-3'>
+                        <div className='flex justify-between items-center max-md:flex-col-reverse'>
+                            <div className='text-zinc-500 flex flex-col gap-3 max-md:text-center max-md:items-center'>
                                 <span className='text-3xl'>Bem estar <strong className='text-3xl'>futuro</strong>,<br></br> Respeito <strong className='text-3xl'>mútuo.</strong></span>
                                 <span className='bg-primaryBlue py-1 px-2 rounded-full text-white text-xs w-max'>TAEYOUNG BRASIL</span>
                                 <span className='text-base leading-6'>Em 1978, a Taeyoung foi fundada na Coréia do Sul pelo engenheiro Seung-Jin Baek, buscando soluções efetivas para proteção de fiação e fitas de isolamento elétrico.</span>                      
@@ -42,26 +42,26 @@ const Empresa = () => {
                                 <span className='text-base leading-6'>Em busca das melhores fitas do mundo, estamos liderando as soluções de proteção de fita na indústria de chicotes automotivos.Visando o líder global, Taeyoung Tape continuará cumprindo nossos deveres de responsabilidade social e humanitária…</span>
                                 <strong>para pessoas, meio ambiente e comunidades.</strong>               
                             </div>
-                            <div>
+                            <div className='flex justify-center'>
                                 <img
-                                className='w-[1500px]'
+                                className='w-[1500px] max-md:w-1/2'
                                 src={HomeHeaderImg} alt="about_tae" />
                             </div>
                         </div>
 
-                        <div className='flex justify-between items-center py-24'>
-                        <div>
+                        <div className='flex justify-between items-center py-24 max-md:flex-col-reverse'>
+                        <div className='flex justify-center'>
                             <img
-                            className='w-[900px]'
+                            className='w-[900px] max-md:w-1/2'
                             src={InstituicionalImage} alt="about_tae" />
                         </div>
                         <div className='text-zinc-500 flex flex-col gap-3'>
-                            <span className='text-3xl text-right'>Taeyoung traz o seu bem estar <strong>para a vida</strong>,</span>
-                            <span className='text-base leading-6 text-right'>Em 1978, a Taeyoung foi fundada na Coréia do Sul pelo engenheiro Seung-Jin Baek, buscando soluções efetivas para proteção de fiação e fitas de isolamento elétrico.</span>                            
+                            <span className='text-3xl text-right max-md:text-center'>Taeyoung traz o seu bem estar <strong className='text-3xl text-right max-md:text-center'>para a vida</strong>,</span>
+                            <span className='text-base leading-6 text-right max-md:text-center'>Em 1978, a Taeyoung foi fundada na Coréia do Sul pelo engenheiro Seung-Jin Baek, buscando soluções efetivas para proteção de fiação e fitas de isolamento elétrico.</span>                            
                         </div>
                         </div>
 
-                        <div className='flex gap-6'>
+                        <div className='grid gap-6 grid-cols-4 max-md:grid-cols-2 max-sm:grid-cols-1'>
                             {typeof InstitucionalIconBox !=="undefined" && InstitucionalIconBox.map((value, idx) => {
                                 const Icon = iconsIconBox[idx]
                                 return (
