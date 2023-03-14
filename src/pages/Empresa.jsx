@@ -26,11 +26,15 @@ const Empresa = () => {
     return (
         <div className='flex flex-col'>
             <HeaderMenu/>
-            <section className='px-[20%] flex justify-between items-center mt-16'>
+            <section className='px-[20%] flex justify-between items-center mt-16'>                
                     <div className='py-24'>
+                        <div className='flex flex-col mb-14 py-16'>
+                            <h2 className='font-heading font-bold text-3xl text-center'>Conheça a Taeyoung</h2>
+                            <span className='text-center text-zinc-500'>Para cada ocasião temos o produto ideal</span>
+                         </div>
                         <div className='flex justify-between items-center'>
                             <div className='text-zinc-500 flex flex-col gap-3'>
-                                <span className='text-3xl'>Bem estar <strong>futuro</strong>,<br></br> Respeito <strong>mútuo.</strong></span>
+                                <span className='text-3xl'>Bem estar <strong className='text-3xl'>futuro</strong>,<br></br> Respeito <strong className='text-3xl'>mútuo.</strong></span>
                                 <span className='bg-primaryBlue py-1 px-2 rounded-full text-white text-xs w-max'>TAEYOUNG BRASIL</span>
                                 <span className='text-base leading-6'>Em 1978, a Taeyoung foi fundada na Coréia do Sul pelo engenheiro Seung-Jin Baek, buscando soluções efetivas para proteção de fiação e fitas de isolamento elétrico.</span>                      
                                 <span className='text-base leading-6'>Com a fabricação One-stop, estamos fornecendo fitas de cablagens automotivas para montadoras globais, como GM, Ford, Hyundai, Kia, Renault-Nissan, Toyota e assim por diante.</span>

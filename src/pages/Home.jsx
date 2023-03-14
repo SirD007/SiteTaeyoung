@@ -20,6 +20,7 @@ import costumerLogo7 from '../assets/costumerLogo7.png'
 import costumerLogo8 from '../assets/costumerLogo8.png'
 import datasheet from '../assets/datasheet.png'
 import headerBgImg from '../assets/headerBgImg.jpg'
+import headerBgImg1 from '../assets/headerBgImg1.jpg'
 import HomeHeaderImg from '../assets/HomeHeaderImg.png'
 import linhapvc from '../assets/linhapvc.png'
 import linhatextil from '../assets/linhatextil.png'
@@ -48,15 +49,15 @@ const Home = () =>{
     <div>
     <HeaderMenu/>
       <main className='flex flex-col'>
-        <section className='max-lg:justify-end max-lg:flex-col-reverse max-lg:px-[10%] px-[20%] flex h-screen justify-between items-center'>
+        <section className='max-lg:justify-end max-lg:flex-col-reverse max-lg:px-[10%] px-[20%] flex h-screen w-screen justify-between items-center'>
           <img
-          className='absolute z-0 top-0 left-0 opacity-50'
-          src={headerBgImg} alt="" />
+          className='absolute z-0 top-0 left-0 opacity-60 min-h-full object-cover'
+          src={headerBgImg1} alt="" />
 
-          <div className='max-lg:text-center w-1/2 flex flex-col z-10'>
+          <div className='max-lg:text-center max-md:w-3/4 w-1/2 flex flex-col z-10'>
             <div className="mb-10 flex flex-col gap-2">
-              <h3 className="text-zinc-700 text-3xl font-heading">Reconhecida como <span className='text-zinc-700 text-3xl font-heading font-black'>líder mundial</span> em fita de isolamento elétrico de PVC</h3>
-              <span className="text-zinc-700">A Taeyoung ouve seus sonhos o os trás à vida através de pensamento criativo e tecnologia inovadora. Juntos, nos esforçamos para alcançar a harmonia social e o respeito pelo seu bem-estar futuro.</span>
+              <h3 className="text-zinc-900 text-3xl font-heading">Reconhecida como <span className='text-zinc-900 text-3xl font-heading font-black'>líder mundial</span> em fita de isolamento elétrico de PVC</h3>
+              <span className="text-zinc-900">A Taeyoung ouve seus sonhos o os trás à vida através de pensamento criativo e tecnologia inovadora. Juntos, nos esforçamos para alcançar a harmonia social e o respeito pelo seu bem-estar futuro.</span>
             </div>
               <Link to="/contato"><CustomBtn text="Entre em Contato" bgColor="bg-primaryBlue" textColor="text-white"/></Link>
           </div>
@@ -111,7 +112,6 @@ const Home = () =>{
         <section className='max-lg:px-[10%] px-[20%] flex justify-between items-center'>
 
             <div className='shadow-lg rounded-lg bg-white mt-[-150px] grid-cols-3 grid z-10 max-lg:flex flex-col-reverse'>
-
               <div className='max-sm:flex max-sm:flex-col grid-cols-2 grid gap-4 p-10 col-span-2 items-center'>
 
                 <div className='flex gap-4 group items-start'>
@@ -193,7 +193,7 @@ const Home = () =>{
             </div>
             <div className='w-1/2 flex flex-col max-lg:w-full'>
 
-              <div className='flex-col flex gap-6 w-full max-lg:col-auto'>
+              <div className='flex-col flex gap-6 w-full max-lg:col-auto max-lg:items-center'>
                 <span className='bg-primaryBlue w-max py-1 px-2 rounded-full text-white font-bold text-xs'>Sobre a Empresa</span>
                 <span className='font-heading font-bold text-3xl max-lg:text-center'>Negócios entre Brasil e Coréia do Sul</span>
                 <span className='text-zinc-500 max-lg:text-center'>Em 1978, a Taeyoung foi fundada na Coréia do Sul pelo engenheiro Seung-Jin Baek, buscando soluções efetivas para proteção de fiação e fitas de isolamento elétrico. Hoje, somos uma potência em soluções efetivas no setores em que atuamos.</span>
@@ -229,7 +229,7 @@ const Home = () =>{
           <div className='flex flex-col mb-14'>
             <h2 className='font-heading font-bold text-3xl text-center'>Principais Clientes</h2>
           </div>
-          <div className='grid grid-flow-row sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-3'>
+          <div className='grid grid-flow-row sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-3 items-center justify-center'>
               <img
               className='min-w-[200px] border-[1px] rounded'
               src={costumerLogo1} alt="costumerLogo1" />
@@ -309,7 +309,7 @@ const Home = () =>{
                 <h2 className="font-heading text-3xl font-bold tracking-tight text-white sm:text-4xl">Tenha acesso as fichas tecnicas em suas mãos.</h2>
                 <p className="mt-6 text-gray-300">Em apenas um clique tenha todas as especificações de nossos produtos para consulta.</p>
                 <div className="mt-10 flex items-center justify-center gap-x-6 lg:justify-start">
-                  <a href="#" className="rounded-md bg-white px-3.5 py-1.5 text-base font-semibold leading-7 text-gray-900 shadow-sm hover:bg-gray-100 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white">Baixe Agora</a>
+                  <a href="/../public/datasheet.pdf" download className="rounded-md bg-white px-3.5 py-1.5 text-base font-semibold leading-7 text-gray-900 shadow-sm hover:bg-gray-100 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white">Baixe Agora</a>
                   <a href="/solucoes" className="text-base font-semibold leading-7 text-white">Ver Produtos<span aria-hidden="true">→</span></a>
                 </div>
               </div>

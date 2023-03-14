@@ -6,11 +6,10 @@ export default function SiteFooter() {
     return (
         <div>
             <div className="bg-gray-800 py-10">
-                <div className="px-[20%] flex justify-between">
-
-                    <div>
-                        <span className="font-bold text-white text-lg">Institucional</span>
-                        <div className="flex flex-col mt-6">
+                <div className="px-[20%] flex justify-between max-lg:flex-col">
+                    <div className="flex flex-col my-4">
+                        <span className="font-bold text-blue-500 text-lg">Institucional</span>
+                        <div className="flex flex-col">
                             <Link
                             className="text-white hover:text-primaryBlue transition-all"
                             to="/empresa">Empresa</Link>
@@ -20,9 +19,9 @@ export default function SiteFooter() {
                         </div>                        
                     </div>
 
-                    <div>
-                        <span className="font-bold text-white text-lg">Soluções</span>
-                        <div className="flex flex-col mt-6">
+                    <div className="flex flex-col my-4">
+                        <span className="font-bold text-blue-500 text-lg">Soluções</span>
+                        <div className="flex flex-col">
                             <Link
                             className="text-white hover:text-primaryBlue transition-all"
                             to="/empresa">Taeyoung Tape</Link>
@@ -38,9 +37,9 @@ export default function SiteFooter() {
                         </div>                        
                     </div>
 
-                    <div>
-                        <span className="font-bold text-white text-lg">Fale Conosco</span>
-                        <div className="flex flex-col mt-6">
+                    <div className="flex flex-col my-4">
+                        <span className="font-bold text-blue-500 text-lg">Fale Conosco</span>
+                        <div className="flex flex-col">
                             <Link
                             className="text-white hover:text-primaryBlue transition-all"
                             to="/empresa">Formulário de Contato</Link>
