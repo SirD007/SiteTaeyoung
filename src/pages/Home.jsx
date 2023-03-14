@@ -34,6 +34,28 @@ const Fitas = [
 
 const Home = () =>{
 
+  const [name, setName] = useState("");
+  const [email, setEmail] = useState("");
+  const onChangeHandler = (fieldName, value)=>{
+    if(fieldName === "name"){
+      setName(value);
+    }
+    else if(fieldName==="email"){
+      setEmail(value);
+    }
+  }
+  const onSubmitHandler = (e)=>{
+    e.preventDefault();
+    if(name.trim()==="" || email.trim() ==""){
+      alert("Favor, preencher os campos necessários");
+    }
+    else{
+      alert(name+" " +email);
+      setName("");
+      setEmail("");
+    }
+  }
+
   const [modal, setModal] = useState(false);
   const [videoLoading, setVideoLoading] = useState(true);
 
@@ -258,7 +280,7 @@ const Home = () =>{
           <div>
             <a
             className='float-right transition-all hover:bg-blue-600 bg-primaryBlue py-1 px-2 rounded text-white text-sm font-bold mt-5'
-            href="#">Ver todos →</a>
+            href="/clientes">Ver todos →</a>
           </div>
 
         </section>
@@ -329,19 +351,13 @@ const Home = () =>{
               <span className='text-4xl font-heading text-center font-bold'>Contato</span>
               <span className='text-zinc-500 text-center'>Nossa equipe está de prontidão para melhor te atender! Entre em contato, te retornaremos em breve</span>
             </div>
-            <form class="w-full mt-10">
+            <form onSubmit={(e)=>{onSubmitHandler(e)}} class="w-full mt-10">
             <div class="flex flex-wrap -mx-3 mb-6">
-              <div class="w-full md:w-1/2 px-3 mb-6 md:mb-0">
+              <div class="w-full px-3 mb-6 md:mb-0">
                 <label class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" for="grid-first-name">
-                  Primeiro Nome
+                  Nome
                 </label>
-                <input class="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:border-gray-500 focus:bg-white" id="grid-first-name" type="text" placeholder="James"></input>
-              </div>
-              <div class="w-full md:w-1/2 px-3">
-                <label class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" for="grid-last-name">
-                  Último Nome
-                </label>
-                <input class="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500" id="grid-last-name" type="text" placeholder="Doe"></input>
+                <input value={name} onChange={(e)=>{ onChangeHandler("name",e.target.value)}} class="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:border-gray-500 focus:bg-white" id="grid-first-name" type="text" placeholder="James John"></input>
               </div>
             </div>
             <div class="flex flex-wrap -mx-3 mb-6">
@@ -349,7 +365,7 @@ const Home = () =>{
                 <label class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" for="grid-password">
                   E-mail
                 </label>
-                <input class="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white focus:border-gray-500" id="email" type="email"></input>
+                <input value={email} onChange={(e)=>{ onChangeHandler("email",e.target.value)}} class="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white focus:border-gray-500" id="email" type="email"></input>
               </div>
             </div>
             <div class="flex flex-wrap -mx-3 mb-6">
@@ -362,7 +378,7 @@ const Home = () =>{
             </div>
             <div class="md:flex md:items-center">
               <div class="md:w-1/3">
-                <button class="shadow bg-primaryBlue hover:opacity-90 focus:shadow-outline focus:outline-none text-white font-bold py-2 px-4 rounded" type="button">
+                <button value="Submit" type="submit" class="shadow bg-primaryBlue hover:opacity-90 focus:shadow-outline focus:outline-none text-white font-bold py-2 px-4 rounded">
                   Enviar
                 </button>
               </div>
