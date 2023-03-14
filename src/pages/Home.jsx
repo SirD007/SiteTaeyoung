@@ -185,7 +185,7 @@ const Home = () =>{
         </section>
 
         <section className='max-lg:px-[10%] px-[20%] my-[150px] flex flex-col'>
-          <div className='max-lg:flex-col flex justify-between items-center w-full'>
+          <div className='max-lg:flex-col flex justify-between items-center w-full reveal fade-left'>
             <div className='w-1/2'>
               <img 
               className='max-w-[400px] w-[40vw]'
@@ -263,7 +263,7 @@ const Home = () =>{
 
         </section>
 
-        <section className='max-lg:px-[10%] px-[20%] flex flex-col'>
+        <section className='max-lg:px-[10%] px-[20%] flex flex-col reveal fade-left'>
           <div className='flex flex-col mb-14'>
             <h2 className='font-heading font-bold text-3xl text-center'>Conheça nossas linhas</h2>
           </div>
@@ -324,7 +324,7 @@ const Home = () =>{
 
         <section className='max-lg:px-[10%] px-[20%] mb-[150px] flex flex-col'>
 
-          <div className='flex flex-col'>
+          <div className='flex flex-col reveal fade-bottom'>
             <div className='flex flex-col'>
               <span className='text-4xl font-heading text-center font-bold'>Contato</span>
               <span className='text-zinc-500 text-center'>Nossa equipe está de prontidão para melhor te atender! Entre em contato, te retornaremos em breve</span>
