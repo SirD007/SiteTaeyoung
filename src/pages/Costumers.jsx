@@ -105,7 +105,7 @@ export default function Costumers () {
                         <div className="flex justify-center">
                             <span className="text-zinc-500 font-bold text-xl py-6">Automotivo</span>
                         </div>
-                        <div className='grid grid-flow-row sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-3'>
+                        <div className='grid sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-3 justify-center'>
 
                             {autoCostumerLogo.map((value) => {
                                 return (
@@ -114,11 +114,12 @@ export default function Costumers () {
                                     src={value.imgSrc} alt="costumerLogo1" />
                                 )
                             })}
+
                         </div>
                         <div className="flex justify-center">
                             <span className="text-zinc-500 font-bold text-xl py-6">Eletrônico</span>
                         </div>
-                        <div className='grid grid-flow-row sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-3'>
+                        <div className='grid sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-3 justify-center'>
 
                             {eletrConstumerLogo.map((value) => {
                                 return (
@@ -131,7 +132,7 @@ export default function Costumers () {
                         <div className="flex justify-center">
                             <span className="text-zinc-500 font-bold text-xl py-6">Motocicletas</span>
                         </div>
-                        <div className='grid grid-flow-row sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-3'>
+                        <div className='grid sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-3 justify-center'>
 
                             {motorcycleConstumerLogo.map((value) => {
                                 return (
