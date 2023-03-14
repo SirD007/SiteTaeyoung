@@ -65,14 +65,14 @@ const Contato = () => {
             </div>
             </div>
 
-            <div className='grid grid-cols-3 items-center bg-slate-50 w-full'>
+            <div className='flex items-center bg-slate-50'>
 
-                <div>
-                    <img src={chicoteautomotivo} alt="chicoteautomotivo" />
+                <div className='w-1/2'>
+                    <img className='w-full' src={chicoteautomotivo} alt="chicoteautomotivo" />
                 </div>
 
-                <div className='bg-white p-10 shadow-xl rounded relative left-[-25%]'>
-                    <form class="w-full mt-10">
+                <div className='bg-white p-10 shadow-xl rounded relative left-[-10%] w-1/2'>
+                    <form class="mt-10">
                         <div class="flex flex-wrap -mx-3 mb-6">
                         <div class="w-full px-3">
                             <label class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" for="sector">
@@ -135,8 +135,10 @@ const Contato = () => {
                         </div>
                     </form>
                 </div>
+            </div>
 
-                <div className='relative pr-32'>
+            <div className='relative px-[20%] justify-center items-center'>
+                <div className='items-center justify-center py-10'>
                     <Carousel
                     autoPlay="true"
                     infiniteLoop="true"
@@ -184,12 +186,11 @@ const Contato = () => {
                             </div>
                             )
                         })}
-                    </Carousel>
+                        </Carousel>
+                    </div>
                 </div>
 
-            </div>
-
-            <div className='px-[20%] my-20 flex items-center justify-between'>
+            <div className='px-[20%] my-20 flex items-center justify-between max-lg:flex-col max-lg:gap-8'>
                 <div>
                     <span className='text-zinc-800 uppercase text-sm font-bold'>Contato</span>
                     <div className='flex items-center gap-2 text-zinc-500'>
@@ -216,7 +217,7 @@ const Contato = () => {
                 </div>
                 <div class="mapouter">
                     <div class="gmap_canvas">
-                        <iframe width="600" height="350" id="gmap_canvas" src="https://maps.google.com/maps?q=Rua%20Visconde%20de%20Taunay%2080&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
+                        <iframe className='w-[600px]' height="350" id="gmap_canvas" src="https://maps.google.com/maps?q=Rua%20Visconde%20de%20Taunay%2080&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
                     </div>
                 </div>
             </div>
