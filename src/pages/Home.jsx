@@ -51,7 +51,7 @@ const Home = () =>{
       <main className='flex flex-col'>
         <section className='max-lg:justify-end max-lg:flex-col-reverse max-lg:px-[10%] px-[20%] flex h-screen w-screen justify-between items-center'>
           <img
-          className='absolute z-0 top-0 left-0 opacity-60 min-h-full object-cover'
+          className='absolute z-0 top-0 left-0 opacity-90 min-h-full object-cover'
           src={headerBgImg1} alt="" />
 
           <div className='max-lg:text-center max-md:w-3/4 w-1/2 flex flex-col z-10'>
