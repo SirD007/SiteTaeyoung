@@ -27,9 +27,9 @@ import linhatextil from '../assets/linhatextil.png'
 import linhaaltatensao from '../assets/linhaaltatensao.png'
 
 const Fitas = [
-  {imageSrc: `${linhapvc}`, pillText: 'Linha PVC', contentText: 'Fita isolante de PVC elaborada para uso automotivo em ultra aderência', href: '/solucoes#maskpro'},
-  {imageSrc: `${linhaaltatensao}`, pillText: 'Linha Alta Tensão', contentText: 'Fita à base de borracha de etileno-propileno com alta conformidade', href: '/solucoes#doowon'},
-  {imageSrc: `${linhatextil}`, pillText: 'Linha Têxtil', contentText: 'Fita isolante para proteger os cabos e chicotes elétricos de alta temperatura', href: '/solucoes#tapes'}
+  {imageSrc: `${linhapvc}`, pillText: 'Linha PVC', contentText: 'Fita isolante de PVC elaborada para uso automotivo em ultra aderência', href: '/linhapvc'},
+  {imageSrc: `${linhaaltatensao}`, pillText: 'Linha Alta Tensão', contentText: 'Fita à base de borracha de etileno-propileno com alta conformidade', href: '/linhaaltatensao'},
+  {imageSrc: `${linhatextil}`, pillText: 'Linha Têxtil', contentText: 'Fita isolante para proteger os cabos e chicotes elétricos de alta temperatura', href: '/linhatextil'}
 ]
 
 function reveal() {

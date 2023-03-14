@@ -23,7 +23,7 @@ export default function HeaderMenu() {
                         <div className="flex gap-10 max-md:hidden">
                             <Link
                             className="text-gray-700 hover:text-primaryRose transition-all uppercase"
-                            to="/home">Home</Link>
+                            to="/">Home</Link>
                             <Link
                             className="text-gray-700 hover:text-primaryRose transition-all uppercase"
                             to="/empresa">Empresa</Link>
