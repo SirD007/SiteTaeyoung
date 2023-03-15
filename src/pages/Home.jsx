@@ -224,7 +224,7 @@ const Home = () =>{
 
         </section>
 
-        <section className='max-lg:px-[10%] px-[20%] my-[150px] flex flex-col'>
+        <section className='max-lg:px-[10%] px-[20%] py-10 flex flex-col'>
           <div className='max-lg:flex-col flex justify-between items-center w-full reveal fade-left'>
             <div className='w-1/2'>
               <img 

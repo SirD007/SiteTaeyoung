@@ -53,7 +53,7 @@ export default function HeaderMenu() {
                                 />
                                 <Link
                                 className="text-gray-700 hover:text-primaryRose transition-all text-center"
-                                to="/home">Home</Link>
+                                to="/">Home</Link>
                             </div>
                             <div className="p-4 flex gap-4 items-center hover:bg-zinc-100 rounded">
                                 <AiOutlineHeart

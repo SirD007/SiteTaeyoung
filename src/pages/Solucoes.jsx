@@ -14,13 +14,13 @@ const Solucoes = () => {
         <div className='flex flex-col'>
             <HeaderMenu/>
             <div className='mt-24'>
-                <div className='flex flex-col mb-14 py-24 max-lg:py-12'>
+                <div className='flex flex-col py-10 max-lg:py-12'>
                     <h2 className='font-heading font-bold text-3xl text-center'>Conheça nossos produtos em toda sua essência</h2>
                     <span className='text-center text-zinc-500'>Para cada ocasião temos o produto ideal</span>
                 </div>
             </div>
 
-            <div id='linhapvc' className='bg-white py-16'>
+            <div id='linhapvc' className='bg-white py-4'>
                 <div className='flex justify-between px-[20%] max-lg:px-[10%] items-center max-lg:flex-col'>
                     <div>
                         <img

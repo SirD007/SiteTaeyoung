@@ -28,7 +28,7 @@ const Empresa = () => {
             <HeaderMenu/>
             <section className='max-lg:px-[10%] px-[20%] flex items-center mt-16'>                
                     <div className='py-24'>
-                        <div className='flex flex-col mb-14 py-16'>
+                        <div className='flex flex-col mb-14 py-4'>
                             <h2 className='font-heading font-bold text-3xl text-center'>Conheça a Taeyoung</h2>
                             <span className='text-center text-zinc-500'>Para cada ocasião temos o produto ideal</span>
                          </div>

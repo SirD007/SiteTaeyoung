@@ -59,7 +59,7 @@ const Contato = () => {
         <div className='flex flex-col w-screen'>
             <HeaderMenu/>
             <div className='mt-24'>
-            <div className='flex flex-col mb-14 py-24 max-md:py-10'>
+            <div className='flex flex-col mb-14 py-10 max-md:py-10'>
                 <h2 className='font-heading font-bold text-3xl text-center'>Vamos conversar</h2>
                 <span className='text-center text-zinc-500'>Gostariamos muito de te ouvir, veja como nos contactar</span>
             </div>
