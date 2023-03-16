@@ -27,9 +27,9 @@ import linhatextil from '../assets/linhatextil.png'
 import linhaaltatensao from '../assets/linhaaltatensao.png'
 
 const Fitas = [
-  {imageSrc: `${linhapvc}`, pillText: 'Linha PVC', contentText: 'Fita isolante de PVC elaborada para uso automotivo em ultra aderência', href: '/linhapvc'},
-  {imageSrc: `${linhaaltatensao}`, pillText: 'Linha Alta Tensão', contentText: 'Fita à base de borracha de etileno-propileno com alta conformidade', href: '/linhaaltatensao'},
-  {imageSrc: `${linhatextil}`, pillText: 'Linha Têxtil', contentText: 'Fita isolante para proteger os cabos e chicotes elétricos de alta temperatura', href: '/linhatextil'}
+  {imageSrc: `${linhapvc}`, pillText: 'Linha PVC', contentText: 'Fita isolante de PVC elaborada para uso automotivo em ultra aderência', href: '/products'},
+  {imageSrc: `${linhaaltatensao}`, pillText: 'Linha Alta Tensão', contentText: 'Fita à base de borracha de etileno-propileno com alta conformidade', href: '/products'},
+  {imageSrc: `${linhatextil}`, pillText: 'Linha Têxtil', contentText: 'Fita isolante para proteger os cabos e chicotes elétricos de alta temperatura', href: '/products'}
 ]
 
 function reveal() {
@@ -92,7 +92,7 @@ const Home = () =>{
         <section className='max-lg:justify-end max-lg:flex-col-reverse max-lg:px-[10%] px-[20%] flex h-screen w-screen justify-between items-center'>
           <img
           className='absolute z-0 top-0 left-0 opacity-90 min-h-full object-cover'
-          src={headerBgImg1} alt="" />
+          src={headerBgImg} alt="" />
 
           <div className='max-lg:text-center max-md:w-3/4 w-1/2 flex flex-col z-10'>
             <div className="mb-10 flex flex-col gap-2">
