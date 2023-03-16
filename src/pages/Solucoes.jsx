@@ -98,9 +98,6 @@ const Solucoes = () => {
                             <a 
                             className='py-2 px-4 bg-primaryRose text-white rounded flex items-center gap-2'
                             href="/products#linhapvc"><BiShow/> Detalhes</a>
-                            <a 
-                            className='py-2 px-4 bg-primaryRose text-white rounded flex items-center gap-2'
-                            href="#"><BiBookOpen/> Datasheet</a>
                         </div>
 
                     </div>
@@ -149,9 +146,6 @@ const Solucoes = () => {
                             <a 
                             className='py-2 px-4 bg-primaryRose text-white rounded flex items-center gap-2'
                             href="/products#linhatextil"><BiShow/> Detalhes</a>
-                            <a 
-                            className='py-2 px-4 bg-primaryRose text-white rounded flex items-center gap-2'
-                            href="#"><BiBookOpen/> Datasheet</a>
                         </div>
 
                     </div>
@@ -210,9 +204,6 @@ const Solucoes = () => {
                             <a 
                             className='py-2 px-4 bg-primaryRose text-white rounded flex items-center gap-2'
                             href="/products#linhaaltatensao"><BiShow/> Detalhes</a>
-                            <a 
-                            className='py-2 px-4 bg-primaryRose text-white rounded flex items-center gap-2'
-                            href="#"><BiBookOpen/> Datasheet</a>
                         </div>
 
                     </div>
