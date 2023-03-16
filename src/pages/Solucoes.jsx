@@ -8,6 +8,21 @@ import { FaFire, FaCheckDouble, FaLevelUpAlt, FaVolumeMute, FaTape, FaExpandAlt,
 import linhapvc from '../assets/h131.png'
 import linhatextil from '../assets/textil.png'
 import linhaaltatensao from '../assets/r800.png'
+import cores from '../assets/cores.png'
+import rohs from '../assets/rohs.png'
+import flex from '../assets/flex.png'
+import antichama from '../assets/antichama.png'
+import certificado from '../assets/certificado.png'
+import ul from '../assets/ul.png'
+
+const Features = [
+    {id:"1", imgSrc: `${rohs}`, text:"As fitas possuem certificação, RoHS, uma diretiva europeia que proíbe substâncias perigosas usado na fabricação de produtos, tais como: Cádmio, Chumbo, Mercúrio, entre outros."},
+    {id:"2", imgSrc: `${flex}`, text:"Quanto mais flexível a fita isolante, melhor é sua aderência a superfície aplicada. Garantindo uma proteção por mais tempo, sem que a fita comece a deslocar da área que precisa ser isolada, evitando curtos e acidentes."},
+    {id:"3", imgSrc: `${cores}`, text:"Variadas cores pode-se utilizar para diferenciar o isolamento em variados cabos elétricos que uma mesma aplicação possui, como por exemplo um chicote automotivo. Essa prática pode evitar enganos em conectar cabos trocados."},
+    {id:"4", imgSrc: `${antichama}`, text:"Fitas isolantes anti-chamas são utilizadas em situações de alta tensão, as mesmas não propagam o fogo em situações que o isolamento elétrico possa de alguma forma entrar em curto"},
+    {id:"5", imgSrc: `${certificado}`, text:"As fitas Taeyoung possuem certificação que atendem os padrões de alta qualidade dass grandes montadoras de veículos, por isso as mesmas suportam elevadas temperaturas, chegando até 90°C."},
+    {id:"6", imgSrc: `${ul}`, text:"As fitas Taeyoung possuem certificação UL, empresa global independente de soluções de segurança da adoção pública de eletricidade para novos avanços em sustentabilidade, energia renovável e nanotecnologia."}
+]
 
 const Solucoes = () => {
     return (
@@ -19,6 +34,22 @@ const Solucoes = () => {
                     <span className='text-center text-zinc-500'>Para cada ocasião temos o produto ideal</span>
                 </div>
             </div>
+            
+            <section className='flex flex-col px-[20%] max-lg:px-[10%] py-10'>
+                <div className='grid grid-flow-row gap-4 grid-cols-3 max-lg:grid-cols-2 max-sm:grid-cols-1'>
+                    {Features.map((value) => {
+                        return (
+                            <div key={value.id} className='flex flex-col items-center justify-center gap-4 p-4 rounded-lg shadow-md border-[1px] border-slate-100'>
+                                <img className='max-w-[50px]' src={value.imgSrc} alt="cores" />
+                            <div className='flex'>
+                                <span className='text-zinc-500 text-center'>{value.text}</span>
+                            </div>
+                        </div>
+                        )
+                    })}
+
+                </div>
+            </section>
 
             <div id='linhapvc' className='bg-white py-4'>
                 <div className='flex justify-between px-[20%] max-lg:px-[10%] items-center max-lg:flex-col'>

@@ -1,12 +1,15 @@
 import React from "react";
 import { Route, BrowserRouter, Routes } from "react-router-dom";
 
+
+
 import Home from "./pages/Home";
 import Empresa from "./pages/Empresa";
 import Solucoes from "./pages/Solucoes";
 import Contato from "./pages/Contato";
 import Costumers from "./pages/Costumers";
 import Linhapvc from "./pages/Linhapvc";
+import ProductDetail from "./pages/ProductDetail";
 
 export default function Rotas() {
    return(
@@ -18,6 +21,7 @@ export default function Rotas() {
                 <Route element = { <Contato/> }  path="/contato" />
                 <Route element = { <Costumers/> }  path="/clientes" />
                 <Route element = { <Linhapvc/> }  path="/linhapvc" />
+                <Route element= { <ProductDetail/> } path="/products/:productId" />
            </Routes>
        </BrowserRouter>
    )
