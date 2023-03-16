@@ -99,7 +99,7 @@ const Home = () =>{
               <h3 className="text-zinc-900 text-3xl font-heading">Reconhecida como <span className='text-zinc-900 text-3xl font-heading font-black'>líder mundial</span> em fita de isolamento elétrico de PVC</h3>
               <span className="text-zinc-900">A Taeyoung ouve seus sonhos o os trás à vida através de pensamento criativo e tecnologia inovadora. Juntos, nos esforçamos para alcançar a harmonia social e o respeito pelo seu bem-estar futuro.</span>
             </div>
-              <Link to="/contato"><CustomBtn text="Entre em Contato" bgColor="bg-primaryBlue" textColor="text-white"/></Link>
+              <Link to="/solucoes"><CustomBtn text="Ver Soluções" bgColor="bg-primaryBlue" textColor="text-white"/></Link>
           </div>
 
     <div className='z-20 max-lg:mt-[150px]'>
