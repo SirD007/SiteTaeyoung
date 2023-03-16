@@ -15,7 +15,7 @@ export default function Linhapvc() {
             <HeaderMenu/>
             <div className="bg-slate-50 w-screen py-40">
 
-                <div className="flex flex-col px-[20%] max-lg:px-[10%] items-center py-14">
+                <div id="linhapvc" className="flex flex-col px-[20%] max-lg:px-[10%] items-center py-14">
                         <h1 className="text-center text-4xl text-gray-600 py-3">Linha PVC</h1>
                         <div className="w-2/4 h-[1px] bg-gray-300 mb-20"></div>
                     <div className="grid grid-cols-2 max-md:grid-cols-1 gap-6 w-full">
@@ -46,7 +46,7 @@ export default function Linhapvc() {
                     </div>
                 </div>  
 
-                <div className="flex flex-col px-[20%] max-lg:px-[10%] items-center py-14">
+                <div id="linhatextil" className="flex flex-col px-[20%] max-lg:px-[10%] items-center py-14">
                         <h1 className="text-center text-4xl text-gray-600 py-3">Linha Têxtil</h1>
                         <div className="w-2/4 h-[1px] bg-gray-300 mb-20"></div>
                     <div className="grid grid-cols-2 max-md:grid-cols-1 gap-6 w-full">
@@ -77,7 +77,7 @@ export default function Linhapvc() {
                     </div>
                 </div>  
 
-                <div className="flex flex-col px-[20%] max-lg:px-[10%] items-center py-14">
+                <div id="linhaaltatensao" className="flex flex-col px-[20%] max-lg:px-[10%] items-center py-14">
                         <h1 className="text-center text-4xl text-gray-600 py-3">Linha Alta Tensão</h1>
                         <div className="w-2/4 h-[1px] bg-gray-300 mb-20"></div>
                     <div className="grid grid-cols-2 max-md:grid-cols-1 gap-6 w-full">

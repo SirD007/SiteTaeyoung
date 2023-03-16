@@ -97,7 +97,7 @@ const Solucoes = () => {
                         <div className='flex gap-4'>
                             <a 
                             className='py-2 px-4 bg-primaryRose text-white rounded flex items-center gap-2'
-                            href="https://taeyoungtape.com.br"><BiShow/> Detalhes</a>
+                            href="/products#linhapvc"><BiShow/> Detalhes</a>
                             <a 
                             className='py-2 px-4 bg-primaryRose text-white rounded flex items-center gap-2'
                             href="#"><BiBookOpen/> Datasheet</a>
@@ -148,7 +148,7 @@ const Solucoes = () => {
                         <div className='flex gap-4'>
                             <a 
                             className='py-2 px-4 bg-primaryRose text-white rounded flex items-center gap-2'
-                            href="https://taeyoungtape.com.br"><BiShow/> Detalhes</a>
+                            href="/products#linhatextil"><BiShow/> Detalhes</a>
                             <a 
                             className='py-2 px-4 bg-primaryRose text-white rounded flex items-center gap-2'
                             href="#"><BiBookOpen/> Datasheet</a>
@@ -209,7 +209,7 @@ const Solucoes = () => {
                         <div className='flex gap-4'>
                             <a 
                             className='py-2 px-4 bg-primaryRose text-white rounded flex items-center gap-2'
-                            href="https://taeyoungtape.com.br"><BiShow/> Detalhes</a>
+                            href="/products#linhaaltatensao"><BiShow/> Detalhes</a>
                             <a 
                             className='py-2 px-4 bg-primaryRose text-white rounded flex items-center gap-2'
                             href="#"><BiBookOpen/> Datasheet</a>
