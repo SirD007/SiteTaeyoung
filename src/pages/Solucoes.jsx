@@ -13,7 +13,7 @@ import rohs from '../assets/rohs.png'
 import flex from '../assets/flex.png'
 import antichama from '../assets/antichama.png'
 import certificado from '../assets/certificado.png'
-import ul from '../assets/ul.png'
+import ul from '../assets/UL.png'
 
 const Features = [
     {id:"1", imgSrc: `${rohs}`, text:"As fitas possuem certificação, RoHS, uma diretiva europeia que proíbe substâncias perigosas usado na fabricação de produtos, tais como: Cádmio, Chumbo, Mercúrio, entre outros."},
