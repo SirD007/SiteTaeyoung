@@ -4,8 +4,13 @@ import s153 from '../assets/tapes/s153.png'
 import eg10 from '../assets/h131.png'
 import eg13 from '../assets/h131.png'
 import d193 from '../assets/h131.png'
+import f1915bk from '../assets/tapes/F1915BK.png'
+import pet from '../assets/tapes/pet.png'
+import r800 from '../assets/r800.png'
 
-export default [
+
+export default {
+  "linhapvc": [
     {
       id: "1",
       imgSrc: `${h131}`,
@@ -137,4 +142,85 @@ export default [
         "bg-black"
       ],
     },
-  ];
+  ],
+
+  linhatextil: [
+    {
+      id: "7",
+      imgSrc: `${pet}`,
+      ref: "U1915BK200",
+      SKU: "U200",
+      description: "Fita isolante recomendada para proteger os cobos e chicotes elétricos do exposição de alta temperatura. Ideal para substituir os caninhos de PVC do motor do carro, caminhão, ônibus, entre outros. Em outras aplicações, poderá ser utilizada para acabamento originados cobos de som na parte traseiro do carro.",
+      composition: "Poly Vinnyl Chloide",
+      tempClass: "150°C . TEST 150°C x 500hrs, 1kv/min",
+      AdesAço: "2.1N/cm(400gf/19mm",
+      AdesDorso: "2.4N/cm(450gf/19mm)",
+      ResisTraç: "120N/cm(23.0kgf/19mm)",
+      Along: "25%",
+      ResistChama: "Auto extinguível",
+      Utility: "Fábrica de chicote, Montadoras e Concessionários Automotivos, Oficinas mecânicas, Loja de som, e uso geral domésticos. Atende o mercado telecom para altas tensões.<br> • Instalação de TV a cabo <br> • Operadores e telefonia<br>• Internet",
+      roHS: "",
+      cores: [
+        "bg-black",
+        "bg-orange-600"
+      ],
+      vant: [
+        "Redução de ruído",
+        "Resistência ao tempo",
+        "Durabilidade de Abrasão",
+        "Aderente fortemente forte",
+        "Resistência ao calor"
+      ]
+    },
+    {
+      id: "8",
+      imgSrc: `${f1915bk}`,
+      ref: "F1915BK500",
+      SKU: "F500",
+      description: "Fleece Tape, é usado para embrulhar chicote de fios automotivos. Este produto é feito com material radix, possui uma capacidade antisujidade superficial forte e estabilidade de resistência a altas temperaturas, adequada para a posição delicada interna do auto. Com características de desenrolamento fácil, à prova de vibração , redução de som, boa aderência e resistência à tração. Usado para enrolamento de cablagem automáticapoderá ser utilizada para acabamento originados cobos de som na parte traseiro do carro.",
+      composition: "Poly Vinnyl Chloide",
+      tempClass: "90°C . TEST 125°C x 300hrs, 500v/min",
+      AdesAço: "2.1N/cm(400gf/19mm)",
+      AdesDorso: "1.8N/cm(350gf/19mm)",
+      ResisTraç: "120N/cm(6.0kgf/19mm)",
+      Along: "20%",
+      ResistChama: "Auto extinguível",
+      Utility: "Isolação de cabos elétricos, emendas e suporte automotivo de cabos.",
+      roHS: "",
+      cores: [
+        "bg-black",
+        "bg-orange-600"
+      ],
+      vant: [
+        "Efeito de redução de ruído muito alto e superfície",
+        "Extremamente Macia",
+        "Força adesiva elevada, muito grande resistência contra a abrasão,",
+        "Flexível e fácil de manusear",
+        "Resistência a altas temperaturas",
+        "Livre de substâncias críticas",
+      ]
+    },
+  ],
+  linhaaltatensao: [
+    {
+      id: "9",
+      imgSrc: `${r800}`,
+      ref: "R1905BK800",
+      SKU: "R800",
+      description: "Fita à base de borracha de etileno-propileno com alta conformidade em qualquer tipo de superfície e formulada para fusão instantânea sem a necessidade de aquecimento (Autofusão).desenrolamento fácil, à prova de vibração, redução de som, boa aderência e resistência à tração. Usado para enrolamento de cablagem automáticapoderá ser utilizada para acabamento originados cobos de som na parte traseiro do carro.",
+      composition: "Borracha",
+      tempClass: "90°C . TEST 100°C x 120hrs",
+      AdesAço: "7.9N/cm(1.5kgf/19mm)",
+      AdesDorso: "",
+      ResisTraç: "7.9N/cm(1.5kgf/19mm)",
+      Along: "600%",
+      ResistChama: "",
+      Utility: "Fita profissional de alta aderência, melhor proteção em alta voltagem, utilizada por empresas de TV à cabos, telecomunicação, náutica e eletricistas profissionais, entre outras aplicações de alta voltagem, Vedação contra a umidade, para proteger a isolação dos cabos de potência. Proteção contra a penetração de umidade pelas pontas dos cabos de potência. Esta fita deve sempre ser coberta com uma camada da Fita Isolante D193 para proteção contra intempéries e ação do tempo. Atende o mercado telecom para altas tensões. • Instalação de TV a cabo • Operadores e telefonia e Internet cabo",
+      roHS: "",
+      cores: [
+        "bg-white" 
+      ],
+    },
+  ]
+  
+};

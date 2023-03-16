@@ -2,9 +2,7 @@
 import { Link } from "react-router-dom";
 import HeaderMenu from "../components/HeaderMenu";
 import SiteFooter from "../components/SiteFooter";
-import LinhaPvcData from "./LinhaPvcData";
-import LinhaTextilData from "./LinhaTextilData";
-import LinhaAltaTensaoData from "./LinhaAltaTensaoData";
+import Linhas from "./Linhas";
 
 import rohscert from "../assets/rohscert.png"
 
@@ -19,7 +17,7 @@ export default function Linhapvc() {
                         <h1 className="text-center text-4xl text-gray-600 py-3">Linha PVC</h1>
                         <div className="w-2/4 h-[1px] bg-gray-300 mb-20"></div>
                     <div className="grid grid-cols-2 max-md:grid-cols-1 gap-6 w-full">
-                        {LinhaPvcData.map((product, index) => {
+                        {Linhas.linhapvc.map((product, index) => {
                         return (
                                 <div className="w-full">
                                     <div key={index} className="flex items-center shadow-lg group hover:scale-105 transition-all rounded-xl w-full">
@@ -50,7 +48,7 @@ export default function Linhapvc() {
                         <h1 className="text-center text-4xl text-gray-600 py-3">Linha Têxtil</h1>
                         <div className="w-2/4 h-[1px] bg-gray-300 mb-20"></div>
                     <div className="grid grid-cols-2 max-md:grid-cols-1 gap-6 w-full">
-                        {LinhaTextilData.map((product, index) => {
+                        {Linhas.linhatextil.map((product, index) => {
                         return (
                                 <div className="w-full">
                                     <div key={index} className="flex items-center shadow-lg group hover:scale-105 transition-all rounded-xl w-full">
@@ -81,7 +79,7 @@ export default function Linhapvc() {
                         <h1 className="text-center text-4xl text-gray-600 py-3">Linha Alta Tensão</h1>
                         <div className="w-2/4 h-[1px] bg-gray-300 mb-20"></div>
                     <div className="grid grid-cols-2 max-md:grid-cols-1 gap-6 w-full">
-                        {LinhaAltaTensaoData.map((product, index) => {
+                        {Linhas.linhaaltatensao.map((product, index) => {
                         return (
                                 <div className="w-full">
                                     <div key={index} className="flex items-center shadow-lg group hover:scale-105 transition-all rounded-xl w-full">
