@@ -1,10 +1,11 @@
-import h131 from '../assets/h131.png'
-import h132 from '../assets/h131.png'
+
+import f1915bk from '../assets/tapes/F1915BK.png'
+import pet from '../assets/tapes/pet.png'
 
 export default [
     {
       id: "1",
-      imgSrc: `${h131}`,
+      imgSrc: `${pet}`,
       ref: "U1915BK200",
       SKU: "U200",
       description: "Fita isolante recomendada para proteger os cobos e chicotes elétricos do exposição de alta temperatura. Ideal para substituir os caninhos de PVC do motor do carro, caminhão, ônibus, entre outros. Em outras aplicações, poderá ser utilizada para acabamento originados cobos de som na parte traseiro do carro.",
@@ -31,7 +32,7 @@ export default [
     },
     {
       id: "2",
-      imgSrc: `${h132}`,
+      imgSrc: `${f1915bk}`,
       ref: "F1915BK500",
       SKU: "F500",
       description: "Fleece Tape, é usado para embrulhar chicote de fios automotivos. Este produto é feito com material radix, possui uma capacidade antisujidade superficial forte e estabilidade de resistência a altas temperaturas, adequada para a posição delicada interna do auto. Com características de desenrolamento fácil, à prova de vibração , redução de som, boa aderência e resistência à tração. Usado para enrolamento de cablagem automáticapoderá ser utilizada para acabamento originados cobos de som na parte traseiro do carro.",

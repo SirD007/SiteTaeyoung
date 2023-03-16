@@ -10,14 +10,14 @@ import "react-responsive-carousel/lib/styles/carousel.min.css";
 
 import { FaBinoculars, FaPeopleArrows, FaAward, FaBullseye, FaPlayCircle, FaSlack, FaReply } from "react-icons/fa";
 
-import costumerLogo1 from '../assets/costumerLogo1.png'
-import costumerLogo2 from '../assets/costumerLogo2.png'
-import costumerLogo3 from '../assets/costumerLogo3.png'
-import costumerLogo4 from '../assets/costumerLogo4.png'
-import costumerLogo5 from '../assets/costumerLogo5.png'
-import costumerLogo6 from '../assets/costumerLogo6.png'
-import costumerLogo7 from '../assets/costumerLogo7.png'
-import costumerLogo8 from '../assets/costumerLogo8.png'
+import costumerLogo1 from '../assets/costumerLogo/costumerLogo1.png'
+import costumerLogo2 from '../assets/costumerLogo/costumerLogo2.png'
+import costumerLogo3 from '../assets/costumerLogo/costumerLogo3.png'
+import costumerLogo4 from '../assets/costumerLogo/costumerLogo4.png'
+import costumerLogo5 from '../assets/costumerLogo/costumerLogo5.png'
+import costumerLogo6 from '../assets/costumerLogo/costumerLogo6.png'
+import costumerLogo7 from '../assets/costumerLogo/costumerLogo7.png'
+import costumerLogo8 from '../assets/costumerLogo/costumerLogo8.png'
 import datasheet from '../assets/datasheet.png'
 import headerBgImg from '../assets/headerBgImg.jpg'
 import headerBgImg1 from '../assets/headerBgImg1.jpg'

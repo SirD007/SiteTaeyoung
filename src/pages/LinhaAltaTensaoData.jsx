@@ -1,9 +1,9 @@
-import h131 from '../assets/h131.png'
+import r800 from '../assets/r800.png'
 
 export default [
     {
       id: "1",
-      imgSrc: `${h131}`,
+      imgSrc: `${r800}`,
       ref: "R1905BK800",
       SKU: "R800",
       description: "Fita à base de borracha de etileno-propileno com alta conformidade em qualquer tipo de superfície e formulada para fusão instantânea sem a necessidade de aquecimento (Autofusão).desenrolamento fácil, à prova de vibração, redução de som, boa aderência e resistência à tração. Usado para enrolamento de cablagem automáticapoderá ser utilizada para acabamento originados cobos de som na parte traseiro do carro.",
