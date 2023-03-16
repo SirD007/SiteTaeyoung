@@ -2,8 +2,6 @@ import React from "react"
 import {Link, useParams} from "react-router-dom"
 import HeaderMenu from "../components/HeaderMenu"
 import productsData from "./Linhas"
-import productsDataT from "./LinhaTextilData"
-import productsDataAT from "./LinhaAltaTensaoData"
 
 function ProductDetail() {
     const {productId} = useParams()

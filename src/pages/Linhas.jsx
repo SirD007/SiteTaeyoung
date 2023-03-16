@@ -9,9 +9,8 @@ import pet from '../assets/tapes/pet.png'
 import r800 from '../assets/r800.png'
 
 
-export default {
-  "linhapvc": [
-    {
+export default [
+      {
       id: "1",
       imgSrc: `${h131}`,
       ref: "D1920BK193",
@@ -142,9 +141,6 @@ export default {
         "bg-black"
       ],
     },
-  ],
-
-  linhatextil: [
     {
       id: "7",
       imgSrc: `${pet}`,
@@ -200,8 +196,6 @@ export default {
         "Livre de substâncias críticas",
       ]
     },
-  ],
-  linhaaltatensao: [
     {
       id: "9",
       imgSrc: `${r800}`,
@@ -222,5 +216,3 @@ export default {
       ],
     },
   ]
-  
-};
