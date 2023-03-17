@@ -12,7 +12,7 @@ function ProductDetail() {
             <HeaderMenu/>
             <div key={productId} className="px-[10%] h-screen w-screen bg-gray-900 flex relative justify-center items-center">
                 <div className="bg-slate-800 w-[90%] h-28 shadow-2xl rounded-lg absolute bottom-4 z-50 flex justify-between items-center">
-                    <Link className="text-red-700 font-semibold text-lg bg-red-300 hover:bg-red-400 p-2 rounded transition-all flex items-center justify-center w-28 h-full" to="/products">← Voltar</Link>
+                    <Link className="text-red-700 font-semibold text-lg bg-red-300 hover:bg-red-400 p-2 rounded transition-all flex items-center justify-center w-26 h-20 m-4" to="/products">← Voltar</Link>
                     <div>
                         <span className="text-white">Cores</span>
                         <div className="flex gap-2">
@@ -23,7 +23,7 @@ function ProductDetail() {
                             })}
                         </div>
                     </div>
-                    <div className="h-full w-1/2 flex flex-col justify-center">
+                    <div className="h-full w-[70%] px-6 flex flex-col justify-center">
                         <span className="text-white">Utilizado em</span>
                         <span className="text-white text-sm">{thisProduct.Utility}</span>
                     </div>
