@@ -39,6 +39,12 @@ function ProductDetail() {
                             <span className="text-white font-light text-lg select-none">Ref: {thisProduct.ref}</span>
                         </div>
                         <span className="text-zinc-400">{thisProduct.description}</span>
+                        <span className="text-white mt-3 font-bold">Vantagens</span>
+                        {thisProduct.vant.map((vantagem, index) => {
+                                return (
+                                    <span className="text-zinc-400" key={index}>• {vantagem}</span>
+                                )
+                            })}
                     </div>
                     <div className="rounded-lg overflow-hidden shadow-lg flex flex-col w-1/2">
                         <div className="flex flex-col bg-gray-700 p-5">
@@ -60,6 +66,9 @@ function ProductDetail() {
                             </div>
                             <div className="flex flex-col bg-slate-800 p-3">
                                 <span className="text-xs uppercase text-gray-400 font-bold">Resistência a chama</span><span className="text-white">{thisProduct.ResistChama}</span>
+                            </div>
+                            <div className="flex flex-col bg-slate-700 p-3">
+                                <span className="text-xs uppercase text-gray-400 font-bold">roHS</span><span className="text-white">{thisProduct.roHS}</span>
                             </div>
                         </div>
                     </div>

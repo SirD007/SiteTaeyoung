@@ -24,10 +24,18 @@ export default [
       Along: "180%",
       ResistChama: "Auto extinguível",
       Utility: "Fábrica de chicote, Montadoras e Concessionários Automotivos, Oficinas mecânicas, Loja de som, e uso geral domésticos.",
-      roHS: "",
+      roHS: "Cd, Pb, Hg, Cr6+, PBDEs, PBBs Free",
       cores: [
         "bg-black" 
       ],
+      vant: [
+        "Efeito de redução de ruído muito alto e superfície",
+        "Extremamente Macia",
+        "Força adesiva elevada, muito grande resistência contra a abrasão,",
+        "Flexível e fácil de manusear",
+        "Resistência a altas temperaturas",
+        "Livre de substâncias críticas",
+      ]
     },
     {
       id: "2",
@@ -58,6 +66,14 @@ export default [
         "bg-red-700",
         "bg-emerald-300"
       ],
+      vant: [
+        "Efeito de redução de ruído muito alto e superfície",
+        "Extremamente Macia",
+        "Força adesiva elevada, muito grande resistência contra a abrasão,",
+        "Flexível e fácil de manusear",
+        "Resistência a altas temperaturas",
+        "Livre de substâncias críticas",
+      ]
     },
     {
       id: "3",
@@ -73,7 +89,7 @@ export default [
       Along: "220%",
       ResistChama: "Auto extinguível",
       Utility: "Fábrica de chicote, Montadoras e Concessionários Automotivos, Oficinas mecânicas, Loja de som, e uso geral domésticos.",
-      roHS: "",
+      roHS: "Cd, Pb, Hg, Cr6+, PBDEs, PBBs Free",
       cores: [
         "bg-teal-700",
         "bg-stone-400",
@@ -83,6 +99,14 @@ export default [
         "bg-red-700",
         "bg-black"
       ],
+      vant: [
+        "Efeito de redução de ruído muito alto e superfície",
+        "Extremamente Macia",
+        "Força adesiva elevada, muito grande resistência contra a abrasão,",
+        "Flexível e fácil de manusear",
+        "Resistência a altas temperaturas",
+        "Livre de substâncias críticas",
+      ]
     },
     {
       id: "4",
@@ -97,11 +121,19 @@ export default [
       ResisTraç: "22.0N/cm(4.3kgf/19mm)",
       Along: "230%",
       ResistChama: "Auto extinguível",
-      Utility: "",
-      roHS: "(cd, Pb, Hg, Cr6+, PBDEs. PBBs free)",
+      Utility: "Fábrica de chicote, Montadoras e Concessionários Automotivos, Oficinas mecânicas, Loja de som, e uso geral domésticos.",
+      roHS: "cd, Pb, Hg, Cr6+, PBDEs. PBBs free",
       cores: [
         "bg-black"
       ],
+      vant: [
+        "Efeito de redução de ruído muito alto e superfície",
+        "Extremamente Macia",
+        "Força adesiva elevada, muito grande resistência contra a abrasão,",
+        "Flexível e fácil de manusear",
+        "Resistência a altas temperaturas",
+        "Livre de substâncias críticas",
+      ]
     },
     {
       id: "5",
@@ -116,11 +148,19 @@ export default [
       ResisTraç: "22.0N/cm(4.3kgf/19mm)",
       Along: "230%",
       ResistChama: "Auto extinguível",
-      Utility: "",
-      roHS: "(cd, Pb, Hg, Cr6+, PBDEs. PBBs free)",
+      Utility: "Fábrica de chicote, Montadoras e Concessionários Automotivos, Oficinas mecânicas, Loja de som, e uso geral domésticos.",
+      roHS: "cd, Pb, Hg, Cr6+, PBDEs. PBBs free",
       cores: [
         "bg-black"
       ],
+      vant: [
+        "Efeito de redução de ruído muito alto e superfície",
+        "Extremamente Macia",
+        "Força adesiva elevada, muito grande resistência contra a abrasão,",
+        "Flexível e fácil de manusear",
+        "Resistência a altas temperaturas",
+        "Livre de substâncias críticas",
+      ]
     },
     {
       id: "6",
@@ -136,10 +176,18 @@ export default [
       Along: "220%",
       ResistChama: "Auto extinguível",
       Utility: "Fita profissional de alta aderência, melhor proteção emalta voltagem, utilizada tambémpor empresas de TV à cabos, telecomunicação, náutica e eletricistas profissionais, entre outras aplicações de alta voltagem<br>Atende o mercado telecom para altas tensões.<br>• Instalação de TV a cabo<br>• Operadores e telefonia<br>• Internet",
-      roHS:"",
+      roHS:"Cd, Pb, Hg, Cr6+, PBDEs, PBBs Free",
       cores: [
         "bg-black"
       ],
+      vant: [
+        "Efeito de redução de ruído muito alto e superfície",
+        "Extremamente Macia",
+        "Força adesiva elevada, muito grande resistência contra a abrasão,",
+        "Flexível e fácil de manusear",
+        "Resistência a altas temperaturas",
+        "Livre de substâncias críticas",
+      ]
     },
     {
       id: "7",
@@ -155,7 +203,7 @@ export default [
       Along: "25%",
       ResistChama: "Auto extinguível",
       Utility: "Fábrica de chicote, Montadoras e Concessionários Automotivos, Oficinas mecânicas, Loja de som, e uso geral domésticos. Atende o mercado telecom para altas tensões.<br> • Instalação de TV a cabo <br> • Operadores e telefonia<br>• Internet",
-      roHS: "",
+      roHS: "Cd, Pb, Hg, Cr6+, PBDEs, PBBs Free",
       cores: [
         "bg-black",
         "bg-orange-600"
@@ -166,7 +214,8 @@ export default [
         "Durabilidade de Abrasão",
         "Aderente fortemente forte",
         "Resistência ao calor"
-      ]
+      ],
+      
     },
     {
       id: "8",
@@ -182,7 +231,7 @@ export default [
       Along: "20%",
       ResistChama: "Auto extinguível",
       Utility: "Isolação de cabos elétricos, emendas e suporte automotivo de cabos.",
-      roHS: "",
+      roHS: "Cd, Pb, Hg, Cr6+, PBDEs, PBBs Free",
       cores: [
         "bg-black",
         "bg-orange-600"
@@ -210,9 +259,17 @@ export default [
       Along: "600%",
       ResistChama: "",
       Utility: "Fita profissional de alta aderência, melhor proteção em alta voltagem, utilizada por empresas de TV à cabos, telecomunicação, náutica e eletricistas profissionais, entre outras aplicações de alta voltagem, Vedação contra a umidade, para proteger a isolação dos cabos de potência. Proteção contra a penetração de umidade pelas pontas dos cabos de potência. Esta fita deve sempre ser coberta com uma camada da Fita Isolante D193 para proteção contra intempéries e ação do tempo. Atende o mercado telecom para altas tensões. • Instalação de TV a cabo • Operadores e telefonia e Internet cabo",
-      roHS: "",
+      roHS: "Cd, Pb, Hg, Cr6+, PBDEs, PBBs Free",
       cores: [
         "bg-white" 
       ],
+      vant: [
+        "Efeito de redução de ruído muito alto e superfície",
+        "Extremamente Macia",
+        "Força adesiva elevada, muito grande resistência contra a abrasão,",
+        "Flexível e fácil de manusear",
+        "Resistência a altas temperaturas",
+        "Livre de substâncias críticas",
+      ]
     },
   ]
