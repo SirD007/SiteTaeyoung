@@ -207,7 +207,7 @@ const Home = () =>{
               <div className='bg-primaryBlue p-[2rem] flex flex-col gap-6'>
                   <span className='text-white font-bold'>Nosso orgulho</span>
                   <span className='text-white text-2xl'>9 anos de sucesso imbativel</span>
-                  <span className='text-zinc-200'>A Taeyoung vem durante anos desempenhando o papel de agregar valor aos mercado que atua, com transparência nas negociações e serenidade no processo.</span>
+                  <span className='text-zinc-200'>A Taeyoung vem durante anos desempenhando o papel de agregar valor aos mercados que atua, com transparência nas negociações e serenidade no processo.</span>
                   <Link to='/empresa'>
                   <CustomBtn
                   bgColor="bg-primaryRose"
