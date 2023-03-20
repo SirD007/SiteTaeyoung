@@ -47,14 +47,13 @@ function reveal() {
   }
 }
 
-const contactForm = document.querySelector('#contact-form')
-
 (function() {
   emailjs.init('USqTm3JvB2hwQSF7J');
 })();
 
 window.onload = function() {
-  contactForm?.addEventListener('submit', function(event) {
+  const contactForm = document.querySelector('#contact-form')
+  contactForm.addEventListener('submit', function(event) {
       event.preventDefault();
       this.contact_number.value = Math.random() * 100000 | 0;
       emailjs.sendForm('service_6x6vau6', 'template_e5fkveu', this)
@@ -93,7 +92,7 @@ const Home = () =>{
           <div className='max-lg:text-center max-md:w-3/4 w-1/2 flex flex-col z-10'>
             <div className="mb-10 flex flex-col gap-2">
               <h3 className="text-zinc-900 text-3xl font-heading">Reconhecida como <span className='text-zinc-900 text-3xl font-heading font-black'>líder mundial</span> em fita de isolamento elétrico de PVC</h3>
-              <span className="text-zinc-900">A Taeyoung ouve seus sonhos o os trás à vida através de pensamento criativo e tecnologia inovadora. Juntos, nos esforçamos para alcançar a harmonia social e o respeito pelo seu bem-estar futuro.</span>
+              <span className="text-zinc-900">A Taeyoung ouve seus sonhos e os trás à vida através de pensamento criativo e tecnologia inovadora. Juntos, nos esforçamos para alcançar a harmonia social e o respeito pelo seu bem-estar futuro.</span>
             </div>
               <Link to="/solucoes"><CustomBtn text="Ver Soluções" bgColor="bg-primaryBlue" textColor="text-white"/></Link>
           </div>
