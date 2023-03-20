@@ -20,7 +20,6 @@ import costumerLogo7 from '../assets/costumerLogo/costumerLogo7.png'
 import costumerLogo8 from '../assets/costumerLogo/costumerLogo8.png'
 import datasheet from '../assets/datasheet.png'
 import headerBgImg from '../assets/headerBgImg.jpg'
-import headerBgImg1 from '../assets/headerBgImg1.jpg'
 import HomeHeaderImg from '../assets/HomeHeaderImg.png'
 import linhapvc from '../assets/linhapvc.png'
 import linhatextil from '../assets/linhatextil.png'
@@ -48,33 +47,28 @@ function reveal() {
   }
 }
 
+(function() {
+  emailjs.init('USqTm3JvB2hwQSF7J');
+})();
+
+window.onload = function() {
+  document.getElementById('contact-form').addEventListener('submit', function(event) {
+      event.preventDefault();
+      this.contact_number.value = Math.random() * 100000 | 0;
+      emailjs.sendForm('service_6x6vau6', 'template_e5fkveu', this)
+          .then(function() {
+              console.log('SUCCESS!');
+          }, function(error) {
+              console.log('FAILED...', error);
+          });
+  });
+}
+
 window.addEventListener("scroll", reveal);
 
 const Home = () =>{
-  
-  const [name, setName] = useState("");
-  const [email, setEmail] = useState("");
-  const onChangeHandler = (fieldName, value)=>{
-    if(fieldName === "name"){
-      setName(value);
-    }
-    else if(fieldName==="email"){
-      setEmail(value);
-    }
-  }
-  const onSubmitHandler = (e)=>{
-    e.preventDefault();
-    if(name.trim()==="" || email.trim() ==""){
-      alert("Favor, preencher os campos necessários");
-    }
-    else{
-      alert(name+" " +email);
-      setName("");
-      setEmail("");
-    }
-  }
 
-  const [modal, setModal] = useState(false);
+   const [modal, setModal] = useState(false);
   const [videoLoading, setVideoLoading] = useState(true);
 
   const openModal = () => {
@@ -369,13 +363,14 @@ const Home = () =>{
               <span className='text-4xl font-heading text-center font-bold'>Contato</span>
               <span className='text-zinc-500 text-center'>Nossa equipe está de prontidão para melhor te atender! Entre em contato, te retornaremos em breve</span>
             </div>
-            <form onSubmit={(e)=>{onSubmitHandler(e)}} class="w-full mt-10">
+            <form id="contact-form" class="w-full mt-10">
             <div class="flex flex-wrap -mx-3 mb-6">
               <div class="w-full px-3 mb-6 md:mb-0">
                 <label class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" for="grid-first-name">
                   Nome
                 </label>
-                <input value={name} onChange={(e)=>{ onChangeHandler("name",e.target.value)}} class="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:border-gray-500 focus:bg-white" id="grid-first-name" type="text" placeholder="James John"></input>
+                <input type="hidden" name="contact_number"></input>
+                <input class="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:border-gray-500 focus:bg-white" name="user_name" id="grid-first-name" type="text" placeholder="James John"></input>
               </div>
             </div>
             <div class="flex flex-wrap -mx-3 mb-6">
@@ -383,7 +378,7 @@ const Home = () =>{
                 <label class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" for="grid-password">
                   E-mail
                 </label>
-                <input value={email} onChange={(e)=>{ onChangeHandler("email",e.target.value)}} class="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white focus:border-gray-500" id="email" type="email"></input>
+                <input class="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white focus:border-gray-500" name='user_email' id="email" type="email"></input>
               </div>
             </div>
             <div class="flex flex-wrap -mx-3 mb-6">
@@ -391,7 +386,7 @@ const Home = () =>{
                 <label class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" for="grid-password">
                   Mensagem
                 </label>
-                <textarea class=" no-resize appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white focus:border-gray-500 h-48 resize-none" id="message"></textarea>
+                <textarea className="no-resize appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white focus:border-gray-500 h-48 resize-none" name="message" id="message"></textarea>
               </div>
             </div>
             <div class="md:flex md:items-center">
