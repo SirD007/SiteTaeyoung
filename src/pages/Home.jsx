@@ -47,12 +47,14 @@ function reveal() {
   }
 }
 
+const contactForm = document.querySelector('#contact-form')
+
 (function() {
   emailjs.init('USqTm3JvB2hwQSF7J');
 })();
 
 window.onload = function() {
-  document.getElementById('contact-form').addEventListener('submit', function(event) {
+  contactForm?.addEventListener('submit', function(event) {
       event.preventDefault();
       this.contact_number.value = Math.random() * 100000 | 0;
       emailjs.sendForm('service_6x6vau6', 'template_e5fkveu', this)
