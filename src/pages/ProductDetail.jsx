@@ -3,6 +3,8 @@ import {Link, useParams} from "react-router-dom"
 import HeaderMenu from "../components/HeaderMenu"
 import productsData from "./Linhas"
 
+import rohscert from "../assets/rohscert.png"
+
 function ProductDetail() {
     const {productId} = useParams()
     const thisProduct = productsData.find(prod => prod.id === productId)
@@ -46,7 +48,8 @@ function ProductDetail() {
                                 )
                             })}
                     </div>
-                    <div className="rounded-lg overflow-hidden shadow-lg flex flex-col w-1/2">
+                    <div className="rounded-lg overflow-hidden shadow-lg flex flex-col w-1/2 relative">
+                        <div className="absolute right-4 top-[-5px] w-10 h-14 bg-green-500 rounded-b-md justify-center items-center flex"><img src={rohscert} alt="rohs" /></div>
                         <div className="flex flex-col bg-gray-700 p-5">
                             <span className="text-xl font-black text-white">{thisProduct.SKU}</span>
                             <span className="text-sm text-zinc-400">{thisProduct.composition}</span>
