@@ -1,4 +1,4 @@
-import React from 'react';
+import {React, useState} from 'react';
 
 import { Carousel } from 'react-responsive-carousel';
 import "react-responsive-carousel/lib/styles/carousel.min.css";
@@ -52,7 +52,24 @@ const testimonials = [
         sector: 'Diretora',
         text: 'O sucesso da Taeyoung é resultado de um esforço conjunto de toda uma equipe engajada a superar os desafios que aparecem no dia a dia'
     },
-]
+];
+
+(function() {
+    emailjs.init('USqTm3JvB2hwQSF7J');
+  })();
+  
+  window.onload = function() {
+    document.getElementById('contact-form-contact').addEventListener('submit', function(event) {
+        event.preventDefault();
+        this.contact_number.value = Math.random() * 100000 | 0;
+        emailjs.sendForm('service_6x6vau6', 'template_w4u8bjd', this)
+            .then(function() {
+                console.log('SUCCESS!');
+            }, function(error) {
+                console.log('FAILED...', error);
+            });
+    });
+  };
 
 const Contato = () => {
     return (
@@ -72,13 +89,13 @@ const Contato = () => {
                 </div>
 
                 <div className='bg-white p-10 shadow-xl rounded relative max-md:left-0 max-md:w-3/4 left-[-10%] w-1/2 max-md:items-center'>
-                    <form class="mt-10">
-                        <div class="flex flex-wrap -mx-3 mb-6">
-                        <div class="w-full px-3">
-                            <label class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" for="sector">
+                    <form id='contact-form-contact' className="mt-10">
+                        <div className="flex flex-wrap -mx-3 mb-6">
+                        <div className="w-full px-3">
+                            <label className="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" htmlFor="sector">
                             Area de Interesse
                             </label>
-                            <select class="block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500" id="sector" type="sector">
+                            <select name='user_setor' className="block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500" id="sector" type="sector">
                                 <option value="Comercial">Comercial</option>                                
                                 <option value="Marketing">Marketing</option>                                
                                 <option value="Compras">Compras</option>                                
@@ -87,51 +104,52 @@ const Contato = () => {
                             </select>
                         </div>
                         </div>
-                        <div class="flex flex-wrap -mx-3 mb-6">
-                        <div class="w-full md:w-1/2 px-3 mb-6 md:mb-0">
-                            <label class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" for="grid-first-name">
+                        <div className="flex flex-wrap -mx-3 mb-6">
+                        <div className="w-full md:w-1/2 px-3 mb-6 md:mb-0">
+                        <input type="hidden" name="contact_number"></input>
+                            <label className="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" htmlFor="grid-first-name">
                             Primeiro Nome
                             </label>
-                            <input class="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:border-gray-500 focus:bg-white" id="grid-first-name" type="text" placeholder="James"></input>
+                            <input name='user_name' className="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:border-gray-500 focus:bg-white" id="grid-first-name" type="text" placeholder="James"></input>
                         </div>
-                        <div class="w-full md:w-1/2 px-3">
-                            <label class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" for="email">
+                        <div className="w-full md:w-1/2 px-3">
+                            <label className="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" htmlFor="email">
                             Email
                             </label>
-                            <input class="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500" id="email" type="email" placeholder="E-mail"></input>
+                            <input name='user_email' className="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500" id="email" type="email" placeholder="E-mail"></input>
                         </div>
                         </div>
-                        <div class="flex flex-wrap -mx-3 mb-6">
-                        <div class="w-full px-3">
-                            <label class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" for="number">
+                        <div className="flex flex-wrap -mx-3 mb-6">
+                        <div className="w-full px-3">
+                            <label className="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" htmlFor="number">
                             Telefone
                             </label>
-                            <input class="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500" id="number" type="number"></input>
+                            <input name='user_phone' className="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500" id="number" type="number"></input>
                         </div>
                         </div>
-                        <div class="flex flex-wrap -mx-3 mb-6">
-                        <div class="w-full px-3">
-                            <label class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" for="city">
+                        <div className="flex flex-wrap -mx-3 mb-6">
+                        <div className="w-full px-3">
+                            <label className="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" htmlFor="city">
                             Cidade
                             </label>
-                            <input class="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500" id="city" type="city"></input>
+                            <input name='user_city' className="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500" id="city" type="city"></input>
                         </div>
                         </div>
-                        <div class="flex flex-wrap -mx-3 mb-6">
-                        <div class="w-full px-3">
-                            <label class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" for="message">
+                        <div className="flex flex-wrap -mx-3 mb-6">
+                        <div className="w-full px-3">
+                            <label className="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" htmlFor="message">
                             Mensagem
                             </label>
-                            <textarea class=" no-resize appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500 h-48 resize-none" id="message"></textarea>
+                            <textarea name='message' className="no-resize appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500 h-48 resize-none" id="message"></textarea>
                         </div>
                         </div>
-                        <div class="md:flex md:items-center">
-                        <div class="md:w-1/3">
-                            <button class="shadow bg-primaryBlue hover:opacity-90 focus:shadow-outline focus:outline-none text-white font-bold py-2 px-4 rounded" type="button">
+                        <div className="md:flex md:items-center">
+                        <div className="md:w-1/3">
+                            <button value="Submit" type="submit" className="shadow bg-primaryBlue hover:opacity-90 focus:shadow-outline focus:outline-none text-white font-bold py-2 px-4 rounded">
                             Enviar
                             </button>
                         </div>
-                        <div class="md:w-2/3"></div>
+                        <div className="md:w-2/3"></div>
                         </div>
                     </form>
                 </div>
@@ -140,12 +158,12 @@ const Contato = () => {
             <div className='relative px-[20%] justify-center items-center'>
                 <div className='items-center justify-center py-10'>
                     <Carousel
-                    autoPlay="true"
-                    infiniteLoop="true"
-                    interval="6000"
-                    emulateTouch="true"
-                    showArrows="false"
-                    showIndicators="false"
+                    showThumbs={false}
+                    autoPlay={true}
+                    infiniteLoop={true}
+                    interval="3000"
+                    showArrows={false}
+                    showIndicators={false}
                     renderIndicator= {() => {
                         return (
                             <div></div>
@@ -162,9 +180,9 @@ const Contato = () => {
                         )
                     }}
                     >
-                        {testimonials.map((value) => {
+                        {testimonials.map((value, id) => {
                             return( 
-                                <div className='flex flex-col gap-4'>
+                                <div key={id} className='flex flex-col gap-4'>
                                 <span className='text-zinc-400 text-sm leading-snug text-left'>{value.text}</span>
                                 
                                 <div className='flex justify-between items-center'>
@@ -214,9 +232,9 @@ const Contato = () => {
                         <span>7:30 - 16:30</span>
                     </div>
                 </div>
-                <div class="mapouter">
-                    <div class="gmap_canvas">
-                        <iframe className='w-[600px] max-lg:w-auto' height="350" id="gmap_canvas" src="https://maps.google.com/maps?q=Rua%20Visconde%20de%20Taunay%2080&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
+                <div className="mapouter">
+                    <div className="gmap_canvas">
+                        <iframe className='w-[600px] max-lg:w-auto' height="350" id="gmap_canvas" src="https://maps.google.com/maps?q=Rua%20Visconde%20de%20Taunay%2080&t=&z=13&ie=UTF8&iwloc=&output=embed" frameBorder="0" scrolling="no" marginHeight="0" marginWidth="0"></iframe>
                     </div>
                 </div>
             </div>
