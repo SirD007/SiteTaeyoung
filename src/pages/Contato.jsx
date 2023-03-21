@@ -54,7 +54,7 @@ const testimonials = [
     },
 ];
   
-  window.onload = function SubmitContact() {    
+    function SubmitContact() {    
         const contactForm2 = document.getElementById('contact-form-contact')
         contactForm2?.addEventListener('submit', function(event) {
             event.preventDefault();
@@ -67,6 +67,8 @@ const testimonials = [
                 });
         });
       };
+
+    SubmitContact()
 
 const Contato = () => {
     return (
