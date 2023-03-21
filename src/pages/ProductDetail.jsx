@@ -5,6 +5,8 @@ import productsData from "./Linhas"
 
 import rohscert from "../assets/rohscert.png"
 
+import { AiFillFire } from "react-icons/ai";
+
 function ProductDetail() {
     const {productId} = useParams()
     const thisProduct = productsData.find(prod => prod.id === productId)
@@ -29,7 +31,11 @@ function ProductDetail() {
                         <span className="text-white">Utilizado em</span>
                         <span className="text-white text-sm">{thisProduct.Utility}</span>
                     </div>
-                        <Link className="text-green-700 font-semibold text-lg bg-green-300 hover:bg-green-400 p-2 rounded transition-all flex items-center justify-center w-26 h-20 m-4">Baixar datasheet</Link>
+                            {thisProduct.downloadLink ? (
+                                <Link to={thisProduct.downloadLink} download target="_blank" className="text-green-700 font-semibold text-lg bg-green-300 hover:bg-green-400 p-2 rounded transition-all flex items-center justify-center w-26 h-20 m-4">Baixar datasheet</Link>
+                            ) : (
+                                <Link disable className="cursor-default text-green-700 font-semibold text-lg bg-green-300 p-2 rounded transition-all flex items-center justify-center w-26 h-20 m-4">Datasheet Indisponível</Link>
+                            )}                              
                 </div>
                 <div className="w-screen h-screen grid grid-cols-3 justify-center items-center relative">
                     <div className="p-10">
@@ -37,6 +43,10 @@ function ProductDetail() {
                     </div>
                     <div className="flex flex-col p-10">
                         <div>
+                            <div className="flex items-center gap-2">
+                                <AiFillFire className="fill-orange-400 text-lg"/>
+                                <span className="font-bold text-white">{thisProduct.tempClass}</span>
+                            </div>                            
                             <h1 className="text-zinc-200 font-black text-8xl select-none">{thisProduct.SKU}</h1>
                             <span className="text-white font-light text-lg select-none">Ref: {thisProduct.ref}</span>
                         </div>
@@ -49,8 +59,12 @@ function ProductDetail() {
                             })}
                     </div>
                     <div className="rounded-lg overflow-hidden shadow-lg flex flex-col w-1/2 relative">
-                        <div className="absolute right-4 top-[-5px] w-10 h-14 bg-green-500 rounded-b-md justify-center items-center flex"><img src={rohscert} alt="rohs" /></div>
-                        <div className="flex flex-col bg-gray-700 p-5">
+                        {thisProduct.roHS ? (
+                            <div className="absolute right-4 top-[-5px] w-10 h-14 bg-green-500 rounded-b-md justify-center items-center flex"><img src={rohscert} alt="rohs" /></div>
+                        ) : 
+                        (<div></div>)
+                        }
+                           <div className="flex flex-col bg-gray-700 p-5">
                             <span className="text-xl font-black text-white">{thisProduct.SKU}</span>
                             <span className="text-sm text-zinc-400">{thisProduct.composition}</span>
                         </div>
@@ -82,5 +96,3 @@ function ProductDetail() {
 }
 
 export default ProductDetail
-
-// service_6x6vau6

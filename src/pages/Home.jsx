@@ -58,7 +58,7 @@ window.onload = function() {
   const Form_message = document.getElementsByName('contact-form')
 
   const confirmMsg = document.getElementById('confirmMsg')
-  
+
   HomeContactForm?.addEventListener('submit', function(event) {
       event.preventDefault();
             this.contact_number.value = Math.random() * 100000 | 0;
@@ -72,6 +72,7 @@ window.onload = function() {
           }, function(error) {
             confirmMsg.innerText="Algo deu errado, tente novamente";
             confirmMsg.classList.add('text-red-600');
+            console.log(error)
           });
   });
 }

@@ -13,7 +13,7 @@ export default [
       {
       id: "1",
       imgSrc: `${h131}`,
-      ref: "D1920BK193",
+      ref: "H1920BK131",
       SKU: "H131",
       description: "Fita isolante de PVC elaborada para uso automotivo com ultra aderência. Contém procedimento retardante antichama, excelente flexibilidade, alongamento e resistência às mudanças meteorológicas.",
       composition: "Poly Vinnyl Chloide",
@@ -28,6 +28,7 @@ export default [
       cores: [
         "bg-black" 
       ],
+      downloadLink:"../src/assets/datasheet/H131datasheet.pdf",
       vant: [
         "Efeito de redução de ruído muito alto e superfície",
         "Extremamente Macia",
@@ -51,7 +52,7 @@ export default [
       Along: "180%",
       ResistChama: "Auto extinguível",
       Utility: "Fábrica de chicote, Montadoras e Concessionários Automotivos, Oficinas mecânicas, Loja de som, e uso geral domésticos. Distinção de chicotes por seguimentos (partes especiais como Air-bag) Agrupamento e marcação dos cabos (iluminação, instalaçao de som) Instalação de Telecomunicação entre outros. Bigua, Dic som e outras distribuidoras de Som e Acessórios Automotivos",
-      roHS: "",
+      roHS: "Cd, Pb, Hg, Cr6+, PBDEs, PBBs Free",
       cores: [
         "bg-teal-700",
         "bg-violet-800",
@@ -66,6 +67,7 @@ export default [
         "bg-red-700",
         "bg-emerald-300"
       ],
+      downloadLink:"../src/assets/datasheet/H131datasheet.pdf",
       vant: [
         "Efeito de redução de ruído muito alto e superfície",
         "Extremamente Macia",
@@ -99,6 +101,7 @@ export default [
         "bg-red-700",
         "bg-black"
       ],
+      downloadLink:"../src/assets/datasheet/S153datasheet.pdf",
       vant: [
         "Efeito de redução de ruído muito alto e superfície",
         "Extremamente Macia",
@@ -126,6 +129,7 @@ export default [
       cores: [
         "bg-black"
       ],
+      downloadLink:"../src/assets/datasheet/EG1920BK10datasheet.pdf",
       vant: [
         "Efeito de redução de ruído muito alto e superfície",
         "Extremamente Macia",
@@ -153,6 +157,7 @@ export default [
       cores: [
         "bg-black"
       ],
+      downloadLink:"../src/assets/datasheet/EG1920BK13datasheet.pdf",
       vant: [
         "Efeito de redução de ruído muito alto e superfície",
         "Extremamente Macia",
@@ -175,11 +180,12 @@ export default [
       ResisTraç: "34.2N/cm(6.5kgf/19mm)",
       Along: "220%",
       ResistChama: "Auto extinguível",
-      Utility: "Fita profissional de alta aderência, melhor proteção emalta voltagem, utilizada tambémpor empresas de TV à cabos, telecomunicação, náutica e eletricistas profissionais, entre outras aplicações de alta voltagem<br>Atende o mercado telecom para altas tensões.<br>• Instalação de TV a cabo<br>• Operadores e telefonia<br>• Internet",
+      Utility: "Fita profissional de alta aderência, melhor proteção emalta voltagem, utilizada tambémpor empresas de TV à cabos, telecomunicação, náutica e eletricistas profissionais, entre outras aplicações de alta voltagem. Atende o mercado telecom para altas tensões. Utilizavel em Instalação de TV a cabo",
       roHS:"Cd, Pb, Hg, Cr6+, PBDEs, PBBs Free",
       cores: [
         "bg-black"
       ],
+      downloadLink:"../src/assets/datasheet/D1920BK193datasheet.pdf",
       vant: [
         "Efeito de redução de ruído muito alto e superfície",
         "Extremamente Macia",
@@ -208,6 +214,7 @@ export default [
         "bg-black",
         "bg-orange-600"
       ],
+      downloadLink:"../src/assets/datasheet/U1915BK20datasheet.pdf",
       vant: [
         "Redução de ruído",
         "Resistência ao tempo",
@@ -233,9 +240,9 @@ export default [
       Utility: "Isolação de cabos elétricos, emendas e suporte automotivo de cabos.",
       roHS: "Cd, Pb, Hg, Cr6+, PBDEs, PBBs Free",
       cores: [
-        "bg-black",
-        "bg-orange-600"
+        "bg-black"
       ],
+      downloadLink:"../src/assets/datasheet/F1915BK50Bdatasheet.pdf",
       vant: [
         "Efeito de redução de ruído muito alto e superfície",
         "Extremamente Macia",
@@ -263,6 +270,7 @@ export default [
       cores: [
         "bg-white" 
       ],
+      downloadLink:"",
       vant: [
         "Efeito de redução de ruído muito alto e superfície",
         "Extremamente Macia",

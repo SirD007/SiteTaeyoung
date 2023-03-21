@@ -78,9 +78,11 @@ const sendEmail = (e) => {
         Form_user_name.value=""
         Form_user_email.value=""
         Form_message.value=""
+        console.log(result)
     }, (error) => {
         confirmMsg.innerText="Algo deu errado, tente novamente";
         confirmMsg.classList.add('text-red-600');
+        console.log(error)
     });
 }
 
