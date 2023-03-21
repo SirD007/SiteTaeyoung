@@ -54,13 +54,13 @@ const testimonials = [
     },
 ];
 
+const contactForm2 = document.getElementById('contact-form-contact')
+
 (function() {
     emailjs.init('USqTm3JvB2hwQSF7J');
   })();
   
   window.onload = function() {
-    const contactForm2 = document.getElementById('contact-form-contact')
-    if(contactForm2){
         contactForm2.addEventListener('submit', function(event) {
             event.preventDefault();
             this.contact_number.value = Math.random() * 100000 | 0;
@@ -72,7 +72,6 @@ const testimonials = [
                 });
         });
       };
-    }
 
 const Contato = () => {
     return (

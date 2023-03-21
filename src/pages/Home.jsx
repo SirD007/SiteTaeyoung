@@ -47,13 +47,13 @@ function reveal() {
   }
 }
 
+const contactForm = document.getElementById('contact-form')
+
 (function() {
   emailjs.init('USqTm3JvB2hwQSF7J');
 })();
 
 window.onload = function() {
-  const contactForm = document.getElementById('contact-form')
-  if(contactForm){
     contactForm.addEventListener('submit', function(event) {
       event.preventDefault();
       this.contact_number.value = Math.random() * 100000 | 0;
@@ -65,7 +65,6 @@ window.onload = function() {
           });
   });
 }
-  }
 
 
 window.addEventListener("scroll", reveal);
