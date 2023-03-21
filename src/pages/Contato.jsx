@@ -53,24 +53,20 @@ const testimonials = [
         text: 'O sucesso da Taeyoung é resultado de um esforço conjunto de toda uma equipe engajada a superar os desafios que aparecem no dia a dia'
     },
 ];
-
-// (function() {
-//     emailjs.init('USqTm3JvB2hwQSF7J');
-//   })();
   
-//   window.onload = function() {    
-//         const contactForm2 = document.getElementById('contact-form-contact')
-//         contactForm2?.addEventListener('submit', function(event) {
-//             event.preventDefault();
-//             this.contact_number.value = Math.random() * 100000 | 0;
-//             emailjs.sendForm('service_6x6vau6', 'template_w4u8bjd', this)
-//                 .then(function() {
-//                     console.log('SUCCESS!');
-//                 }, function(error) {
-//                     console.log('FAILED...', error);
-//                 });
-//         });
-//       };
+  window.onload = function SubmitContact() {    
+        const contactForm2 = document.getElementById('contact-form-contact')
+        contactForm2?.addEventListener('submit', function(event) {
+            event.preventDefault();
+            this.contact_number.value = Math.random() * 100000 | 0;
+            emailjs.sendForm('service_6x6vau6', 'template_w4u8bjd', this)
+                .then(function() {
+                    console.log('SUCCESS!');
+                }, function(error) {
+                    console.log('FAILED...', error);
+                });
+        });
+      };
 
 const Contato = () => {
     return (
