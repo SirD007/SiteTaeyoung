@@ -51,12 +51,12 @@ function reveal() {
   emailjs.init('USqTm3JvB2hwQSF7J');
 })();
 
-window.onload = function() {  
-    const contactForm = document.getElementById('contact-form')
-    contactForm?.addEventListener('submit', function(event) {
+window.onload = function() {
+  const HomeContactForm = document.getElementById('contact-form')
+  HomeContactForm?.addEventListener('submit', function(event) {
       event.preventDefault();
-      this.contact_number.value = Math.random() * 100000 | 0;
-      emailjs.sendForm('service_6x6vau6', 'template_e5fkveu', this)
+            this.contact_number.value = Math.random() * 100000 | 0;
+            emailjs.sendForm('service_6x6vau6', 'template_e5fkveu', this)
           .then(function() {
               console.log('SUCCESS!');
           }, function(error) {
@@ -305,9 +305,9 @@ const Home = () =>{
           </div>
           
           <div className='flex gap-4 max-md:flex-col'>
-          {Fitas.map((value) => {
+          {Fitas.map((value, index) => {
             return(
-              <a href={value.href}>
+              <a key={index} href={value.href}>
               <div className='mx-auto max-w-full rounded-lg shadow-lg overflow-hidden md:max-w-2xl'>
                 <div className='h-full w-full md:flex md:flex-col'>
                   <div className='overflow-hidden mx-auto max-w-full md:max-w-2xl'>
@@ -330,14 +330,14 @@ const Home = () =>{
         <section className='max-lg:px-[10%] px-[20%] flex flex-col'>
 
         <div>
-          <div class="mx-auto max-w-7xl py-24">
-            <div class="relative isolate overflow-hidden bg-gray-900 px-6 pt-16 shadow-2xl sm:rounded-3xl sm:px-16 md:pt-24 lg:flex lg:gap-x-20 lg:px-24 lg:pt-0">
-              <svg viewBox="0 0 1024 1024" class="absolute top-1/2 left-1/2 -z-10 h-[64rem] w-[64rem] -translate-y-1/2 [mask-image:radial-gradient(closest-side,white,transparent)] sm:left-full sm:-ml-80 lg:left-1/2 lg:ml-0 lg:translate-y-0 lg:-translate-x-1/2" aria-hidden="true">
-                <circle cx="512" cy="512" r="512" fill="url(#759c1415-0410-454c-8f7c-9a820de03641)" fill-opacity="0.7" />
+          <div className="mx-auto max-w-7xl py-24">
+            <div className="relative isolate overflow-hidden bg-gray-900 px-6 pt-16 shadow-2xl sm:rounded-3xl sm:px-16 md:pt-24 lg:flex lg:gap-x-20 lg:px-24 lg:pt-0">
+              <svg viewBox="0 0 1024 1024" className="absolute top-1/2 left-1/2 -z-10 h-[64rem] w-[64rem] -translate-y-1/2 [mask-image:radial-gradient(closest-side,white,transparent)] sm:left-full sm:-ml-80 lg:left-1/2 lg:ml-0 lg:translate-y-0 lg:-translate-x-1/2" aria-hidden="true">
+                <circle cx="512" cy="512" r="512" fill="url(#759c1415-0410-454c-8f7c-9a820de03641)" fillOpacity="0.7" />
                 <defs>
                   <radialGradient id="759c1415-0410-454c-8f7c-9a820de03641">
-                    <stop stop-color="#f43f5e" />
-                    <stop offset="1" stop-color="#f43f5e" />
+                    <stop stopColor="#f43f5e" />
+                    <stop offset="1" stopColor="#f43f5e" />
                   </radialGradient>
                 </defs>
               </svg>
@@ -365,39 +365,39 @@ const Home = () =>{
               <span className='text-4xl font-heading text-center font-bold'>Contato</span>
               <span className='text-zinc-500 text-center'>Nossa equipe está de prontidão para melhor te atender! Entre em contato, te retornaremos em breve</span>
             </div>
-            <form id="contact-form" class="w-full mt-10">
-            <div class="flex flex-wrap -mx-3 mb-6">
-              <div class="w-full px-3 mb-6 md:mb-0">
-                <label class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" htmlFor="grid-first-name">
+            <form id="contact-form" className="w-full mt-10">
+            <div className="flex flex-wrap -mx-3 mb-6">
+              <div className="w-full px-3 mb-6 md:mb-0">
+                <label className="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" htmlFor="grid-first-name">
                   Nome
                 </label>
                 <input type="hidden" name="contact_number"></input>
-                <input class="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:border-gray-500 focus:bg-white" name="user_name" id="grid-first-name" type="text" placeholder="James John"></input>
+                <input className="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:border-gray-500 focus:bg-white" name="user_name" id="grid-first-name" type="text" placeholder="James John"></input>
               </div>
             </div>
-            <div class="flex flex-wrap -mx-3 mb-6">
-              <div class="w-full px-3">
-                <label class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" htmlFor="grid-password">
+            <div className="flex flex-wrap -mx-3 mb-6">
+              <div className="w-full px-3">
+                <label className="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" htmlFor="grid-password">
                   E-mail
                 </label>
-                <input class="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white focus:border-gray-500" name='user_email' id="email" type="email"></input>
+                <input className="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white focus:border-gray-500" name='user_email' id="email" type="email"></input>
               </div>
             </div>
-            <div class="flex flex-wrap -mx-3 mb-6">
-              <div class="w-full px-3">
-                <label class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" htmlFor="grid-password">
+            <div className="flex flex-wrap -mx-3 mb-6">
+              <div className="w-full px-3">
+                <label className="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" htmlFor="grid-password">
                   Mensagem
                 </label>
                 <textarea className="no-resize appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white focus:border-gray-500 h-48 resize-none" name="message" id="message"></textarea>
               </div>
             </div>
-            <div class="md:flex md:items-center">
-              <div class="md:w-1/3">
-                <button value="Submit" type="submit" class="shadow bg-primaryBlue hover:opacity-90 focus:shadow-outline focus:outline-none text-white font-bold py-2 px-4 rounded">
+            <div className="md:flex md:items-center">
+              <div className="md:w-1/3">
+                <button value="Send" type="submit" className="shadow bg-primaryBlue hover:opacity-90 focus:shadow-outline focus:outline-none text-white font-bold py-2 px-4 rounded">
                   Enviar
                 </button>
               </div>
-              <div class="md:w-2/3"></div>
+              <div className="md:w-2/3"></div>
             </div>
             </form>
           </div>
