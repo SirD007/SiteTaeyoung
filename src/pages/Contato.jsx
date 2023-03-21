@@ -59,7 +59,8 @@ const testimonials = [
   })();
   
   window.onload = function() {
-    document.getElementById('contact-form-contact').addEventListener('submit', function(event) {
+    const contactForm = document.querySelector('#contact-form-contact')
+    contactForm.addEventListener('submit', function(event) {
         event.preventDefault();
         this.contact_number.value = Math.random() * 100000 | 0;
         emailjs.sendForm('service_6x6vau6', 'template_w4u8bjd', this)
