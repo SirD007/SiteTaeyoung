@@ -1,5 +1,7 @@
 import {React, useState} from 'react';
 
+import emailjs from 'emailjs-com';
+
 import HeaderMenu from '../components/HeaderMenu'
 import SiteFooter from '../components/SiteFooter'
 import CustomBtn from '../components/CustomBtn';
@@ -46,10 +48,6 @@ function reveal() {
     }
   }
 }
-
-(function() {
-  emailjs.init('USqTm3JvB2hwQSF7J');
-})();
 
 window.onload = function() {
   const HomeContactForm = document.getElementById('contact-form')

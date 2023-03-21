@@ -1,5 +1,7 @@
 import {React, useState} from 'react';
 
+import emailjs from 'emailjs-com';
+
 import { Carousel } from 'react-responsive-carousel';
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 
@@ -53,22 +55,42 @@ const testimonials = [
         text: 'O sucesso da Taeyoung é resultado de um esforço conjunto de toda uma equipe engajada a superar os desafios que aparecem no dia a dia'
     },
 ];
-  
-    function SubmitContact() {    
-        const contactForm2 = document.getElementById('contact-form-contact')
-        contactForm2?.addEventListener('submit', function(event) {
-            event.preventDefault();
-            this.contact_number.value = Math.random() * 100000 | 0;
-            emailjs.sendForm('service_6x6vau6', 'template_w4u8bjd', this)
-                .then(function() {
-                    console.log('SUCCESS!');
-                }, function(error) {
-                    console.log('FAILED...', error);
-                });
-        });
-      };
 
-    SubmitContact()
+(function() {
+  emailjs.init('USqTm3JvB2hwQSF7J');
+})();
+
+const sendEmail = (e) => {
+    e.preventDefault();
+  
+    // let formContact = document.getElementById('contact-form-contact')
+    // formContact?.addEventListener('submit', function(e){
+    //     e.preventDefault
+    // })
+
+    // formContact?.addEventListener('submit', function(){
+    //     console.log("submit")
+    // })
+
+    // function Submitontact() {
+    //     // var contactNumber = document.getElementById('contact_number')
+    //         // contactNumber.value = Math.random() * 100000 | 0;
+    //         emailjs.sendForm('service_6x6vau6', 'template_w4u8bjd', formContact)
+    //             .then(function() {
+    //                 console.log('SUCCESS!');
+    //             }, function(error) {
+    //                 console.log('FAILED...', error);
+    //             });
+    //     }
+    const formContact = document.getElementById('contact-form-contact')
+
+    emailjs.sendForm('service_6x6vau6', 'template_w4u8bjd', formContact)
+    .then((result) => {
+        console.log(result.text);
+    }, (error) => {
+        console.log(error.text);
+    });
+}
 
 const Contato = () => {
     return (
@@ -88,7 +110,7 @@ const Contato = () => {
                 </div>
 
                 <div className='bg-white p-10 shadow-xl rounded relative max-md:left-0 max-md:w-3/4 left-[-10%] w-1/2 max-md:items-center'>
-                    <form id='contact-form-contact' className="mt-10">
+                    <form onSubmit={sendEmail} id='contact-form-contact' className="mt-10">
                         <div className="flex flex-wrap -mx-3 mb-6">
                         <div className="w-full px-3">
                             <label className="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" htmlFor="sector">
@@ -105,7 +127,7 @@ const Contato = () => {
                         </div>
                         <div className="flex flex-wrap -mx-3 mb-6">
                         <div className="w-full md:w-1/2 px-3 mb-6 md:mb-0">
-                        <input type="hidden" name="contact_number"></input>
+                        <input type="hidden" id='contact_numbers' name="contact_number"></input>
                             <label className="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" htmlFor="grid-first-name">
                             Primeiro Nome
                             </label>
