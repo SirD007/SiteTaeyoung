@@ -63,32 +63,24 @@ const testimonials = [
 const sendEmail = (e) => {
     e.preventDefault();
   
-    // let formContact = document.getElementById('contact-form-contact')
-    // formContact?.addEventListener('submit', function(e){
-    //     e.preventDefault
-    // })
-
-    // formContact?.addEventListener('submit', function(){
-    //     console.log("submit")
-    // })
-
-    // function Submitontact() {
-    //     // var contactNumber = document.getElementById('contact_number')
-    //         // contactNumber.value = Math.random() * 100000 | 0;
-    //         emailjs.sendForm('service_6x6vau6', 'template_w4u8bjd', formContact)
-    //             .then(function() {
-    //                 console.log('SUCCESS!');
-    //             }, function(error) {
-    //                 console.log('FAILED...', error);
-    //             });
-    //     }
     const formContact = document.getElementById('contact-form-contact')
+
+    const Form_user_name = document.getElementsByName('contact-form')
+    const Form_user_email = document.getElementsByName('contact-form')
+    const Form_message = document.getElementsByName('contact-form')
+
+    const confirmMsg = document.getElementById('confirmMsg')
 
     emailjs.sendForm('service_6x6vau6', 'template_w4u8bjd', formContact)
     .then((result) => {
-        console.log(result.text);
+        confirmMsg.innerText="Fomulário enviado, entraremos em contato em breve!";
+        confirmMsg.classList.add('text-green-600');
+        Form_user_name.value=""
+        Form_user_email.value=""
+        Form_message.value=""
     }, (error) => {
-        console.log(error.text);
+        confirmMsg.innerText="Algo deu errado, tente novamente";
+        confirmMsg.classList.add('text-red-600');
     });
 }
 
@@ -169,9 +161,9 @@ const Contato = () => {
                             <button value="Submit" type="submit" className="shadow bg-primaryBlue hover:opacity-90 focus:shadow-outline focus:outline-none text-white font-bold py-2 px-4 rounded">
                             Enviar
                             </button>
+                        </div>                        
                         </div>
-                        <div className="md:w-2/3"></div>
-                        </div>
+                        <div id='confirmMsg' className="md:w-2/3"></div>
                     </form>
                 </div>
             </div>

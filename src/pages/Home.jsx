@@ -50,15 +50,28 @@ function reveal() {
 }
 
 window.onload = function() {
+
   const HomeContactForm = document.getElementById('contact-form')
+
+  const Form_user_name = document.getElementsByName('contact-form')
+  const Form_user_email = document.getElementsByName('contact-form')
+  const Form_message = document.getElementsByName('contact-form')
+
+  const confirmMsg = document.getElementById('confirmMsg')
+  
   HomeContactForm?.addEventListener('submit', function(event) {
       event.preventDefault();
             this.contact_number.value = Math.random() * 100000 | 0;
             emailjs.sendForm('service_6x6vau6', 'template_e5fkveu', this)
           .then(function() {
-              console.log('SUCCESS!');
+            confirmMsg.innerText="Fomulário enviado, entraremos em contato em breve!";
+            confirmMsg.classList.add('text-green-600');
+            Form_user_name.value=""
+            Form_user_email.value=""
+            Form_message.value=""
           }, function(error) {
-              console.log('FAILED...', error);
+            confirmMsg.innerText="Algo deu errado, tente novamente";
+            confirmMsg.classList.add('text-red-600');
           });
   });
 }
@@ -395,8 +408,8 @@ const Home = () =>{
                   Enviar
                 </button>
               </div>
-              <div className="md:w-2/3"></div>
             </div>
+            <div id='confirmMsg' className="md:w-2/3"></div>
             </form>
           </div>
         
