@@ -59,7 +59,7 @@ const testimonials = [
   })();
   
   window.onload = function() {
-    const contactForm2 = document.querySelector('#contact-form-contact')
+    const contactForm2 = document.getElementById('contact-form-contact')
     contactForm2.addEventListener('submit', function(event) {
         event.preventDefault();
         this.contact_number.value = Math.random() * 100000 | 0;
