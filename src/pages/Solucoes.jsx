@@ -2,7 +2,7 @@ import React from 'react';
 import HeaderMenu from '../components/HeaderMenu';
 import SiteFooter from '../components/SiteFooter';
 
-import { BiShow, BiBookOpen } from "react-icons/bi";
+import { BiShow } from "react-icons/bi";
 import { FaFire, FaCheckDouble, FaLevelUpAlt, FaVolumeMute, FaTape, FaExpandAlt, FaRegThumbsUp } from 'react-icons/fa'
 
 import linhapvc from '../assets/h131.png'
