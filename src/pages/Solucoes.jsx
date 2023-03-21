@@ -39,7 +39,7 @@ const Solucoes = () => {
                 <div className='grid grid-flow-row gap-4 grid-cols-3 max-lg:grid-cols-2 max-sm:grid-cols-1'>
                     {Features.map((value) => {
                         return (
-                            <div key={value.id} className='flex flex-col items-center justify-center gap-4 p-4 rounded-lg shadow-md border-[1px] border-slate-100'>
+                            <div key={value.id} className='flex flex-col items-center justify-center gap-4 p-4 rounded-lg shadow-sm border-[1px] border-slate-100'>
                                 <img className='max-w-[50px]' src={value.imgSrc} alt="cores" />
                             <div className='flex'>
                                 <span className='text-zinc-500 text-center'>{value.text}</span>
