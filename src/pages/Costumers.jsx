@@ -40,6 +40,10 @@ import costumerLogo37 from '../assets/costumerLogo/costumerLogo37.png'
 import costumerLogo38 from '../assets/costumerLogo/costumerLogo38.png'
 import costumerLogo39 from '../assets/costumerLogo/costumerLogo39.png'
 import costumerLogo40 from '../assets/costumerLogo/costumerLogo40.png'
+import costumerLogo41 from '../assets/costumerLogo/costumerLogo41.png'
+import costumerLogo42 from '../assets/costumerLogo/costumerLogo42.png'
+import costumerLogo43 from '../assets/costumerLogo/costumerLogo43.png'
+import costumerLogo44 from '../assets/costumerLogo/costumerLogo44.png'
 import SiteFooter from "../components/SiteFooter";
 
 const autoCostumerLogo = [
@@ -70,7 +74,9 @@ const autoCostumerLogo = [
     {imgSrc:`${costumerLogo25}`},
     {imgSrc:`${costumerLogo26}`},
     {imgSrc:`${costumerLogo27}`},
-    {imgSrc:`${costumerLogo28}`}
+    {imgSrc:`${costumerLogo28}`},
+    {imgSrc:`${costumerLogo41}`},
+    {imgSrc:`${costumerLogo42}`}
 ]
 
 const eletrConstumerLogo = [
@@ -80,7 +86,9 @@ const eletrConstumerLogo = [
     {imgSrc: `${costumerLogo32}`},
     {imgSrc: `${costumerLogo33}`},
     {imgSrc: `${costumerLogo34}`},
-    {imgSrc: `${costumerLogo35}`}
+    {imgSrc: `${costumerLogo35}`},
+    {imgSrc: `${costumerLogo43}`},
+    {imgSrc: `${costumerLogo44}`}
 ]
 
 const motorcycleConstumerLogo = [
