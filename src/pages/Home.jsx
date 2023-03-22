@@ -83,17 +83,6 @@ window.addEventListener("scroll", reveal);
 
 const Home = () =>{
 
-  //  const [modal, setModal] = useState(false);
-  // const [videoLoading, setVideoLoading] = useState(true);
-
-  // const openModal = () => {
-  //   setModal(!modal);
-  // };
-
-  // const spinner = () => {
-  //   setVideoLoading(!videoLoading);
-  // };
-
   return (
     <div>
     <HeaderMenu/>
@@ -112,56 +101,11 @@ const Home = () =>{
               <Link to="/solucoes"><CustomBtn text="Ver Soluções" bgColor="bg-primaryBlue" textColor="text-white"/></Link>
           </div>
 
-      {/* <div className='z-20 max-lg:mt-[150px]'>
-        <button onClick={openModal}>
-        <FaPlayCircle
-            className='cursor-pointer mr-32 max-lg:mr-0'
-            size='10vw'
-            color='#7f292d'
-            />
-          {modal ? (
-            <section className="modal__bg fixed top-0 left-0 w-full h-full bg-[28,28,28,0.19] ease-out transition-[0.3s]">
-              <div className="modal__align flex justify-center items-center h-[100vh]">
-                <div className="modal__content w-[800px] h-[500px] shadow-xl rounded-xl bg-transparent text-white mx-[4rem]" modal={modal}>
-                  <FaReply
-                    className="modal__close bg-white rounded-[50%] cursor-pointer relative bottom-12 w-8 h-8 p-0"
-                    arial-label="Close modal"
-                    onClick={setModal}
-                  />
-                  <div className="modal__video-align flex relative bottom-9">
-                    {videoLoading ? (
-                      <div className="modal__spinner fixed top-1/2 left-1/2 translate-x-[-50%,-50%] animate-spin text-[40px] text-primaryBlue">
-                        <FaSlack
-                          className="modal__spinner-style"
-                          fadeIn="none"
-                        />
-                      </div>
-                    ) : null}
-                    <iframe
-                      className="modal__video-style z-50"
-                      onLoad={spinner}
-                      loading="lazy"
-                      width="800"
-                      height="500"
-                      src="https://www.youtube.com/embed/4UZrsTqkcW4"
-                      title="YouTube video player"
-                      frameBorder="0"
-                      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                      allowfullscreen
-                    ></iframe>
-                  </div>
-                </div>
-              </div>
-            </section>
-          ) : null}
-        </button>
-      </div> */}
-
         </section>
     
         <section className='max-lg:px-[10%] px-[20%] flex justify-between items-center'>
 
-            <div className='shadow-lg rounded-lg bg-white mt-[-150px] grid-cols-3 grid z-10 max-lg:flex flex-col-reverse'>
+            <div className='shadow-lg rounded-lg bg-white grid-cols-3 grid z-10 max-lg:flex flex-col-reverse'>
               <div className='max-sm:flex max-sm:flex-col grid-cols-2 grid gap-4 p-10 col-span-2 items-center'>
 
                 <div className='flex gap-4 group items-start'>
