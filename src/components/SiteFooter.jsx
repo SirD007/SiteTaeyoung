@@ -24,16 +24,13 @@ export default function SiteFooter() {
                         <div className="flex flex-col">
                             <Link
                             className="text-white hover:text-primaryBlue transition-all"
-                            to="/empresa">Taeyoung Tape</Link>
+                            to="/products">Linha PVC</Link>
                             <Link
                             className="text-white hover:text-primaryBlue transition-all"
-                            to="/empresa">Maskpro</Link>
+                            to="/products">Linha </Link>
                             <Link
                             className="text-white hover:text-primaryBlue transition-all"
-                            to="/empresa">Doowon</Link>
-                            <Link
-                            className="text-white hover:text-primaryBlue transition-all"
-                            to="/empresa">Monstrosol</Link>
+                            to="/products">Doowon</Link>
                         </div>                        
                     </div>
 

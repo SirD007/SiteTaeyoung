@@ -7,6 +7,13 @@ import d193 from '../assets/h131.png'
 import f1915bk from '../assets/tapes/F1915BK.png'
 import pet from '../assets/tapes/pet.png'
 import r800 from '../assets/r800.png'
+import H131datasheet from '../assets/datasheet/H131datasheet.pdf'
+import S153datasheet from '../assets/datasheet/S153datasheet.pdf'
+import EG1920BK10datasheet from '../assets/datasheet/EG1920BK10datasheet.pdf'
+import EG1920BK13datasheet from '../assets/datasheet/EG1920BK13datasheet.pdf'
+import D1920BK193datasheet from '../assets/datasheet/D1920BK193datasheet.pdf'
+import U1915BK20datasheet from '../assets/datasheet/U1915BK20datasheet.pdf'
+import F1915BK50Bdatasheet from '../assets/datasheet/F1915BK50Bdatasheet.pdf'
 
 
 export default [
@@ -28,7 +35,7 @@ export default [
       cores: [
         "bg-black" 
       ],
-      downloadLink:"../src/assets/datasheet/H131datasheet.pdf",
+      downloadLink:`${H131datasheet}`,
       vant: [
         "Efeito de redução de ruído muito alto e superfície",
         "Extremamente Macia",
@@ -67,7 +74,7 @@ export default [
         "bg-red-700",
         "bg-emerald-300"
       ],
-      downloadLink:"../src/assets/datasheet/H131datasheet.pdf",
+      downloadLink:`${H131datasheet}`,
       vant: [
         "Efeito de redução de ruído muito alto e superfície",
         "Extremamente Macia",
@@ -101,7 +108,7 @@ export default [
         "bg-red-700",
         "bg-black"
       ],
-      downloadLink:"../src/assets/datasheet/S153datasheet.pdf",
+      downloadLink:`${S153datasheet}`,
       vant: [
         "Efeito de redução de ruído muito alto e superfície",
         "Extremamente Macia",
@@ -129,7 +136,7 @@ export default [
       cores: [
         "bg-black"
       ],
-      downloadLink:"../src/assets/datasheet/EG1920BK10datasheet.pdf",
+      downloadLink:`${EG1920BK10datasheet}`,
       vant: [
         "Efeito de redução de ruído muito alto e superfície",
         "Extremamente Macia",
@@ -157,7 +164,7 @@ export default [
       cores: [
         "bg-black"
       ],
-      downloadLink:"../src/assets/datasheet/EG1920BK13datasheet.pdf",
+      downloadLink:`${EG1920BK13datasheet}`,
       vant: [
         "Efeito de redução de ruído muito alto e superfície",
         "Extremamente Macia",
@@ -185,7 +192,7 @@ export default [
       cores: [
         "bg-black"
       ],
-      downloadLink:"../src/assets/datasheet/D1920BK193datasheet.pdf",
+      downloadLink:`${D1920BK193datasheet}`,
       vant: [
         "Efeito de redução de ruído muito alto e superfície",
         "Extremamente Macia",
@@ -214,7 +221,7 @@ export default [
         "bg-black",
         "bg-orange-600"
       ],
-      downloadLink:"../src/assets/datasheet/U1915BK20datasheet.pdf",
+      downloadLink:`${U1915BK20datasheet}`,
       vant: [
         "Redução de ruído",
         "Resistência ao tempo",
@@ -242,7 +249,7 @@ export default [
       cores: [
         "bg-black"
       ],
-      downloadLink:"../src/assets/datasheet/F1915BK50Bdatasheet.pdf",
+      downloadLink:`${F1915BK50Bdatasheet}`,
       vant: [
         "Efeito de redução de ruído muito alto e superfície",
         "Extremamente Macia",
