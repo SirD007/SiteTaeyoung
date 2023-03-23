@@ -47,11 +47,11 @@ import costumerLogo44 from '../assets/costumerLogo/costumerLogo44.png'
 import SiteFooter from "../components/SiteFooter";
 
 const autoCostumerLogo = [
+    {imgSrc:`${costumerLogo41}`},
+    {imgSrc:`${costumerLogo42}`},
     {imgSrc:`${costumerLogo1}`},
     {imgSrc:`${costumerLogo2}`},
     {imgSrc:`${costumerLogo3}`},
-    {imgSrc:`${costumerLogo4}`},
-    {imgSrc:`${costumerLogo5}`},
     {imgSrc:`${costumerLogo6}`},
     {imgSrc:`${costumerLogo7}`},
     {imgSrc:`${costumerLogo8}`},
@@ -75,20 +75,20 @@ const autoCostumerLogo = [
     {imgSrc:`${costumerLogo26}`},
     {imgSrc:`${costumerLogo27}`},
     {imgSrc:`${costumerLogo28}`},
-    {imgSrc:`${costumerLogo41}`},
-    {imgSrc:`${costumerLogo42}`}
+    {imgSrc: `${costumerLogo44}`},
+    {imgSrc:`${costumerLogo4}`},
+    {imgSrc:`${costumerLogo5}`},
 ]
 
 const eletrConstumerLogo = [
+    {imgSrc: `${costumerLogo43}`},
     {imgSrc: `${costumerLogo29}`},
     {imgSrc: `${costumerLogo30}`},
+    {imgSrc: `${costumerLogo34}`},
     {imgSrc: `${costumerLogo31}`},
     {imgSrc: `${costumerLogo32}`},
     {imgSrc: `${costumerLogo33}`},
-    {imgSrc: `${costumerLogo34}`},
     {imgSrc: `${costumerLogo35}`},
-    {imgSrc: `${costumerLogo43}`},
-    {imgSrc: `${costumerLogo44}`}
 ]
 
 const motorcycleConstumerLogo = [
