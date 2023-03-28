@@ -21,7 +21,7 @@ export default function Linhapvc() {
                         return (
                                 <div className="w-full">
                                     <div key={index} className="flex items-center shadow-lg group hover:scale-105 transition-all rounded-xl w-full">
-                                        <div className="bg-slate-100 group-hover:bg-primaryRose transition-all h-72 w-1/3 flex items-center relative rounded-l-xl"><img className="object-cover absolute" src={product.imgSrc} alt={product.SKU} /></div>
+                                        <div className="bg-slate-100 group-hover:bg-primaryRose transition-all h-72 w-1/3 flex items-center justify-center relative rounded-l-xl"><img className="object-cover absolute" src={product.imgSrc} alt={product.SKU} /></div>
                                         <div className="bg-slate-50 group-hover:bg-white h-72 w-2/3 p-8 flex flex-col justify-between relative rounded-r-xl">
                                         {product.roHS ? (
                                                 <div className="absolute right-4 top-[-5px] w-10 h-14 bg-green-500 rounded-b-md justify-center items-center flex"><img src={rohscert} alt="rohs" /></div>
@@ -56,7 +56,7 @@ export default function Linhapvc() {
                         return (
                                 <div className="w-full">
                                     <div key={index} className="flex items-center shadow-lg group hover:scale-105 transition-all rounded-xl w-full">
-                                        <div className="bg-slate-100 group-hover:bg-primaryRose transition-all h-72 w-1/3 flex items-center relative rounded-l-xl"><img className="object-cover absolute" src={product.imgSrc} alt={product.SKU} /></div>
+                                        <div className="bg-slate-100 group-hover:bg-primaryRose transition-all h-72 w-1/3 flex items-center justify-center relative rounded-l-xl"><img className="object-cover absolute" src={product.imgSrc} alt={product.SKU} /></div>
                                         <div className="bg-slate-50 group-hover:bg-white h-72 w-2/3 p-8 flex flex-col justify-between relative rounded-r-xl">
                                         {product.roHS ? (
                                                 <div className="absolute right-4 top-[-5px] w-10 h-14 bg-green-500 rounded-b-md justify-center items-center flex"><img src={rohscert} alt="rohs" /></div>
@@ -91,7 +91,7 @@ export default function Linhapvc() {
                         return (
                                 <div className="w-full">
                                     <div key={index} className="flex items-center shadow-lg group hover:scale-105 transition-all rounded-xl w-full">
-                                        <div className="bg-slate-100 group-hover:bg-primaryRose transition-all h-72 w-1/3 flex items-center relative rounded-l-xl"><img className="object-cover absolute" src={product.imgSrc} alt={product.SKU} /></div>
+                                        <div className="bg-slate-100 group-hover:bg-primaryRose transition-all h-72 w-1/3 flex items-center justify-center relative rounded-l-xl"><img className="object-cover absolute" src={product.imgSrc} alt={product.SKU} /></div>
                                         <div className="bg-slate-50 group-hover:bg-white h-72 w-2/3 p-8 flex flex-col justify-between relative rounded-r-xl">
                                             {product.roHS ? (
                                                 <div className="absolute right-4 top-[-5px] w-10 h-14 bg-green-500 rounded-b-md justify-center items-center flex"><img src={rohscert} alt="rohs" /></div>
@@ -126,7 +126,7 @@ export default function Linhapvc() {
                         return (
                                 <div className="w-full">
                                     <div key={index} className="flex items-center shadow-lg group hover:scale-105 transition-all rounded-xl w-full">
-                                        <div className="bg-slate-100 group-hover:bg-primaryRose transition-all h-72 w-1/3 flex items-center relative rounded-l-xl"><img className="object-cover absolute" src={product.imgSrc} alt={product.SKU} /></div>
+                                        <div className="bg-slate-100 group-hover:bg-primaryRose transition-all h-72 w-1/3 flex items-center justify-center relative rounded-l-xl"><img className="object-cover absolute" src={product.imgSrc} alt={product.SKU} /></div>
                                         <div className="bg-slate-50 group-hover:bg-white h-72 w-2/3 p-8 flex flex-col justify-between relative rounded-r-xl">
                                             {product.roHS ? (
                                                 <div className="absolute right-4 top-[-5px] w-10 h-14 bg-green-500 rounded-b-md justify-center items-center flex"><img src={rohscert} alt="rohs" /></div>
