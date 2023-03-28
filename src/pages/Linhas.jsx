@@ -5,6 +5,7 @@ import eg10 from '../assets/h131.png'
 import eg13 from '../assets/h131.png'
 import d193 from '../assets/h131.png'
 import f1915bk from '../assets/tapes/F1915BK.png'
+import silvertape from '../assets/tapes/silvertape.png'
 import pet from '../assets/tapes/pet.png'
 import r800 from '../assets/r800.png'
 import H131datasheet from '../assets/datasheet/H131datasheet.pdf'
@@ -285,6 +286,31 @@ export default [
         "Flexível e fácil de manusear",
         "Resistência a altas temperaturas",
         "Livre de substâncias críticas",
+      ]
+    },
+    {
+      id: "10",
+      imgSrc: `${silvertape}`,
+      ref: "L5050BK300",
+      SKU: "L300",
+      description: "Fita constituída de um tecido de algodão coberto por uma película de polietileno. Esta composição lhes dá características especiais tais como: Impermeabilidade,Resistência mecânica, Facilidade ao rasgamento manual, Alta conformabilidade.",
+      composition: "Algodão e Polietileno",
+      tempClass: "Auto Extinguível",
+      AdesAço: "3.9N/cm (760gf/19mm)",
+      AdesDorso: "3.9N/cm (760gf/19mm)",
+      ResisTraç: "3.9N/cm (750kgf/19mm)",
+      Along: "15%",
+      ResistChama: "Auto Extinguível",
+      Utility: "Segmento náutico, Esportes, Indústria de refrigeração, Aplicações domésticas, Fechamento de embalagens pesadas, Aplicações onde é necessário alta resistência, tração e ótima adesão.",
+      cores: [
+        "bg-black" 
+      ],
+      downloadLink:"",
+      vant: [
+        "Impermeabilidade",
+        "Resistência mecânica",
+        "Facilidade ao rasgamento manual",
+        "Alta conformabilidade",
       ]
     },
   ]
