@@ -14,32 +14,10 @@ function ProductDetail() {
     return (
         <div>
             <HeaderMenu/>
-            <div key={productId} className="px-[10%] h-screen w-screen bg-gray-900 flex relative justify-center items-center">
-                <div className="bg-slate-800 w-[90%] h-28 shadow-2xl rounded-lg absolute bottom-16 z-50 flex justify-between items-center">
-                    <Link className="text-red-700 font-semibold text-lg bg-red-300 hover:bg-red-400 p-2 rounded transition-all flex items-center justify-center w-26 h-20 m-4" to="/products">← Voltar</Link>
-                    <div>
-                        <span className="text-white">Cores</span>
-                        <div className="flex gap-2">
-                            {thisProduct.cores.map((cores, index) => {
-                                return (
-                                    <div key={index} className={`${cores} w-5 h-5 rounded-[50%] border-2`}></div>
-                                )
-                            })}
-                        </div>
-                    </div>
-                    <div className="h-full w-[50%] px-6 flex flex-col justify-center">
-                        <span className="text-white">Utilizado em</span>
-                        <span className="text-white text-sm">{thisProduct.Utility}</span>
-                    </div>
-                            {thisProduct.downloadLink ? (
-                                <Link to={thisProduct.downloadLink} download target="_blank" className="text-green-700 font-semibold text-lg bg-green-300 hover:bg-green-400 p-2 rounded transition-all flex items-center justify-center w-26 h-20 m-4">Baixar datasheet</Link>
-                            ) : (
-                                <Link disable className="cursor-default text-green-700 font-semibold text-lg bg-green-300 p-2 rounded transition-all flex items-center justify-center w-26 h-20 m-4">Datasheet Indisponível</Link>
-                            )}                              
-                </div>
-                <div className="w-screen h-screen grid grid-cols-3 justify-center items-center relative">
-                    <div className="p-10">
-                        <img src={thisProduct.imgSrc} alt="" />
+            <div key={productId} className="px-[10%] h-screen w-screen bg-gray-900 flex flex-col relative justify-center items-center">
+                <div className="w-screen grid grid-cols-3 justify-center items-center relative px-[10%]">
+                    <div className="p-10 flex items-center justify-center">
+                        <img src={thisProduct.imgSrc} alt="" className="" />
                     </div>
                     <div className="flex flex-col p-10">
                         <div>
@@ -89,6 +67,28 @@ function ProductDetail() {
                             </div>
                         </div>
                     </div>
+                </div>
+                <div className="bg-slate-800 w-[90%] p-2 shadow-2xl rounded-lg z-50 flex justify-between items-center">
+                    <Link className="text-red-700 font-semibold text-lg bg-red-300 hover:bg-red-400 p-2 rounded transition-all flex items-center justify-center w-26 h-20 m-4" to="/products">← Voltar</Link>
+                    <div>
+                        <span className="text-white">Cores</span>
+                        <div className="flex gap-2">
+                            {thisProduct.cores.map((cores, index) => {
+                                return (
+                                    <div key={index} className={`${cores} w-5 h-5 rounded-[50%] border-2`}></div>
+                                )
+                            })}
+                        </div>
+                    </div>
+                    <div className="h-full w-[50%] px-6 flex flex-col justify-center">
+                        <span className="text-white">Utilizado em</span>
+                        <span className="text-white text-sm">{thisProduct.Utility}</span>
+                    </div>
+                            {thisProduct.downloadLink ? (
+                                <Link to={thisProduct.downloadLink} download target="_blank" className="text-green-700 font-semibold text-lg bg-green-300 hover:bg-green-400 p-2 rounded transition-all flex items-center justify-center w-26 h-20 m-4">Baixar datasheet</Link>
+                            ) : (
+                                <Link disable className="cursor-default text-green-700 font-semibold text-lg bg-green-300 p-2 rounded transition-all flex items-center justify-center w-26 h-20 m-4">Datasheet Indisponível</Link>
+                            )}                              
                 </div>
             </div>
         </div>
