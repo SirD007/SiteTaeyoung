@@ -14,7 +14,7 @@ function ProductDetail() {
     return (
         <div>
             <HeaderMenu/>
-            <div key={productId} className="px-[10%] h-screen w-screen bg-gray-900 flex flex-col relative justify-center items-center">
+            <div key={productId} className="px-[10%] h-screen w-screen bg-gray-900 flex flex-col relative justify-evenly items-center">
                 <div className="w-screen grid grid-cols-3 justify-center items-center relative px-[10%]">
                     <div className="p-10 flex items-center justify-center">
                         <img src={thisProduct.imgSrc} alt="" className="" />
@@ -75,7 +75,9 @@ function ProductDetail() {
                         <div className="flex gap-2">
                             {thisProduct.cores.map((cores, index) => {
                                 return (
-                                    <div key={index} className={`${cores} w-5 h-5 rounded-[50%] border-2`}></div>
+                                    <div key={index} className={`${cores} w-5 h-5 rounded-[50%] border-2 cursor-pointer group relative`}>
+                                        <span className="bg-zinc-100 p-1 rounded hidden group-hover:flex absolute left-6 z-10 text-xs min-w-max">{cores}</span>
+                                    </div>
                                 )
                             })}
                         </div>
