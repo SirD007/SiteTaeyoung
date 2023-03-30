@@ -20,9 +20,9 @@ export default function Linhapvc() {
                         {Linhas.slice(0,6).map((product, index) => {
                         return (
                                 <div className="w-full">
-                                    <div key={index} className="flex items-center shadow-lg group hover:scale-105 transition-all rounded-xl w-full">
-                                        <div className="bg-slate-100 group-hover:bg-primaryRose transition-all h-72 w-1/3 flex items-center justify-center relative rounded-l-xl"><img className="object-cover absolute" src={product.imgSrc} alt={product.SKU} /></div>
-                                        <div className="bg-slate-50 group-hover:bg-white h-72 w-2/3 p-8 flex flex-col justify-between relative rounded-r-xl">
+                                    <div key={index} className="flex items-center shadow-lg group/item hover:scale-105 transition-all rounded-xl w-full">
+                                        <div className="bg-slate-100 group-hover/item:bg-primaryRose transition-all h-72 w-1/3 flex items-center justify-center relative rounded-l-xl"><img className="object-cover absolute" src={product.imgSrc} alt={product.SKU} /></div>
+                                        <div className="bg-slate-50 group-hover/item:bg-white h-72 w-2/3 p-8 flex flex-col justify-between relative rounded-r-xl">
                                         {product.roHS ? (
                                                 <div className="absolute right-4 top-[-5px] w-10 h-14 bg-green-500 rounded-b-md justify-center items-center flex"><img src={rohscert} alt="rohs" /></div>
                                             ) : (
@@ -35,7 +35,9 @@ export default function Linhapvc() {
                                                 <span className="text-sm font-bold">Cores:</span>
                                                 <div className="flex-wrap flex w-full gap-2">
                                                     {product.cores.map((product, index) => {
-                                                            return (<div key={index} className={`${product} w-5 h-5 rounded-[50%] border-2`}></div>)
+                                                            return (<div key={index} className={`${product.color} w-5 h-5 rounded-[50%] border-2 group relative`}>
+                                                                <span className="bg-zinc-100 p-1 rounded hidden group-hover:flex absolute bottom-6 z-10 text-xs min-w-max">{product.colorName}</span>
+                                                            </div>)
                                                     })}
                                                 </div>
                                             </div>
@@ -55,9 +57,9 @@ export default function Linhapvc() {
                         {Linhas.slice(6,8).map((product, index) => {
                         return (
                                 <div className="w-full">
-                                    <div key={index} className="flex items-center shadow-lg group hover:scale-105 transition-all rounded-xl w-full">
-                                        <div className="bg-slate-100 group-hover:bg-primaryRose transition-all h-72 w-1/3 flex items-center justify-center relative rounded-l-xl"><img className="object-cover absolute" src={product.imgSrc} alt={product.SKU} /></div>
-                                        <div className="bg-slate-50 group-hover:bg-white h-72 w-2/3 p-8 flex flex-col justify-between relative rounded-r-xl">
+                                    <div key={index} className="flex items-center shadow-lg group/item hover:scale-105 transition-all rounded-xl w-full">
+                                        <div className="bg-slate-100 group-hover/item:bg-primaryRose transition-all h-72 w-1/3 flex items-center justify-center relative rounded-l-xl"><img className="object-cover absolute" src={product.imgSrc} alt={product.SKU} /></div>
+                                        <div className="bg-slate-50 group-hover/item:bg-white h-72 w-2/3 p-8 flex flex-col justify-between relative rounded-r-xl">
                                         {product.roHS ? (
                                                 <div className="absolute right-4 top-[-5px] w-10 h-14 bg-green-500 rounded-b-md justify-center items-center flex"><img src={rohscert} alt="rohs" /></div>
                                             ) : (
@@ -70,7 +72,9 @@ export default function Linhapvc() {
                                                 <span className="text-sm font-bold">Cores:</span>
                                                 <div className="flex-wrap flex w-full gap-2">
                                                     {product.cores.map((product, index) => {
-                                                            return (<div key={index} className={`${product} w-5 h-5 rounded-[50%] border-2`}></div>)
+                                                            return (<div key={index} className={`${product.color} w-5 h-5 rounded-[50%] border-2 group relative`}>
+                                                                <span className="bg-zinc-100 p-1 rounded hidden group-hover:flex absolute bottom-6 z-10 text-xs min-w-max">{product.colorName}</span>
+                                                            </div>)
                                                     })}
                                                 </div>
                                             </div>
@@ -90,9 +94,9 @@ export default function Linhapvc() {
                         {Linhas.slice(8,9).map((product, index) => {
                         return (
                                 <div className="w-full">
-                                    <div key={index} className="flex items-center shadow-lg group hover:scale-105 transition-all rounded-xl w-full">
-                                        <div className="bg-slate-100 group-hover:bg-primaryRose transition-all h-72 w-1/3 flex items-center justify-center relative rounded-l-xl"><img className="object-cover absolute" src={product.imgSrc} alt={product.SKU} /></div>
-                                        <div className="bg-slate-50 group-hover:bg-white h-72 w-2/3 p-8 flex flex-col justify-between relative rounded-r-xl">
+                                    <div key={index} className="flex items-center shadow-lg group/item hover:scale-105 transition-all rounded-xl w-full">
+                                        <div className="bg-slate-100 group-hover/item:bg-primaryRose transition-all h-72 w-1/3 flex items-center justify-center relative rounded-l-xl"><img className="object-cover absolute" src={product.imgSrc} alt={product.SKU} /></div>
+                                        <div className="bg-slate-50 group-hover/item:bg-white h-72 w-2/3 p-8 flex flex-col justify-between relative rounded-r-xl">
                                             {product.roHS ? (
                                                 <div className="absolute right-4 top-[-5px] w-10 h-14 bg-green-500 rounded-b-md justify-center items-center flex"><img src={rohscert} alt="rohs" /></div>
                                             ) : (
@@ -105,7 +109,9 @@ export default function Linhapvc() {
                                                 <span className="text-sm font-bold">Cores:</span>
                                                 <div className="flex-wrap flex w-full gap-2">
                                                     {product.cores.map((product, index) => {
-                                                            return (<div key={index} className={`${product} w-5 h-5 rounded-[50%] border-2`}></div>)
+                                                            return (<div key={index} className={`${product.color} w-5 h-5 rounded-[50%] border-2 group relative`}>
+                                                                <span className="bg-zinc-100 p-1 rounded hidden group-hover:flex absolute bottom-6 z-10 text-xs min-w-max">{product.colorName}</span>
+                                                            </div>)
                                                     })}
                                                 </div>
                                             </div>
@@ -125,9 +131,9 @@ export default function Linhapvc() {
                         {Linhas.slice(9).map((product, index) => {
                         return (
                                 <div className="w-full">
-                                    <div key={index} className="flex items-center shadow-lg group hover:scale-105 transition-all rounded-xl w-full">
-                                        <div className="bg-slate-100 group-hover:bg-primaryRose transition-all h-72 w-1/3 flex items-center justify-center relative rounded-l-xl"><img className="object-cover absolute" src={product.imgSrc} alt={product.SKU} /></div>
-                                        <div className="bg-slate-50 group-hover:bg-white h-72 w-2/3 p-8 flex flex-col justify-between relative rounded-r-xl">
+                                    <div key={index} className="flex items-center shadow-lg group/item hover:scale-105 transition-all rounded-xl w-full">
+                                        <div className="bg-slate-100 group-hover/item:bg-primaryRose transition-all h-72 w-1/3 flex items-center justify-center relative rounded-l-xl"><img className="object-cover absolute" src={product.imgSrc} alt={product.SKU} /></div>
+                                        <div className="bg-slate-50 group-hover/item:bg-white h-72 w-2/3 p-8 flex flex-col justify-between relative rounded-r-xl">
                                             {product.roHS ? (
                                                 <div className="absolute right-4 top-[-5px] w-10 h-14 bg-green-500 rounded-b-md justify-center items-center flex"><img src={rohscert} alt="rohs" /></div>
                                             ) : (
@@ -140,7 +146,9 @@ export default function Linhapvc() {
                                                 <span className="text-sm font-bold">Cores:</span>
                                                 <div className="flex-wrap flex w-full gap-2">
                                                     {product.cores.map((product, index) => {
-                                                            return (<div key={index} className={`${product} w-5 h-5 rounded-[50%] border-2`}></div>)
+                                                            return (<div key={index} className={`${product} w-5 h-5 rounded-[50%] border-2 group relative`}>
+                                                                 <span className="bg-zinc-100 p-1 rounded hidden group-hover:flex absolute bottom-6 z-10 text-xs min-w-max">{product.colorName}</span>
+                                                            </div>)
                                                     })}
                                                 </div>
                                             </div>

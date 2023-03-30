@@ -75,8 +75,8 @@ function ProductDetail() {
                         <div className="flex gap-2">
                             {thisProduct.cores.map((cores, index) => {
                                 return (
-                                    <div key={index} className={`${cores} w-5 h-5 rounded-[50%] border-2 cursor-pointer group relative`}>
-                                        <span className="bg-zinc-100 p-1 rounded hidden group-hover:flex absolute left-6 z-10 text-xs min-w-max">{cores}</span>
+                                    <div key={index} className={`${cores.color} w-5 h-5 rounded-[50%] border-2 cursor-pointer group relative`}>
+                                        <span className="bg-zinc-100 p-1 rounded hidden group-hover:flex absolute bottom-6 z-10 text-xs min-w-max">{cores.colorName}</span>
                                     </div>
                                 )
                             })}

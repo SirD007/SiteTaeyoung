@@ -34,7 +34,7 @@ export default [
       Utility: "Fábrica de chicote, Montadoras e Concessionários Automotivos, Oficinas mecânicas, Loja de som, e uso geral domésticos.",
       roHS: "Cd, Pb, Hg, Cr6+, PBDEs, PBBs Free",
       cores: [
-        "bg-black" 
+        {color:"bg-black", colorName: "Preto"} 
       ],
       downloadLink:`${H131datasheet}`,
       vant: [
@@ -62,18 +62,18 @@ export default [
       Utility: "Fábrica de chicote, Montadoras e Concessionários Automotivos, Oficinas mecânicas, Loja de som, e uso geral domésticos. Distinção de chicotes por seguimentos (partes especiais como Air-bag) Agrupamento e marcação dos cabos (iluminação, instalaçao de som) Instalação de Telecomunicação entre outros. Bigua, Dic som e outras distribuidoras de Som e Acessórios Automotivos",
       roHS: "Cd, Pb, Hg, Cr6+, PBDEs, PBBs Free",
       cores: [
-        "bg-teal-700",
-        "bg-violet-800",
-        "bg-rose-400",
-        "bg-amber-900",
-        "bg-orange-500",
-        "bg-stone-400",
-        "bg-blue-600",
-        "bg-sky-400",
-        "bg-white",
-        "bg-yellow-500",
-        "bg-red-700",
-        "bg-emerald-300"
+        {color:"bg-teal-700", colorName:"Verde Escuro"},
+        {color:"bg-violet-800", colorName:"Violeta"},
+        {color:"bg-rose-400", colorName:"Rosa"},
+        {color:"bg-amber-900", colorName:"Marsala"},
+        {color:"bg-orange-500", colorName:"Laranja"},
+        {color:"bg-stone-400", colorName:"Cinza"},
+        {color:"bg-blue-600", colorName: "Azul Escuro"},
+        {color:"bg-sky-400", colorName: "Azul Claro"},
+        {color:"bg-white", colorName: "Branco"},
+        {color:"bg-yellow-500", colorName: "Amarelo"},
+        {color:"bg-red-700", colorName: "Vermelho"},
+        {color:"bg-emerald-300", colorName: "Verde Claro"}
       ],
       downloadLink:`${H131datasheet}`,
       vant: [
@@ -101,13 +101,13 @@ export default [
       Utility: "Fábrica de chicote, Montadoras e Concessionários Automotivos, Oficinas mecânicas, Loja de som, e uso geral domésticos.",
       roHS: "Cd, Pb, Hg, Cr6+, PBDEs, PBBs Free",
       cores: [
-        "bg-teal-700",
-        "bg-stone-400",
-        "bg-blue-600",
-        "bg-white",
-        "bg-yellow-500",
-        "bg-red-700",
-        "bg-black"
+        {color:"bg-teal-700", colorName: "Verde Escuro"},
+        {color:"bg-stone-400", colorName: "Cinza"},
+        {color:"bg-blue-600", colorName: "Azul"},
+        {color:"bg-white", colorName: "Branco"},
+        {color:"bg-yellow-500", colorName: "Amarelo"},
+        {color:"bg-red-700", colorName: "Vermelho"},
+        {color:"bg-black", colorName: "Preto"}
       ],
       downloadLink:`${S153datasheet}`,
       vant: [
@@ -135,7 +135,7 @@ export default [
       Utility: "Fábrica de chicote, Montadoras e Concessionários Automotivos, Oficinas mecânicas, Loja de som, e uso geral domésticos.",
       roHS: "cd, Pb, Hg, Cr6+, PBDEs. PBBs free",
       cores: [
-        "bg-black"
+        {color:"bg-black", colorName:"Preto"}
       ],
       downloadLink:`${EG1920BK10datasheet}`,
       vant: [
@@ -163,7 +163,7 @@ export default [
       Utility: "Fábrica de chicote, Montadoras e Concessionários Automotivos, Oficinas mecânicas, Loja de som, e uso geral domésticos.",
       roHS: "cd, Pb, Hg, Cr6+, PBDEs. PBBs free",
       cores: [
-        "bg-black"
+        {color:"bg-black", colorName:"Preto"}
       ],
       downloadLink:`${EG1920BK13datasheet}`,
       vant: [
@@ -191,7 +191,7 @@ export default [
       Utility: "Fita profissional de alta aderência, melhor proteção emalta voltagem, utilizada tambémpor empresas de TV à cabos, telecomunicação, náutica e eletricistas profissionais, entre outras aplicações de alta voltagem. Atende o mercado telecom para altas tensões. Utilizavel em Instalação de TV a cabo",
       roHS:"Cd, Pb, Hg, Cr6+, PBDEs, PBBs Free",
       cores: [
-        "bg-black"
+        {color:"bg-black", colorName:"Preto"}
       ],
       downloadLink:`${D1920BK193datasheet}`,
       vant: [
@@ -219,8 +219,8 @@ export default [
       Utility: "Fábrica de chicote, Montadoras e Concessionários Automotivos, Oficinas mecânicas, Loja de som, e uso geral domésticos. Atende o mercado telecom para altas tensões.<br> • Instalação de TV a cabo <br> • Operadores e telefonia<br>• Internet",
       roHS: "Cd, Pb, Hg, Cr6+, PBDEs, PBBs Free",
       cores: [
-        "bg-black",
-        "bg-orange-600"
+        {color:"bg-black", colorName:"Preto"},
+        {color:"bg-orange-600", colorName:"Laranja"}
       ],
       downloadLink:`${U1915BK20datasheet}`,
       vant: [
@@ -248,7 +248,7 @@ export default [
       Utility: "Isolação de cabos elétricos, emendas e suporte automotivo de cabos.",
       roHS: "Cd, Pb, Hg, Cr6+, PBDEs, PBBs Free",
       cores: [
-        "bg-black"
+        {color:"bg-black", colorName:"Preto"},
       ],
       downloadLink:`${F1915BK50Bdatasheet}`,
       vant: [
@@ -276,7 +276,7 @@ export default [
       Utility: "Fita profissional de alta aderência, melhor proteção em alta voltagem, utilizada por empresas de TV à cabos, telecomunicação, náutica e eletricistas profissionais, entre outras aplicações de alta voltagem, Vedação contra a umidade, para proteger a isolação dos cabos de potência. Proteção contra a penetração de umidade pelas pontas dos cabos de potência. Esta fita deve sempre ser coberta com uma camada da Fita Isolante D193 para proteção contra intempéries e ação do tempo. Atende o mercado telecom para altas tensões. • Instalação de TV a cabo • Operadores e telefonia e Internet cabo",
       roHS: "Cd, Pb, Hg, Cr6+, PBDEs, PBBs Free",
       cores: [
-        "bg-white" 
+        {color:"bg-white", colorName:"Branco"},
       ],
       downloadLink:"",
       vant: [
@@ -303,7 +303,7 @@ export default [
       ResistChama: "Auto Extinguível",
       Utility: "Segmento náutico, Esportes, Indústria de refrigeração, Aplicações domésticas, Fechamento de embalagens pesadas, Aplicações onde é necessário alta resistência, tração e ótima adesão.",
       cores: [
-        "bg-black" 
+        {color:"bg-black", colorName:"Preto"},
       ],
       downloadLink:"",
       vant: [
