@@ -87,7 +87,7 @@ const Home = () =>{
     <div>
     <HeaderMenu/>
       <main className='flex flex-col'>
-        <section className='max-lg:justify-end max-lg:flex-col-reverse max-lg:px-[10%] px-[20%] flex h-screen w-screen justify-between items-center'>
+        <section className='max-lg:justify-end max-lg:flex-col-reverse max-lg:px-[10%] px-[20%] flex h-screen justify-between items-center'>
           <img
           className='absolute z-0 top-0 left-0 min-h-full object-cover'
           src={headerBgImg} alt="" />
