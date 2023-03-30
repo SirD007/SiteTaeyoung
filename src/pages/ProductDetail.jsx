@@ -10,14 +10,14 @@ import { AiFillFire } from "react-icons/ai";
 function ProductDetail() {
     const {productId} = useParams()
     const thisProduct = productsData.find(prod => prod.id === productId)
-    
+  
     return (
         <div>
             <HeaderMenu/>
             <div key={productId} className="px-[10%] h-screen w-screen bg-gray-900 flex flex-col relative justify-evenly items-center">
                 <div className="w-screen grid grid-cols-3 justify-center items-center relative px-[10%]">
                     <div className="p-10 flex items-center justify-center">
-                        <img src={thisProduct.imgSrc} alt="" className="" />
+                        <img id="productImg" src={thisProduct.imgSrc} alt="" className="" />
                     </div>
                     <div className="flex flex-col p-10">
                         <div>
@@ -74,12 +74,14 @@ function ProductDetail() {
                         <span className="text-white">Cores</span>
                         <div className="flex gap-2">
                             {thisProduct.cores.map((cores, index) => {
+                                const productImg = document.getElementById("productImg")
+                                const changeImg = function() {productImg.setAttribute( 'src', cores.colorImg )}
                                 return (
-                                    <div key={index} className={`${cores.color} w-5 h-5 rounded-[50%] border-2 cursor-pointer group relative`}>
-                                        <span className="bg-zinc-100 p-1 rounded hidden group-hover:flex absolute bottom-6 z-10 text-xs min-w-max">{cores.colorName}</span>
+                                    <div onClick={changeImg} key={index} className={`${cores.color} w-5 h-5 rounded-[50%] border-2 cursor-pointer group relative`}>
+                                        <span className="bg-zinc-100 p-1 rounded hidden group-hover:flex absolute bottom-6 z-10 text-xs min-w-max select-none">{cores.colorName}</span>
                                     </div>
                                 )
-                            })}
+                            })} 
                         </div>
                     </div>
                     <div className="h-full w-[50%] px-6 flex flex-col justify-center">
