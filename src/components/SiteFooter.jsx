@@ -27,10 +27,10 @@ export default function SiteFooter() {
                             to="/products">Linha PVC</Link>
                             <Link
                             className="text-white hover:text-primaryBlue transition-all"
-                            to="/products">Linha </Link>
+                            to="/products">Linha Têxtil</Link>
                             <Link
                             className="text-white hover:text-primaryBlue transition-all"
-                            to="/products">Doowon</Link>
+                            to="/products">Linha Alta Tensão</Link>
                         </div>                        
                     </div>
 
