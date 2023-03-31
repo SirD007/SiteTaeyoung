@@ -1,6 +1,25 @@
 import h131 from '../assets/h131.png'
-import h132 from '../assets/tapes/h132.png'
+import h132bl from '../assets/tapes/h132bl.png'
+import h132br from '../assets/tapes/h132br.png'
+import h132gr from '../assets/tapes/h132gr.png'
+import h132gy from '../assets/tapes/h132gy.png'
+import h132lb from '../assets/tapes/h132lb.png'
+import h132lg from '../assets/tapes/h132lg.png'
+import h132ms from '../assets/tapes/h132ms.png'
+import h132or from '../assets/tapes/h132or.png'
+import h132pk from '../assets/tapes/h132pk.png'
+import h132re from '../assets/tapes/h132re.png'
+import h132vo from '../assets/tapes/h132vo.png'
+import h132wh from '../assets/tapes/h132wh.png'
+import h132yl from '../assets/tapes/h132yl.png'
+import h132 from '../assets/tapes/h132bl.png'
 import s153 from '../assets/tapes/s153.png'
+import s153bl from '../assets/tapes/s153bl.png'
+import s153gr from '../assets/tapes/s153gr.png'
+import s153gy from '../assets/tapes/s153gy.png'
+import s153re from '../assets/tapes/s153re.png'
+import s153wh from '../assets/tapes/s153wh.png'
+import s153yl from '../assets/tapes/s153yl.png'
 import eg10 from '../assets/h131.png'
 import eg13 from '../assets/h131.png'
 import d193 from '../assets/h131.png'
@@ -62,18 +81,18 @@ export default [
       Utility: "Fábrica de chicote, Montadoras e Concessionários Automotivos, Oficinas mecânicas, Loja de som, e uso geral domésticos. Distinção de chicotes por seguimentos (partes especiais como Air-bag) Agrupamento e marcação dos cabos (iluminação, instalaçao de som) Instalação de Telecomunicação entre outros. Bigua, Dic som e outras distribuidoras de Som e Acessórios Automotivos",
       roHS: "Cd, Pb, Hg, Cr6+, PBDEs, PBBs Free",
       cores: [
-        {color:"bg-teal-700", colorName:"Verde Escuro", colorImg: `${h131}`},
-        {color:"bg-violet-800", colorName:"Violeta", colorImg: `${s153}`},
-        {color:"bg-rose-400", colorName:"Rosa", colorImg: `${h131}`},
-        {color:"bg-amber-900", colorName:"Marsala", colorImg: `${h132}`},
-        {color:"bg-orange-500", colorName:"Laranja", colorImg: `${eg10}`},
-        {color:"bg-stone-400", colorName:"Cinza", colorImg: `${pet}`},
-        {color:"bg-blue-600", colorName: "Azul Escuro", colorImg: `${h131}`},
-        {color:"bg-sky-400", colorName: "Azul Claro", colorImg: `${h131}`},
-        {color:"bg-white", colorName: "Branco", colorImg: `${h131}`},
-        {color:"bg-yellow-500", colorName: "Amarelo", colorImg: `${h131}`},
-        {color:"bg-red-700", colorName: "Vermelho", colorImg: `${h131}`},
-        {color:"bg-emerald-300", colorName: "Verde Claro", colorImg: `${h131}`}
+        {color:"bg-teal-700", colorName:"Verde Escuro", colorImg: `${h132gr}`},
+        {color:"bg-violet-800", colorName:"Violeta", colorImg: `${h132vo}`},
+        {color:"bg-rose-400", colorName:"Rosa", colorImg: `${h132pk}`},
+        {color:"bg-amber-900", colorName:"Marsala", colorImg: `${h132ms}`},
+        {color:"bg-orange-500", colorName:"Laranja", colorImg: `${h132or}`},
+        {color:"bg-stone-400", colorName:"Cinza", colorImg: `${h132gy}`},
+        {color:"bg-blue-600", colorName: "Azul Escuro", colorImg: `${h132bl}`},
+        {color:"bg-sky-400", colorName: "Azul Claro", colorImg: `${h132lb}`},
+        {color:"bg-white", colorName: "Branco", colorImg: `${h132wh}`},
+        {color:"bg-yellow-500", colorName: "Amarelo", colorImg: `${h132yl}`},
+        {color:"bg-red-700", colorName: "Vermelho", colorImg: `${h132re}`},
+        {color:"bg-emerald-300", colorName: "Verde Claro", colorImg: `${h132lg}`}
       ],
       downloadLink:`${H131datasheet}`,
       vant: [
@@ -101,13 +120,13 @@ export default [
       Utility: "Fábrica de chicote, Montadoras e Concessionários Automotivos, Oficinas mecânicas, Loja de som, e uso geral domésticos.",
       roHS: "Cd, Pb, Hg, Cr6+, PBDEs, PBBs Free",
       cores: [
-        {color:"bg-teal-700", colorName: "Verde Escuro"},
-        {color:"bg-stone-400", colorName: "Cinza"},
-        {color:"bg-blue-600", colorName: "Azul"},
-        {color:"bg-white", colorName: "Branco"},
-        {color:"bg-yellow-500", colorName: "Amarelo"},
-        {color:"bg-red-700", colorName: "Vermelho"},
-        {color:"bg-black", colorName: "Preto"}
+        {color:"bg-teal-700", colorName: "Verde Escuro", colorImg: `${s153gr}`},
+        {color:"bg-stone-400", colorName: "Cinza", colorImg: `${s153gy}`},
+        {color:"bg-blue-600", colorName: "Azul", colorImg: `${s153bl}`},
+        {color:"bg-white", colorName: "Branco", colorImg: `${s153wh}`},
+        {color:"bg-yellow-500", colorName: "Amarelo", colorImg: `${s153yl}`},
+        {color:"bg-red-700", colorName: "Vermelho", colorImg: `${s153re}`},
+        {color:"bg-black", colorName: "Preto", colorImg: `${s153}`}
       ],
       downloadLink:`${S153datasheet}`,
       vant: [
