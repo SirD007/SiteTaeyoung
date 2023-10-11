@@ -238,7 +238,7 @@ export default [
       Utility: "Fábrica de chicote, Montadoras e Concessionários Automotivos, Oficinas mecânicas, Loja de som, e uso geral domésticos. Atende o mercado telecom para altas tensões.<br> • Instalação de TV a cabo <br> • Operadores e telefonia<br>• Internet",
       roHS: "Cd, Pb, Hg, Cr6+, PBDEs, PBBs Free",
       cores: [
-        {color:"bg-black", colorName:"Preto"},
+        {color:"bg-black", colorName:"Preto"},  
         {color:"bg-orange-600", colorName:"Laranja"}
       ],
       downloadLink:`${U1915BK20datasheet}`,

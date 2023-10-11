@@ -21,7 +21,6 @@ import costumerLogo6 from '../assets/costumerLogo/costumerLogo6.png'
 import costumerLogo7 from '../assets/costumerLogo/costumerLogo7.png'
 import costumerLogo8 from '../assets/costumerLogo/costumerLogo8.png'
 import datasheet from '../assets/datasheet.png'
-import headerBgImg from '../assets/headerBgImg.jpg'
 import HomeHeaderImg from '../assets/HomeHeaderImg.png'
 import linhapvc from '../assets/linhapvc.png'
 import linhatextil from '../assets/linhatextil.png'
@@ -87,10 +86,10 @@ const Home = () =>{
     <div>
     <HeaderMenu/>
       <main className='flex flex-col'>
-        <section className='max-lg:justify-end max-lg:flex-col-reverse max-lg:px-[10%] px-[20%] flex h-screen justify-between items-center'>
-          <img
+        <section className='max-lg:px-[10%] px-[20%] py-20 flex h-screen justify-center items-center bg-homeBg bg-no-repeat bg-cover'>
+          {/* <img
           className='absolute z-0 top-0 left-0 min-h-full object-cover'
-          src={headerBgImg} alt="" />
+          src={headerBgImg} alt="" /> */}
 
           <div className='text-center flex flex-col z-10 items-center'>
             <img className='w-1/4' src={taeyoungWhite} alt="logoTaeyoung" />
@@ -103,7 +102,7 @@ const Home = () =>{
 
         </section>
     
-        <section className='max-lg:px-[10%] px-[20%] flex justify-between items-center'>
+        <section className='max-lg:px-[10%] px-[20%] mt-16 flex justify-between items-center'>
 
             <div className='shadow-lg rounded-lg bg-white grid-cols-3 grid z-10 max-lg:flex flex-col-reverse'>
               <div className='max-sm:flex max-sm:flex-col grid-cols-2 grid gap-4 p-10 col-span-2 items-center'>

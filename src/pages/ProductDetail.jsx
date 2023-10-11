@@ -71,7 +71,7 @@ function ProductDetail() {
                 <div className="bg-slate-800 w-[90%] p-2 shadow-2xl rounded-lg z-50 flex justify-between items-center">
                     <Link className="text-red-700 font-semibold text-lg bg-red-300 hover:bg-red-400 p-2 rounded transition-all flex items-center justify-center w-26 h-20 m-4" to="/products">← Voltar</Link>
                     <div>
-                        <span className="text-white">Cores</span>
+                        <span className="text-white">Cores <span className="text-xs text-zinc-500">Clique sobre a cor</span></span>
                         <div className="flex gap-2">
                             {thisProduct.cores.map((cores, index) => {
                                 const productImg = document.getElementById("productImg")

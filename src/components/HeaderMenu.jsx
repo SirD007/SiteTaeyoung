@@ -14,7 +14,7 @@ export default function HeaderMenu() {
 
     return (
         <div>
-            <div className="fixed z-50">
+            <div className="fixed z-50 mb-24">
                 <nav>
                     <div className="bg-white shadow-md h-26 w-screen flex px-[10%] justify-between items-center">
                         <div>
