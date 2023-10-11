@@ -18,7 +18,7 @@ module.exports = {
         'secImg1': "url('src/assets/tapes.jpg')",
         'secImg2': "url('src/assets/maskpro.jpg')",
         'secImg3': "url('src/assets/doowon.png')",
-        'homeBg': "url('./src/assets/headerBgImg.jpg')"
+        'homeBg': "url('../src/assets/headerBgImg.jpg')"
       }
     },
   },
