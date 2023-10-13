@@ -11,40 +11,36 @@ export default function SiteFooter() {
                         <span className="font-bold text-blue-500 text-lg">Institucional</span>
                         <div className="flex flex-col">
                             <Link
-                            className="text-white hover:text-primaryBlue transition-all"
-                            to="/empresa">Empresa</Link>
+                                className="text-white hover:text-primaryBlue transition-all"
+                                to="/empresa">Empresa</Link>
                             <Link
-                            className="text-white hover:text-primaryBlue transition-all"
-                            to="/empresa">Politica de Privacidade</Link>
-                        </div>                        
+                                className="text-white hover:text-primaryBlue transition-all"
+                                to="/empresa">Politica de Privacidade</Link>
+                        </div>
                     </div>
 
                     <div className="flex flex-col my-4">
                         <span className="font-bold text-blue-500 text-lg">Soluções</span>
                         <div className="flex flex-col">
                             <Link
-                            className="text-white hover:text-primaryBlue transition-all"
-                            to="/products">Linha PVC</Link>
+                                className="text-white hover:text-primaryBlue transition-all"
+                                to="/products">Linha PVC</Link>
                             <Link
-                            className="text-white hover:text-primaryBlue transition-all"
-                            to="/products">Linha Têxtil</Link>
+                                className="text-white hover:text-primaryBlue transition-all"
+                                to="/products">Linha Têxtil</Link>
                             <Link
-                            className="text-white hover:text-primaryBlue transition-all"
-                            to="/products">Linha Alta Tensão</Link>
-                        </div>                        
+                                className="text-white hover:text-primaryBlue transition-all"
+                                to="/products">Linha Alta Tensão</Link>
+                        </div>
                     </div>
 
                     <div className="flex flex-col my-4">
                         <span className="font-bold text-blue-500 text-lg">Fale Conosco</span>
                         <div className="flex flex-col">
-                            <Link
-                            className="text-white hover:text-primaryBlue transition-all"
-                            to="/empresa">Formulário de Contato</Link>
-
                             <div className="flex items-center gap-4 my-2 p-4 bg-white rounded-md">
                                 <FaPhoneAlt
-                                color="#3b82f6"
-                                size="24px"
+                                    color="#3b82f6"
+                                    size="24px"
                                 />
                                 <div className="flex flex-col">
                                     <span className="text-gray-800 text-xs uppercase leading-3">Central de Atendimento</span>
@@ -54,8 +50,8 @@ export default function SiteFooter() {
 
                             <div className="flex items-center gap-4 my-2 p-4 bg-white rounded-md">
                                 <FaMailBulk
-                                color="#3b82f6"
-                                size="24px"
+                                    color="#3b82f6"
+                                    size="24px"
                                 />
                                 <div className="flex flex-col">
                                     <span className="text-gray-800 text-xs uppercase leading-3">email</span>
@@ -63,7 +59,7 @@ export default function SiteFooter() {
                                 </div>
                             </div>
 
-                        </div>                        
+                        </div>
                     </div>
 
                 </div>
