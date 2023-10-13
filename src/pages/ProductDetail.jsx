@@ -14,7 +14,7 @@ function ProductDetail() {
     return (
         <div className="overflow-x-hidden">
             <HeaderMenu />
-            <div key={productId} className="overflow-x-hidden p-20 bg-gray-900 min-h-screen flex flex-col relative justify-evenly items-center">
+            <div key={productId} className="overflow-x-hidden p-20 gap-10 max-lg:p-10 bg-gray-900 min-h-screen flex flex-col relative justify-evenly items-center">
                 <div className="w-screen grid grid-cols-3 max-lg:grid-cols-1 justify-center items-center relative px-20 max-lg:px-10">
                     <div className="p-10 flex items-center justify-center">
                         <img id="productImg" className="max-lg:w-[500px]" src={thisProduct.imgSrc} alt=""/>
@@ -68,11 +68,11 @@ function ProductDetail() {
                         </div>
                     </div>
                 </div>
-                <div className="bg-slate-800 w-[90%] p-2 shadow-2xl rounded-lg z-50 flex justify-between items-center max-lg:flex-col">
+                <div className="bg-slate-800 w-[90%] max-lg:w-full p-2 shadow-2xl rounded-lg flex justify-between items-center max-lg:flex-col gap-5">
                     <Link className="text-red-700 font-semibold text-lg bg-red-300 hover:bg-red-400 p-2 rounded transition-all flex items-center justify-center w-26 h-20 m-4" to="/products">← Voltar</Link>
-                    <div>
+                    <div className="px-5">
                         <span className="text-white">Cores <span className="text-xs text-zinc-500">Clique sobre a cor</span></span>
-                        <div className="flex gap-2">
+                        <div className="flex gap-2 flex-wrap">
                             {thisProduct.cores.map((cores, index) => {
                                 const productImg = document.getElementById("productImg")
                                 const changeImg = function () { productImg?.setAttribute('src', cores.colorImg) }
@@ -84,7 +84,7 @@ function ProductDetail() {
                             })}
                         </div>
                     </div>
-                    <div className="h-full w-[50%] px-6 flex flex-col justify-center">
+                    <div className="h-full w-[50%] max-lg:w-full px-6 flex flex-col justify-center">
                         <span className="text-white">Utilizado em</span>
                         <span className="text-white text-sm">{thisProduct.Utility}</span>
                     </div>
